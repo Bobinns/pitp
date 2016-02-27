@@ -1,0 +1,244 @@
+﻿@model PITP.email
+@{
+    ViewBag.Title = "sponsors";
+}
+
+<div id="page">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div>
+                <a class="navbar-brand" href='.'>
+                    <img src="img/header-logo.png" class="img-responsive" alt="header logo" />
+                </a>
+            </div>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Home", "Index", "PITP")</li>
+                <li>@Html.ActionLink("2014", "year2014", "PITP")</li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>@Html.ActionLink("About Us", "about-us", "PITP")</li>
+                        <li>@Html.ActionLink("Tent City", "tent-city", "PITP")</li>
+                        </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+
+                        <li>@Html.ActionLink("Origins", "origins", "PITP")</li>
+                        <li>@Html.ActionLink("Up And Coming...", "upandcoming", "PITP")</li>
+                        <li>@Html.ActionLink("pastevents", "pastevents", "PITP")</li>
+                    </ul>
+                </li>
+                <li class="active">@Html.ActionLink("Sponsors", "sponsors", "PITP")</li>
+                <li>@Html.ActionLink("Volunteer", "volunteer", "PITP")</li>
+                <li>@Html.ActionLink("Contact", "contact", "PITP")</li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.facebook.com/profile.php?id=100005402296847">Facebook</a></li>
+                        <li><a href="https://twitter.com/pitpnxd">Twitter</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+@if (@ViewData["Sent"] != "sent")
+{
+
+    <div class="intro-block2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                    <img class="img-responsive tpad" src="img/vol.png">
+                </div>
+                <div class="col-xs-9">
+                    <h1>Party In The Park <span class="text-muted qback">&raquo; We need your sponsorship!</span></h1>
+                    <p class="lead">After the success of “Party in the Park” held in <a href='@Url.Action("year2014", "PITP")'>2014</a> the event’s organisers are planning an even bigger and better day out for 2016!</p>
+                    <p>This is a great opportunity for your business to help support this great community based festival. Sponsorship would give your organisation a great platform to promote itself within the local community.</p>
+                    <p>Your sponsorship can help build upon the achievements of last year’s event. With your support we want to deliver a great day out for all who attend Fordham Park on September 2014. We are making efforts to build a network of local businesses and organisations that are keen to profit from involvement in what we foresee as a prosperous annual event. This is a great chance for you to benefit from participation in an occasion that will be perceived over the coming years as a valuable community asset.</p>
+                    <p>Sponsorship will ensure that your businesses name and logo will feature in any “Party in the Park” promotional literature. We will be producing flyers, posters and adverts in order to publicise the event, which is an opportunity for your business to advertise itself as an important member of the community. Aside from traditional media promotion the event will also be publicised on the internet. Our web site employs the latest ‘responsive web design’ techniques to ensure that our message is displayed appropriately across all devices. Sponsors will have their name, logo, description, and appropriate web link displayed on the site.</p>
+                    <p>This is a great chance for your organisation to be promoted in New Cross, Deptford and beyond. We hope you take up this opportunity to work with us to establish an annual event to be cherished.</p>
+
+</div>
+            </div>            
+        </div>
+    </div>
+    @*<div class="spon">
+    <div class="container">
+            <div class="row">
+      <div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><h3 class="panel-title"><a name="sponsor">Sponsorship opportunities</a></h3></div>
+  
+
+  <!-- List group -->
+  <ul class="list-group">
+    <li class="list-group-item"><span class="badge">£20	</span>	Logo and company details on PITP website.</li>
+    <li class="list-group-item"><span class="badge">£50</span>		Logo and company details on PITP website  and print promotion.</li>
+    <li class="list-group-item"><span class="badge">£100</span>		On and offline promotion, plus a banner at the event.</li>
+    <li class="list-group-item"><span class="badge">£250</span>	We will feature your business on our website and print promotion, with a banner and shout outs at the event.</li>
+    <li class="list-group-item"><span class="badge">£500</span>	Your business will be mentioned throughout the day and will feature on all on and offline promotional material.</li>
+    <li class="list-group-item"><span class="badge">£1000</span>	As one of the main sponsors, your business can sponsor a stage or area of the festival and will be promoted in all on and offline promotional activity.</li>
+  </ul>
+</div>
+</div>
+        </div>
+        </div>*@
+    <!-- End Intro Text -->
+}
+else
+{
+    <div class="intro-block2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                    <img class="img-responsive tpad" src="img/vol.png">
+                </div>
+                <div class="col-xs-9">
+                    <h1>Thank you.</h1>
+                    <p class="lead">@ViewData["Message"]</p>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+
+<div class="container padded batop">
+    <div class="row">
+        <div class="col-sm-8">
+            <h2>Get in touch</h2>
+            <hr class="style-one">
+            <p>If you wish to enquire about sponsorship, please use the form below to contact us.</p>
+
+
+            @using (Html.BeginForm("sponsors", "PITP", new { @class = "form-horizontal tpad" }))
+            {
+               
+                <div class="form-group">
+                    <label for="email" class="col-lg-2 control-label">Email</label>
+                    <div class="col-lg-10">
+                        @Html.TextBoxFor(x => x.Email, new { type = "email", @class = "form-control", id = "email", placeholder = "Email" })
+                    </div>
+                </div>
+                <div class="form-group tpad">
+                    <label for="message" class="col-lg-2 control-label">Message</label>
+                    <div class="col-lg-10">
+                        @Html.TextAreaFor(x => x.Message, new { @class = "form-control", rows = "6", id = "message", placeholder = "Message..." })
+                    </div>
+                </div>
+                <div class="form-group tpad">
+                    <div class="col-lg-offset-2 col-lg-10">
+                        @*<a data-toggle="modal" href="#myModal" class="btn btn-default btn-lg">Send</a>*@
+                        @*<input type="submit" value="Send" class="btn btn-default btn-lg" />*@
+                        <input type="submit" value="Send" />
+                    </div>
+                </div>                
+            }
+        </div>
+        <div class="col-sm-4">
+            <img class="img-circle img-responsive" src="img/ba.jpg">
+            <hr class="style-one">
+            <address>
+                <h3>New Cross Learning</h3>
+                283 – 285 New Cross Road<br>
+                London, SE14 6AS<br>
+                <a href="mailto: pitpnxd@gmail.com">pitpnxd@gmail.com</a><br>
+                <abbr title="Phone">P:</abbr>0208 320 0813
+            </address>
+        </div>
+    </div>
+</div>
+<!-- End Page Content -->
+
+<div class="info">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Last Years Sponsors</h3>
+                <hr class="style-one">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordian-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-home"></span> Hexagon</a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse in">
+                            <div class="panel-body">
+                                <a href="http://www.hexagon.org.uk/">
+                                    <img src="img/hexagon.png" class="pull-right" alt="Hexagon housing association"></a>Hexagon is an innovative and responsive Housing Association working in partnership with a range of local authorities to meet housing and care needs across South East London. With a turnover of £25.78m and 154 staff, Hexagon is continually improving the quality and range of our affordable homes and services. Click any of the headings opposite for more information about Hexagon.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordian-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-home"></span> Three Boroughs Housing Co-op</a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <a href="http://threeboroughs.co.uk/">
+                                    <img src="img/three-bs.png" class="pull-right" alt="Three Boroughs Housing Co-op"></a>Three Boroughs is a fully mutual housing co-op based in Southeast London. We are managed by our members in the form of a committee elected at the AGM. We act as managing agents for a number of Housing Associations operating in the boroughs of Lewisham, Southwark and formerly, Greenwich.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordian-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-home"></span> The Birds Nest</a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <a href="http://www.thebirdsnestpub.com/">
+                                    <img src="img/birds-nest-skull-logo.png" class="pull-right" alt="The Birds Nest Logo"></a>
+                                The Birds Nest has evolved into a fantastic, international music and arts venue while retaining its original South London flavour. Located at the end of Creekside and on the borders of Greenwich and Deptford, the pub is a hub of artists and musicians.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="intro-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 tabbable">
+                <blockquote>
+                    <p>&ldquo;In its day, Urban Festival was the alternative Glastonbury. This party is being organised by local people for local people and it’s also a celebration of local talent – the musicians and artists you’ll be reading about next year. And unlike so many festivals today it’s absolutely free.&rdquo;</p>
+                    <small class="qback">Kathy Dunbar, <cite title="source title">New Cross Learning, Chair </cite></small>
+                </blockquote>
+            </div>
+            <div class="col-sm-4 col-sm-offset-2">
+                <!-- Quote go here -->
+                <blockquote>
+                    <p>&ldquo;We think the Party in the Park embodies the spirit of New Cross: this is a brilliant community and people have come together to volunteer their time and local organisations have sponsored the party..&rdquo;</p>
+                    <small class="qback">R.McFarlane</small>
+                </blockquote>
+            </div>
+        </div>
+        <div class="col-sm-6 tabbable wd">website developed by - <a href="mailto:derm.finn@gmail.com">derm.finn@gmail.com</a></div>
+    </div>
+</div>

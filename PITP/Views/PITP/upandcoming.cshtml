@@ -1,0 +1,132 @@
+﻿@{
+    ViewBag.Title = "upandcoming";
+}
+<div id="page">
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div>
+                    <a class="navbar-brand" href='.'>
+                        <img src="img/header-logo.png" class="img-responsive" alt="header logo" />
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "PITP")</li>
+                    <li>@Html.ActionLink("2014", "year2014", "PITP")</li>
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>@Html.ActionLink("About Us", "about-us", "PITP")</li>
+                        <li>@Html.ActionLink("Tent City", "tent-city", "PITP")</li>
+                        </ul>
+                </li>
+                    <li class="dropdown active">
+                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+
+                        <li>@Html.ActionLink("Origins", "origins", "PITP")</li>
+                        <li class="active">@Html.ActionLink("Up And Coming...", "upandcoming", "PITP")</li>
+                        <li>@Html.ActionLink("pastevents", "pastevents", "PITP")</li>
+                        </ul>
+                        </li>
+                    <li>@Html.ActionLink("Sponsors", "sponsors", "PITP")</li>
+                    <li>@Html.ActionLink("Volunteer", "volunteer", "PITP")</li>
+                    <li>@Html.ActionLink("Contact", "contact", "PITP")</li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://www.facebook.com/profile.php?id=100005402296847">Facebook</a></li>
+                            <li><a href="https://twitter.com/pitpnxd">Twitter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+           <!-- End Navigation -->
+<div class="intro-block2">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3">
+                <img class="img-responsive tpad" src="img/idea.png">
+            </div>
+            <div class="col-xs-9">
+                <h1>Up and Coming... <span class="text-muted qback">&raquo;Monthly Craft Workshops </span></h1>
+                <p class="lead">Party In The Park working with the <a href="http://minesweepercollective.co.uk/workshops/party-in-the-park-warm-up-workshops-april-25th-26th/" alt="party in the park craft workshops" >Minesweeper Collective</a> will be holding a 
+                     craft workshops on <b>Saturday MAY 16th & Sunday 17th</b></p>
+                <h2>It's FREE! - Get involved.</h2>
+                <p>The aim of these workshops is to develop artistic skills for people who wish to contribute to this year’s Party in the Park. A whole range of activities will be put into place for the build up to this year’s festival in Fordham Park on September 5th.</p>
+                <p>The following activities will be made available to those who attend -</p>
+                <ul>
+                <li>Live painting</li>
+                <li>Live screen-printing</li>
+                <li>Comics workshop</li>
+                <li>Pin-hole photography </li>
+                <li>Jam and recording session </li>
+                <li>Performance art</li>
+            </ul>
+                <p>The dates for subsequent workshops are <b>MAY 30th & 31st , JUNE 13th & 14th, Saturday JULY 18th & Sunday 19th, Saturday AUGUST 15th & Sunday 16th</b></p>
+                <p>Check out the @Html.ActionLink("image gallary here", "pastevents", "pitp", null, null,"craft-workshop", null, null)  from the last workshop successfully held on 25th & 26th of April</p>
+                <p>P.S. - After each weekender, on each Sunday from 8pm, we will host SUNDAY SOUNDS monthly, a new line-up of rebel acoustic each month till 12am!</p>
+            </div>
+        </div>
+    </div>    
+</div>
+    
+    <div class="spon">
+    <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                <img src="~/img/minesweeper.png" alt="fund raiser" class="img-responsive" / style="margin-bottom:3em">
+                </div>
+                <div class="col-xs-6">
+                <img src="~/img/minesweeper-dates.png" alt="fund raiser" class="img-responsive" / style="margin-bottom:3em">
+                    </div>
+    
+</div>
+        </div>
+        </div>
+<!-- End Intro Text -->
+
+<div class="map">    
+    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2484.8704238967384!2d-0.017342899999999998!3d51.4788927!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876028e93541155%3A0xd81a5e7bafe33988!2s23+Norman+Rd%2C+London+SE10+9QZ%2C+UK!5e0!3m2!1sen!2s!4v1430749074895"></iframe><br />
+</div>
+<div class="container">
+    <div class="row">    
+        <div class="col-lg-12">             
+            <small><a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2484.8704238967384!2d-0.017342899999999998!3d51.4788927!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876028e93541155%3A0xd81a5e7bafe33988!2s23+Norman+Rd%2C+London+SE10+9QZ%2C+UK!5e0!3m2!1sen!2s!4v1430749074895" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+        </div>
+    </div>
+</div>
+
+ 
+
+
+<div class="intro-block"">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 tabbable">
+                <blockquote>
+                    <p>&ldquo;In its day, Urban Festival was the alternative Glastonbury. This party is being organised by local people for local people and it’s also a celebration of local talent – the musicians and artists you’ll be reading about next year. And unlike so many festivals today it’s absolutely free.&rdquo;</p>
+                    <small class="qback">Kathy Dunbar, <cite title="source title">New Cross Learning, Chair </cite></small>
+                </blockquote>
+            </div>
+            <div class="col-sm-4 col-sm-offset-2">
+                <!-- Quote go here -->
+                <blockquote>
+                    <p>&ldquo;We think the Party in the Park embodies the spirit of New Cross: this is a brilliant community and people have come together to volunteer their time and local organisations have sponsored the party..&rdquo;</p>
+                    <small class="qback">R.McFarlane</small>
+                </blockquote>
+            </div>
+        </div>
+        <div class="col-sm-6 tabbable wd">website developed by - <a href="mailto:derm.finn@gmail.com">derm.finn@gmail.com</a></div>
+    </div>       
+</div>
+        </div>

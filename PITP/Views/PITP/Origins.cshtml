@@ -1,0 +1,164 @@
+﻿@{
+    ViewBag.Title = "Origins";
+}
+<div id="page">
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div>
+                    <a class="navbar-brand" href='.'>
+                        <img src="img/header-logo.png" class="img-responsive" alt="header logo" />
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "PITP")</li>
+                    <li>@Html.ActionLink("2014", "year2014", "PITP")</li>
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>@Html.ActionLink("About Us", "about-us", "PITP")</li>
+                        <li>@Html.ActionLink("Tent City", "tent-city", "PITP")</li>
+                        </ul>
+                </li>
+                    <li class="dropdown active">
+                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+
+                        <li class="active">@Html.ActionLink("Origins", "origins", "PITP")</li>
+                        <li>@Html.ActionLink("Up And Coming...", "upandcoming", "PITP")</li>
+                        <li>@Html.ActionLink("pastevents", "pastevents", "PITP")</li>
+                        </ul>
+                        </li>
+                    <li>@Html.ActionLink("Sponsors", "sponsors", "PITP")</li>
+                    <li>@Html.ActionLink("Volunteer", "volunteer", "PITP")</li>
+                    <li>@Html.ActionLink("Contact", "contact", "PITP")</li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://www.facebook.com/profile.php?id=100005402296847">Facebook</a></li>
+                            <li><a href="https://twitter.com/pitpnxd">Twitter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+        <!-- End Navigation -->
+<div class="intro-block2">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3">
+                <img class="img-responsive tpad" src="img/origins.png">
+            </div>
+            <div class="col-xs-9">
+                <h1>Origins <span class="text-muted qback">&raquo; Deptford Urban Free Festival</span></h1>
+                
+                <p class="lead">The origins of Party In The Park can be traced back to an annual event called the <a href="http://transpont.blogspot.co.uk/2012/01/urban-free-festival-1992.html" title="Transpontine blog about the Urban Free Festival 1992">"Deptford Urban Free Festival"</a>. 
+                    What began in 1989 as a small festival with one stage grew into a massive open air party that attracted thousands of people.
+                   </p>
+            </div>
+        </div>
+    </div>    
+</div>
+<!-- End Intro Text -->
+<div class="container">
+    <div class="row orgcar">
+<div id="myCarousel" class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/f1.jpg">
+                    <div class="container active">
+                        <div class="carousel-caption">
+                            <h1>Deptford Urban Free Festival</h1>
+                            <p><b>Photographs dating from 1992 - The sites developer is in the first photo!</b></p>
+                            <p><a href="#" class="btn btn-primary btn-large">Read More...</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/f2.jpg">
+                    <div class="container active">
+                        <div class="carousel-caption">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/f3.jpg">
+                    <div class="container active">
+                        <div class="carousel-caption">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/f4.jpg">
+                    <div class="container active">
+                        <div class="carousel-caption">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/f5.jpg">
+                    <div class="container active">
+                        <div class="carousel-caption">
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
+</div></div>
+<div class="intro-block"">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 tabbable">
+                <blockquote>
+                    <p>&ldquo;In its day, Urban Festival was the alternative Glastonbury. This party is being organised by local people for local people and it’s also a celebration of local talent – the musicians and artists you’ll be reading about next year. And unlike so many festivals today it’s absolutely free.&rdquo;</p>
+                    <small class="qback">Kathy Dunbar, <cite title="source title">New Cross Learning, Chair </cite></small>
+                </blockquote>
+            </div>
+            <div class="col-sm-4 col-sm-offset-2">
+                <!-- Quote go here -->
+                <blockquote>
+                    <p>&ldquo;We think the Party in the Park embodies the spirit of New Cross: this is a brilliant community and people have come together to volunteer their time and local organisations have sponsored the party..&rdquo;</p>
+                    <small class="qback">R.McFarlane</small>
+                </blockquote>
+            </div>
+        </div>
+        <div class="col-sm-6 tabbable wd">website developed by - <a href="mailto:derm.finn@gmail.com">derm.finn@gmail.com</a></div>
+    </div>       
+</div>
+<!-- info panel end -->    
+
+        <!-- End Intro Text -->
+
+@section Scripts {
+    <script>
+        $(function () {
+            $('.carousel').carousel({
+                interval: 4000
+            });
+        })
+
+</script>
+}

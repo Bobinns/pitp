@@ -1,0 +1,218 @@
+﻿@model PITP.email
+@{
+    ViewBag.Title = "volunteer";
+}
+<div id="page">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div>
+                <a class="navbar-brand" href='.'>
+                    <img src="img/header-logo.png" class="img-responsive" alt="header logo" />
+                </a>
+            </div>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Home", "Index", "PITP")</li>
+                <li>@Html.ActionLink("2014", "year2014", "PITP")</li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>@Html.ActionLink("About Us", "about-us", "PITP")</li>
+                        <li>@Html.ActionLink("Tent City", "tent-city", "PITP")</li>
+                        </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+
+                        <li>@Html.ActionLink("Origins", "origins", "PITP")</li>
+                        <li>@Html.ActionLink("Up And Coming...", "upandcoming", "PITP")</li>
+                        <li>@Html.ActionLink("pastevents", "pastevents", "PITP")</li>
+                    </ul>
+                </li>
+                <li>@Html.ActionLink("Sponsors", "sponsors", "PITP")</li>
+                <li class="active">@Html.ActionLink("Volunteer", "volunteer", "PITP")</li>
+                <li>@Html.ActionLink("Contact", "contact", "PITP")</li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.facebook.com/profile.php?id=100005402296847">Facebook</a></li>
+                        <li><a href="https://twitter.com/pitpnxd">Twitter</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<!-- End Navigation -->
+
+@if (@ViewData["Sent"] != "sent")
+{
+    <div class="intro-block2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                    <img class="img-responsive tpad" src="img/vol.png">
+                </div>
+                <div class="col-xs-9">
+                    <h1>Party In The Park <span class="text-muted qback">&raquo; We need your help!</span></h1>
+                    <p class="lead">
+                        The people who are currently making this possible are a very small group of very dedicated people - but there's only so much they can do and 
+the organisers are still looking for volunteers
+                    </p>
+                    <p>We are looking for people who can contribute with the following</p>
+                    <ul>
+                        <li>Security</li>
+                        <li>Stewarding </li>
+                        <li>flyer & poster distribution</li>
+                        <li>Fundraising</li>
+                        <li>Site build, decor & strike</li>
+                        <li>Technical/sound engineers/stage management/stage runners/comperes/carpenters</li>
+                    </ul>
+                    <p>We are particularly need <b class="text-muted2"><em >STEWARDS!</em></b></p>
+                    <p><b class="text-muted2">Duties Include</b></p>
+                    <p>Smile at people when they arrive and they leave • Remain calm and be courteous to members of the public • Be on hand to help with information and maps • Keep an eye out to make sure everyone is safe • Watch out for lost children • Help keep the place clean and tidy • Be a first aider or direct people to the welfare area - help out with accidents • Keeping an eye out for trouble and contacting security if necessary • Ensuring security at entrances and exits • Minimising the risk of fire • Controlling parking and marshalling of traffic if applicable</p>
+                    <p><b class="text-muted2">Perks</b></p>
+                    <p>Free PITP T-shirt - okay it’s last years, but it’s vintage • Free food voucher from any stall • Free drink voucher - alcoholic or otherwise • Free entry to after-party at New Cross Inn (and more free tickets to future gigs sent to your inbox!) • Unlimited respect from the New Cross and Deptford Massive.</p>
+                    <p>If you’re hard enough to come down on Sunday morning to help tidy the lawn and take down a few signs, you get a free Sunday lunch in the Bird’s Nest!</p>
+                    <p>If you can help, please get in touch using the form below</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Intro Text -->
+}
+else
+{
+    <div class="intro-block2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                    <img class="img-responsive tpad" src="img/vol.png">
+                </div>
+                <div class="col-xs-9">
+                    <h1>Thank you.</h1>
+                    <p class="lead">@ViewData["Message"]</p>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<div class="container padded batop">
+    <div class="row">
+        <div class="col-sm-8">
+            <h2>Get in touch</h2>
+            <hr class="style-one">
+            <p>If you wish to help out in any way possible please use the form below to contact us.</p>
+
+            @using (Html.BeginForm("Volunteer", "PITP", FormMethod.Post, new { @class = "form-horizontal tpad", role="form" }))
+            {
+
+                <div class="form-group">
+                    <label for="email" class="col-lg-2 control-label">Email</label>
+                    <div class="col-lg-10">
+                        @Html.TextBoxFor(x => x.Email, new { type = "email", @class = "form-control", id = "email", placeholder = "Email" })
+                    </div>
+                </div>
+                <div class="form-group tpad">
+                    <label for="message" class="col-lg-2 control-label">Message</label>
+                    <div class="col-lg-10">
+                        @Html.TextAreaFor(x => x.Message, new { @class = "form-control", rows = "6", id = "message", placeholder = "Message..." })
+                    </div>
+                </div>
+                <div class="form-group tpad">
+                    <div class="col-lg-offset-2 col-lg-10">
+                        @*<a data-toggle="modal" href="#myModal" class="btn btn-default btn-lg">Send</a>*@
+                        @*<input type="submit" value="Send" class="btn btn-default btn-lg" />*@
+                        <input type="submit" value="Send" />
+                    </div>
+                </div>      
+
+            }
+        </div>
+        <div class="col-sm-4">
+            <img class="img-circle img-responsive" src="img/ba.jpg">
+            <hr class="style-one">
+            <address>
+                <h3>New Cross Learning</h3>
+                283 – 285 New Cross Road<br>
+                London, SE14 6AS<br>
+                <a href="mailto: pitpnxd@gmail.com">pitpnxd@gmail.com</a><br>
+                <abbr title="Phone">P:</abbr>0208 320 0813
+            </address>
+        </div>
+    </div>
+</div>
+<!-- End Page Content -->
+
+<div class="intro-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 tabbable">
+                <blockquote>
+                    <p>&ldquo;In its day, Urban Festival was the alternative Glastonbury. This party is being organised by local people for local people and it’s also a celebration of local talent – the musicians and artists you’ll be reading about next year. And unlike so many festivals today it’s absolutely free.&rdquo;</p>
+                    <small class="qback">Kathy Dunbar, <cite title="source title">New Cross Learning, Chair </cite></small>
+                </blockquote>
+            </div>
+            <div class="col-sm-4 col-sm-offset-2">
+                <!-- Quote go here -->
+                <blockquote>
+                    <p>&ldquo;We think the Party in the Park embodies the spirit of New Cross: this is a brilliant community and people have come together to volunteer their time and local organisations have sponsored the party..&rdquo;</p>
+                    <small class="qback">R.McFarlane</small>
+                </blockquote>
+            </div>
+        </div>
+        <div class="col-sm-6 tabbable wd">website developed by - <a href="mailto:derm.finn@gmail.com">derm.finn@gmail.com</a></div>
+    </div>
+</div>
+<!-- info panel end -->
+
+@section Scripts {
+   <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js" ></script>     
+    <script>
+        $('form').validate({
+            rules: {
+                Email: {
+                    email: true,
+                    required: true
+                },
+                Message: {
+                    minlength: 3,
+                    required: true
+                },
+                messages: {
+                    Email:  {
+                        email: "Please enter a valid email address",
+                        required: "Please enter your email address"
+                    },
+                    Message: {required: "Please enter a message"}
+                }
+            },
+            highlight: function (element) {
+                $(element).closest('.form-group').addClass('has-error');
+            },
+            unhighlight: function (element) {
+                $(element).closest('.form-group').removeClass('has-error');
+            },
+            errorElement: 'span',
+            errorClass: 'help-block',
+           
+            errorPlacement: function (error, element) {
+                if (element.parent('.input-group').length) {
+                    error.insertAfter(element.parent());
+                } else {
+                    error.insertAfter(element);
+                }
+            }
+        });
+</script>
+}

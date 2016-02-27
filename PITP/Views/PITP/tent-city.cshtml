@@ -1,0 +1,255 @@
+﻿@model PITP.Models.email
+@{
+    ViewBag.Title = "volunteer";
+}
+<div id="page">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div>
+                <a class="navbar-brand" href='.'>
+                    <img src="img/header-logo.png" class="img-responsive" alt="header logo" />
+                </a>
+            </div>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Home", "Index", "PITP")</li>
+                <li>@Html.ActionLink("2014", "year2014", "PITP")</li>
+                @*<li>@Html.ActionLink("About", "About", "PITP")</li>*@
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>@Html.ActionLink("About Us", "about-us", "PITP")</li>
+                        <li class="active">@Html.ActionLink("Tent City", "tent-city", "PITP")</li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>@Html.ActionLink("Origins", "origins", "PITP")</li>
+                        <li>@Html.ActionLink("Up And Coming...", "upandcoming", "PITP")</li>
+                        <li>@Html.ActionLink("pastevents", "pastevents", "PITP")</li>
+                    </ul>
+                </li>
+                <li>@Html.ActionLink("Sponsors", "sponsors", "PITP")</li>
+                <li>@Html.ActionLink("Volunteer", "volunteer", "PITP")</li>
+                <li>@Html.ActionLink("Contact", "contact", "PITP")</li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.facebook.com/profile.php?id=100005402296847">Facebook</a></li>
+                        <li><a href="https://twitter.com/pitpnxd">Twitter</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<!-- End Navigation -->
+
+@if (@ViewData["Sent"] != "sent")
+{
+    <div class="intro-block5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                    <img class="img-responsive tpad" src="img/origins.png">
+                </div>
+                <div class="col-xs-9">
+                    <h1>Tent City  <span class="text-muted3 qback2">&raquo; Demanding Housing for Our Community</span></h1>
+                    <p class="leadh">
+                        London is experiencing an ongoing housing crisis. At this year’s Party in the Park an area called “Tent City” will look at the housing problems our communities are facing. We hope to bring together a number of different people to look at ways in which the governments attack can be challenged, particularly with respect impacts on the local area, New Cross and Deptford, SE London.  “Tent City” will look at ways in which people from the community can organise in order to combat the social cleansing of our neighbourhoods and campaign for better social housing provision.
+                    </p>
+                    <h4 class="text-muted3">Tent City schedule</h4>
+                    <h5 class="text-muted3">[Start 1pm]</h5>
+                    <ol>
+                        <li class="tcmb"><em class="text-muted3">The Problem:</em> Introduction to what the housing crisis is, and how it is in impacting on the local area (New Cross, Deptford). The introduction will address the following issues: 
+                            <ul>
+                                <li>Info session about what is going on/ planned for New Cross & Deptford</li>
+                                <li>Specific developments and potential impact, using local planning information, and a case study of a development. </li>
+                                <li>Effect of government welfare reforms on social housing, such as social exclusion, social cleansing</li>
+                                <li>Right-To-Buy and how it will affect London social housing</li>
+                                <li>Affordable Housing (80% market), & being priced out of the city</li>
+                            </ul>
+                            [1hour, 1pm – 2pm, Main Tent]
+                        </li>
+                        <li class="tcmb"><em class="text-muted3">The Solution/ Ways to Organise/ Combating the “Inevitable”:</em> Investigating methods to combat these problems, using the knowledge of existing groups in the Social and Alternative housing sectors:</li>
+                        <span class="text-muted3">Social Housing </span>(incl Housing Associations, co-ops, council housing): how to challenge the threat to social housing, eg right-to-buy, evictions, “affordable” rents. Panel delegates from various housing action groups.
+                    <span style="display: block;" class="tcmb">[1 hour, 3pm – 4pm, Main Tent]</span>
+                        <li class="tcmb"><em class="text-muted3">Workshops:</em> workshops will look at practical ways to organise and resist social cleansing. Breakout into <em class="text-muted3">FOUR workshops </em>around tent city, to include:
+                            <ul>
+                                <li>Tenant Empowerment: Tenant-led management, and tenant participation in HA strategy and policy making </li>
+                                <li>Organising a Housing Action Group</li>
+                                <li>Squatting and Eviction Resistance</li>
+                                <li>Benefits Advice</li>
+                            </ul>
+                            [1 hour, 4pm – 5pm, Workshop Spaces]
+                        </li>
+                        <li class="tcmb"><em class="text-muted3">Plenary Session: </em>getting feedback from each of the workshops, and tackling next steps, such as proposing:
+                            <ul>
+                                <li>A platform to network across different groups</li>
+                                <li>Turn PITP into an annual meet-up of housing groups</li>
+                                [1 hour, 5pm – 6pm, Main Tent]   
+                            </ul>
+                    </ol>
+                    <p class="text-muted3">[Ends: 6pm]</p>
+                    <p class="text-muted3">Speakers, Workshops and Panels to be confirmed in due course. </p>
+                    <p class="text-muted3">Additional Elements running concurrently:</p>
+                    <ul>
+                        <li><em class="text-muted3">Stage/ Speaker’s Corner: </em>Have a speaker’s corner/ soap box in festival for people to talk about housing; small acoustic stage with co-op members performing</li>
+                        <li><em class="text-muted3">People's Court: </em>invite developer/ councilor and put them on trial, with audience as jury.</li>
+                        <li><em class="text-muted3">Housing Information Stall</em>, along with main sponsor stalls (Hexagon HA, Sanford HC)</li>
+                    </ul>
+                    <p>
+                        We are currently seeking participation and help. If you think that you would like to get involved in the Tent City at this year’s Party in the Park, 
+                        or if you just want to be kept updated, please get in touch using the form below or email <a href="mailto:housing@pitpnxd.co.uk" class="tca">housing@pitpnxd.co.uk</a>
+                    </p>
+                    <p class="text-muted3">Contact Details</p>
+                    <p>
+                        Telephone Number: <em class="text-muted3">0208 320 0813</em><br />
+                        Post to: Tent City, c/o <em class="text-muted3">New Cross Learning, 283 – 285 New Cross Road, London SE14 6AS</em>
+                    </p>
+                    <h4 class="text-muted3">Location of Tent City in Fordham Park, New Cross, SE London</h4>
+                    <p>
+                        <img src="~/img/site.png" class="img-responsive" />
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Intro Text -->
+}
+else
+{
+    <div class="intro-block2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                    <img class="img-responsive tpad" src="img/get-involved.png">
+                </div>
+                <div class="col-xs-9">
+                    <h1>Thank you.</h1>
+                    <p class="leadh">@ViewData["Message"]</p>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<div class="container padded batop">
+    <div class="row">
+        <div class="col-sm-8">
+            <h2>Get in touch</h2>
+            <hr class="style-one">
+            <p>
+                If you wish to find out more, or get invloved in the Tent City at this years Party In the Park, then please 
+                use the form below to contact us or send us an email <a href="mailto: pitpnxd@gmail.com">housing@pitpnxd.co.uk</a>
+            </p>
+
+            @using (Html.BeginForm("tent-city", "PITP", FormMethod.Post, new { @class = "form-horizontal tpad", role = "form" }))
+            {
+
+                <div class="form-group">
+                    <label for="email" class="col-lg-2 control-label">Email</label>
+                    <div class="col-lg-10">
+                        @Html.TextBoxFor(x => x.Email, new { type = "email", @class = "form-control", id = "email", placeholder = "Email" })
+                    </div>
+                </div>
+                <div class="form-group tpad">
+                    <label for="message" class="col-lg-2 control-label">Message</label>
+                    <div class="col-lg-10">
+                        @Html.TextAreaFor(x => x.Message, new { @class = "form-control", rows = "6", id = "message", placeholder = "Message..." })
+                    </div>
+                </div>
+                <div class="form-group tpad">
+                    <div class="col-lg-offset-2 col-lg-10">
+                        @*<a data-toggle="modal" href="#myModal" class="btn btn-default btn-lg">Send</a>*@
+                        @*<input type="submit" value="Send" class="btn btn-default btn-lg" />*@
+                        <input type="submit" value="Send" />
+                    </div>
+                </div>      
+
+            }
+        </div>
+        <div class="col-sm-4">
+            <img class="img-circle img-responsive" src="img/get-involved.png">
+            <hr class="style-one">
+            <h3>Email </h3>
+            <address>
+                <a href="mailto: pitpnxd@gmail.com">housing@pitpnxd.co.uk</a>
+            </address>
+        </div>
+    </div>
+</div>
+<!-- End Page Content -->
+
+<div class="intro-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 tabbable">
+                <blockquote>
+                    <p>&ldquo;In its day, Urban Festival was the alternative Glastonbury. This party is being organised by local people for local people and it’s also a celebration of local talent – the musicians and artists you’ll be reading about next year. And unlike so many festivals today it’s absolutely free.&rdquo;</p>
+                    <small class="qback">Kathy Dunbar, <cite title="source title">New Cross Learning, Chair </cite></small>
+                </blockquote>
+            </div>
+            <div class="col-sm-4 col-sm-offset-2">
+                <!-- Quote go here -->
+                <blockquote>
+                    <p>&ldquo;We think the Party in the Park embodies the spirit of New Cross: this is a brilliant community and people have come together to volunteer their time and local organisations have sponsored the party..&rdquo;</p>
+                    <small class="qback">R.McFarlane</small>
+                </blockquote>
+            </div>
+        </div>
+        <div class="col-sm-6 tabbable wd">website developed by - <a href="mailto:derm.finn@gmail.com">derm.finn@gmail.com</a></div>
+    </div>
+</div>
+<!-- info panel end -->
+
+@section Scripts {
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js"></script>
+    <script>
+        $('form').validate({
+            rules: {
+                Email: {
+                    email: true,
+                    required: true
+                },
+                Message: {
+                    minlength: 3,
+                    required: true
+                },
+                messages: {
+                    Email: {
+                        email: "Please enter a valid email address",
+                        required: "Please enter your email address"
+                    },
+                    Message: { required: "Please enter a message" }
+                }
+            },
+            highlight: function (element) {
+                $(element).closest('.form-group').addClass('has-error');
+            },
+            unhighlight: function (element) {
+                $(element).closest('.form-group').removeClass('has-error');
+            },
+            errorElement: 'span',
+            errorClass: 'help-block',
+
+            errorPlacement: function (error, element) {
+                if (element.parent('.input-group').length) {
+                    error.insertAfter(element.parent());
+                } else {
+                    error.insertAfter(element);
+                }
+            }
+        });
+    </script>
+}
