@@ -30,7 +30,7 @@
             @RenderSection("AddToHead", required: false)
         }
 </head>
-<body>
+<body class="@RenderSection("BodyClass", false)">
     @RenderBody()
 
 
