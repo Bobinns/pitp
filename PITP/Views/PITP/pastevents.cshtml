@@ -4,63 +4,59 @@
 @section AddToHead{
     <link href="@Url.Content("~/css/ekko-lightbox.min.css")" rel="stylesheet" type="text/css" />
 }
-
 <div id="page">
-            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div>
-                    <a class="navbar-brand" href='.'>
-                        <img src="img/header-logo.png" class="img-responsive" alt="header logo" />
-                    </a>
-                </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div>
+                <a class="navbar-brand" href='.'>
+                    <img src="img/header-logo.png" class="img-responsive" alt="header logo" />
+                </a>
             </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("Home", "Index", "PITP")</li>
-
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li>@Html.ActionLink("About Us", "about-us", "PITP")</li>
-                                <li>@Html.ActionLink("Origins", "origins", "PITP")</li>
-                            </ul>
-                        </li>
-
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle py" data-toggle="dropdown">Previous Years &nbsp;&nbsp;<b class="caret"></b></a>
-                            <ul class="dropdown-menu pyu">
-                                <li>@Html.ActionLink("2014", "year2014", "PITP")</li>
-                                <li>@Html.ActionLink("2013", "year2013", "PITP")</li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-
-                                <li>@Html.ActionLink("Up And Coming...", "upandcoming", "PITP")</li>
-                                <li class="active">@Html.ActionLink("pastevents", "pastevents", "PITP")</li>
-                            </ul>
-                        </li>
-                        <li>@Html.ActionLink("Sponsors", "sponsors", "PITP")</li>
-                        <li>@Html.ActionLink("Volunteer", "volunteer", "PITP")</li>
-                        <li>@Html.ActionLink("Contact", "contact", "PITP")</li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="https://www.facebook.com/profile.php?id=100005402296847">Facebook</a></li>
-                                <li><a href="https://twitter.com/pitpnxd">Twitter</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-        </nav>
         </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Home", "Index", "PITP")</li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>@Html.ActionLink("About Us", "about-us", "PITP")</li>
+                        <li>@Html.ActionLink("Origins", "origins", "PITP")</li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle py" data-toggle="dropdown">Previous Years &nbsp;&nbsp;<b class="caret"></b></a>
+                    <ul class="dropdown-menu pyu">
+                        <li>@Html.ActionLink("2014", "year2014", "PITP")</li>
+                        <li>@Html.ActionLink("2013", "year2013", "PITP")</li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>@Html.ActionLink("Up And Coming...", "upandcoming", "PITP")</li>
+                        <li class="active">@Html.ActionLink("pastevents", "pastevents", "PITP")</li>
+                    </ul>
+                </li>
+                <li>@Html.ActionLink("Sponsors", "sponsors", "PITP")</li>
+                <li>@Html.ActionLink("Volunteer", "volunteer", "PITP")</li>
+                <li>@Html.ActionLink("Contact", "contact", "PITP")</li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.facebook.com/profile.php?id=100005402296847">Facebook</a></li>
+                        <li><a href="https://twitter.com/pitpnxd">Twitter</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
 <div class="intro-block2">
     <div class="container">
         <div class="row">
@@ -69,221 +65,219 @@
             </div>
             <div class="col-xs-9">
                 <h1>Party in the Park <span class="text-muted qback">&raquo; Past Events</span></h1>
-                <p class="lead">Party in the Park has successfully held a festival in @Html.ActionLink("2013", "pastevents", "pitp", null, null,"2013", null, null)  and <a href='@Url.Action("year2014", "PITP")'>2014</a>. The organisers have held a number of past events. Fund raisers help finance the costs of holding the annual festival and also acts as a platform for some great band and performers within the Deptford and New Cross community. 
+                <p class="lead">
+                    Party in the Park has successfully held a festival in <a href="@Url.Action("year2013", "PITP")" title="party in the park 2013">2013</a> and <a href='@Url.Action("year2014", "PITP")'>2014</a>. The organisers have held a number of past events. Fund raisers help finance the costs of holding the annual festival and also acts as a platform for some great band and performers within the Deptford and New Cross community.
                 </p>
             </div>
         </div>
-    </div>    
+    </div>
 </div>
-
-<div class="container" >
-            <div class="row">
-                <div class="col-sm-8 blog">
-                    <h1 id="craft-workshop">Party in the Park Craft WorkShop</h1>
-                </div>
-                <div class="col-sm-4 sidebar">
-                    <div class="col-sm-9">
-                        <h4>Monthly Workshop</h4>
-                    </div>
-                    <div class="col-sm-3">
-                        <img class="img-responsive" src="img/creative.png">
-                    </div>
-                </div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 blog">
+            <h1 id="craft-workshop">Party in the Park Craft WorkShop</h1>
+        </div>
+        <div class="col-sm-4 sidebar">
+            <div class="col-sm-9">
+                <h3 class="tpad">Minesweeper collective </h3>
             </div>
-            <div class="row wrapper-parent2">
-                <div class="col-sm-8">
-                    <div class="row tpad myTooltip">
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws1.jpg" data-toggle="lightbox" class="thumbnail" data-title="Screen printing 1" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb1.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                      <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws2.jpg" data-toggle="lightbox" class="thumbnail" data-title="Screen printing 2" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb2.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws3.jpg" data-toggle="lightbox" class="thumbnail" data-title="Necklaces craft" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb3.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws4.jpg" data-toggle="lightbox" class="thumbnail" data-title="Making tunes" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb4.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws5.jpg" data-toggle="lightbox" class="thumbnail" data-title="Making tunes 2" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb5.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws6.jpg" data-toggle="lightbox" class="thumbnail" data-title="Costume making" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb6.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws7.jpg" data-toggle="lightbox" class="thumbnail" data-title="Craft materials" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb7.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws8.jpg" data-toggle="lightbox" class="thumbnail" data-title="Glasses screen print 1" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb8.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws9.jpg" data-toggle="lightbox" class="thumbnail" data-title="Glasses screen print 2" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb9.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws10.jpg" data-toggle="lightbox" class="thumbnail" data-title="Notice this" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb10.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws11.jpg" data-toggle="lightbox" class="thumbnail" data-title="Making tunes 3" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb11.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws12.jpg" data-toggle="lightbox" class="thumbnail" data-title="Cat got your tounge?" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb12.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws39.jpg" data-toggle="lightbox" class="thumbnail" data-title="Creative artist at work" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb39.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws14.jpg" data-toggle="lightbox" class="thumbnail" data-title="Glasses screen print 3" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb14.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws15.jpg" data-toggle="lightbox" class="thumbnail" data-title="Sketching" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb15.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws16.jpg" data-toggle="lightbox" class="thumbnail" data-title="Making tunes 4" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb16.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws17.jpg" data-toggle="lightbox" class="thumbnail" data-title="Screen prints" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb17.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws18.jpg" data-toggle="lightbox" class="thumbnail" data-title="Work space" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb18.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws19.jpg" data-toggle="lightbox" class="thumbnail" data-title="Craft materials 1" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb19.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws20.jpg" data-toggle="lightbox" class="thumbnail" data-title="Craft materials 2" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb20.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws21.jpg" data-toggle="lightbox" class="thumbnail" data-title="Screen print 2" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb21.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws22.jpg" data-toggle="lightbox" class="thumbnail" data-title="Cool hoddie!" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb22.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws23.jpg" data-toggle="lightbox" class="thumbnail" data-title="Creative work" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb23.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws24.jpg" data-toggle="lightbox" class="thumbnail" data-title="Scren print process" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb24.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws25.jpg" data-toggle="lightbox" class="thumbnail" data-title="Glasses screen print" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb25.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws26.jpg" data-toggle="lightbox" class="thumbnail" data-title="Cool top!" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb26.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws27.jpg" data-toggle="lightbox" class="thumbnail" data-title="Modeling the merchandise" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb27.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws28.jpg" data-toggle="lightbox" class="thumbnail" data-title="Retro Party in the Park t-shirts" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb28.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws29.jpg" data-toggle="lightbox" class="thumbnail" data-title="Creative design work" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb29.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws30.jpg" data-toggle="lightbox" class="thumbnail" data-title="Creative space" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb30.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws31.jpg" data-toggle="lightbox" class="thumbnail" data-title="Printing money 4" data-gallery="multiimages">
-                                <img src="img/thworkshop/wsthumb31.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/workshop/ws32.jpg" data-toggle="lightbox" class="thumbnail" data-title="Screen print space" data-gallery="multiimages" data-parent=".wrapper-parent2">
-                                <img src="img/thworkshop/wsthumb32.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                    </div>
+            <div class="col-sm-3">
+                <img class="img-responsive" src="img/creative.png">
+            </div>
+        </div>
+    </div>
+    <div class="row wrapper-parent2">
+        <div class="col-sm-8">
+            <div class="row tpad myTooltip">
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws1.jpg" data-toggle="lightbox" class="thumbnail" data-title="Screen printing 1" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb1.jpg" class="img-responsive">
+                    </a>
                 </div>
-                <div class="col-sm-4 sidebar">
-                    <hr class="borback">
-                    <img src="img/workshop-flyer.png" class="img-responsive">
-                    <h2>
-                       April 25 & 26th
-                    </h2>
-                    <p>
-                        The first of the monthly Party in the Park Craft workshop happened at the Minesweeper collective over the weekend of the 25th and 26th of April. Members of the community attended the program which worked at exploring a number of different creative processes.
-                    </p>
-                    <p>
-                        The aim of these workshops is to develop artistic skills for people who wish to contribute to this year’s Party in the Park. We hope that a whole range of activities will be put into place in the build up to this year’s festival in Fordham Park on September 5th.
-                    </p>
-                        <p>
-                            A number of different craft techniques were demonstrated over the weekend. Participants were coached and soon enough found themselves learning from scratch activities that encouraged creative craft development.
-                        </p>
-                    .<p>The following areas were successfully pursued</p>
-                    <ul>
-                        <li>Live Painting</li>
-                        <li>Live Screen-Printing</li>
-                        <li>Comics workshop</li>
-                        <li>Pin-Hole Photography</li>
-                        <li>Jam and Recording Session</li>
-                        <li>Carnival and Performances</li>
-                    </ul>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws2.jpg" data-toggle="lightbox" class="thumbnail" data-title="Screen printing 2" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb2.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws3.jpg" data-toggle="lightbox" class="thumbnail" data-title="Necklaces craft" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb3.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws4.jpg" data-toggle="lightbox" class="thumbnail" data-title="Making tunes" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb4.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws5.jpg" data-toggle="lightbox" class="thumbnail" data-title="Making tunes 2" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb5.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws6.jpg" data-toggle="lightbox" class="thumbnail" data-title="Costume making" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb6.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws7.jpg" data-toggle="lightbox" class="thumbnail" data-title="Craft materials" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb7.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws8.jpg" data-toggle="lightbox" class="thumbnail" data-title="Glasses screen print 1" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb8.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws9.jpg" data-toggle="lightbox" class="thumbnail" data-title="Glasses screen print 2" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb9.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws10.jpg" data-toggle="lightbox" class="thumbnail" data-title="Notice this" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb10.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws11.jpg" data-toggle="lightbox" class="thumbnail" data-title="Making tunes 3" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb11.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws12.jpg" data-toggle="lightbox" class="thumbnail" data-title="Cat got your tounge?" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb12.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws39.jpg" data-toggle="lightbox" class="thumbnail" data-title="Creative artist at work" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb39.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws14.jpg" data-toggle="lightbox" class="thumbnail" data-title="Glasses screen print 3" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb14.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws15.jpg" data-toggle="lightbox" class="thumbnail" data-title="Sketching" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb15.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws16.jpg" data-toggle="lightbox" class="thumbnail" data-title="Making tunes 4" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb16.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws17.jpg" data-toggle="lightbox" class="thumbnail" data-title="Screen prints" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb17.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws18.jpg" data-toggle="lightbox" class="thumbnail" data-title="Work space" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb18.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws19.jpg" data-toggle="lightbox" class="thumbnail" data-title="Craft materials 1" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb19.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws20.jpg" data-toggle="lightbox" class="thumbnail" data-title="Craft materials 2" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb20.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws21.jpg" data-toggle="lightbox" class="thumbnail" data-title="Screen print 2" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb21.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws22.jpg" data-toggle="lightbox" class="thumbnail" data-title="Cool hoddie!" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb22.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws23.jpg" data-toggle="lightbox" class="thumbnail" data-title="Creative work" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb23.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws24.jpg" data-toggle="lightbox" class="thumbnail" data-title="Scren print process" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb24.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws25.jpg" data-toggle="lightbox" class="thumbnail" data-title="Glasses screen print" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb25.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws26.jpg" data-toggle="lightbox" class="thumbnail" data-title="Cool top!" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb26.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws27.jpg" data-toggle="lightbox" class="thumbnail" data-title="Modeling the merchandise" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb27.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws28.jpg" data-toggle="lightbox" class="thumbnail" data-title="Retro Party in the Park t-shirts" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb28.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws29.jpg" data-toggle="lightbox" class="thumbnail" data-title="Creative design work" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb29.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws30.jpg" data-toggle="lightbox" class="thumbnail" data-title="Creative space" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb30.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws31.jpg" data-toggle="lightbox" class="thumbnail" data-title="Printing money 4" data-gallery="multiimages">
+                        <img src="img/thworkshop/wsthumb31.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 bpad">
+                    <a href="img/gallery/workshop/ws32.jpg" data-toggle="lightbox" class="thumbnail" data-title="Screen print space" data-gallery="multiimages" data-parent=".wrapper-parent2">
+                        <img src="img/thworkshop/wsthumb32.jpg" class="img-responsive">
+                    </a>
                 </div>
             </div>
         </div>
-
-
+        <div class="col-sm-4 sidebar">
+            <hr class="borback">
+            <img src="img/workshop-flyer.png" class="img-responsive">
+            <h2>
+                April 25 & 26th
+            </h2>
+            <p>
+                The first of the monthly Party in the Park Craft workshop happened at the Minesweeper collective over the weekend of the 25th and 26th of April. Members of the community attended the program which worked at exploring a number of different creative processes.
+            </p>
+            <p>
+                The aim of these workshops is to develop artistic skills for people who wish to contribute to this year’s Party in the Park. We hope that a whole range of activities will be put into place in the build up to this year’s festival in Fordham Park on September 5th.
+            </p>
+            <p>
+                A number of different craft techniques were demonstrated over the weekend. Participants were coached and soon enough found themselves learning from scratch activities that encouraged creative craft development.
+            </p>
+            .<p>The following areas were successfully pursued</p>
+            <ul>
+                <li>Live Painting</li>
+                <li>Live Screen-Printing</li>
+                <li>Comics workshop</li>
+                <li>Pin-Hole Photography</li>
+                <li>Jam and Recording Session</li>
+                <li>Carnival and Performances</li>
+            </ul>
+        </div>
+    </div>
+</div>
 <div class="container padded">
     <div class="row">
         <div class="col-sm-8 blog">
@@ -293,26 +287,27 @@
                 <p><span class="glyphicon glyphicon-time"></span> Posted on 4th April, 2014 at 11:00 AM</p>
                 <hr class="borback">
                 <img src="img/nxfr2.jpg" class="img-responsive">
-                <hr class="borback">               
-                <p>On March 22nd 2015 a Party in the Park fund raiser was held in the New Cross Inn. 
+                <hr class="borback">
+                <p>
+                    On March 22nd 2015 a Party in the Park fund raiser was held in the New Cross Inn.
                     A great night out, we organised the event in order to raise funds for this years "Party in the Park <a href='@Url.Action("index", "PITP")'>2015</a> (now cancelled!)".
-                    Show casing some great musical talent, the night kicked off with "Dirt Viv". </p>
-                  <p>Rags Rudi, a seven strong outfit, played some great Ska and Maggie & Lucy Lyrical regaled the audience with acoustic songs. 
-                      Les Zoings teamed up with the infamous Dr Bearnheart Gloss bringing a surreal slant to proceedings, before the Afro beat collective brought us 
-                      back to earth. </p>
+                    Show casing some great musical talent, the night kicked off with "Dirt Viv".
+                </p>
+                <p>
+                    Rags Rudi, a seven strong outfit, played some great Ska and Maggie & Lucy Lyrical regaled the audience with acoustic songs.
+                    Les Zoings teamed up with the infamous Dr Bearnheart Gloss bringing a surreal slant to proceedings, before the Afro beat collective brought us
+                    back to earth.
+                </p>
                 <p>A belated but neither the less brilliant turn by My Bad Sister brought proceedings to a close. Thanks to The Old Kent Roadies, and Steve from Softwax for DJing between sets, and of course to MC’s Patrick Lyons and Richard Lyons. </p>
-
-            </section>            
-        </div>        
+            </section>
+        </div>
         <div class="col-sm-4 sidebar">
             <section>
                 <h3 class="tpad">2015 fund raiser</h3>
                 <img src="img/pitp-poster_fundraiser-2015.png" class="img-responsive">
-            
             </section>
         </div>
     </div>
-
     <div class="row">
         <div class="col-sm-8 blog">
             <section>
@@ -322,185 +317,72 @@
                 <hr class="borback">
                 <img src="img/food1.jpg" class="img-responsive">
                 <hr class="borback">
-                @*<p>Party In the Park is an event organised by various community groups in the area around Fordham Park. It’s a community event for all ages, with family events, arts and crafts, stalls, spoken word, as well as local bands and acts for all tastes from disco to reggae, punk rock, soul and folk.</p>
-                <p>In both 2013 and 2014 the event provided a large range of food stalls, a New Cross Inn beer tent. 
-                   <a href="http://www.madcapcoalition.org.uk/">MADCAP </a> entertained - providing games and competitions with lots of prizes. The festival last year had a health and well being "Detox city" area, stalls that promoted the work of community projects such as, <a href="http://www.buildthelenox.org/">The Lenox Project" Grow Wild</a>, and the great work that housing co-operatives do.</p>
-                <p>Local press coverage heralded the day out as hugely successful. As part of the build up to this year’s festival we will be heavily promoting the event. To help with sponsorship please visit our <a href='@Url.Action("sponsors", "PITP")'>sposorship page</a> or if you want to contact the events organisers, please use or <a href='@Url.Action("contact", "PITP")'>contact form</a>.</p>*@
                 <p>On august 31st 2014 a Party in the Park fund raiser SKA-BBQ was held in Brixton. A great event held at the Siren Sounds Studio raised over £300 for the festival held in 2014. A mouth watering array of food was provided and enjoyed by those who came along. After having feasted on fine food, revellers danced their socks off late into the night to some great music.</p>
-            </section>            
-        </div>        
+            </section>
+        </div>
         <div class="col-sm-4 sidebar">
             <section>
                 <h3 class="tpad">2014 fund raiser</h3>
                 <img src="img/skabbq.png" class="img-responsive">
-            
             </section>
         </div>
     </div>
-
     <div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <h2>2014 July 27th New Cross Inn Fund raiser</h2>
-            <hr class="borback">
-            <p>On sunday 27th July, Party In the Park held a fantastic funraiser at the New Cross Inn. Everyone had a brilliant time watching the top quality acts that performed.</p>
-            <p>Eddie Capone - The Ongoing Project - Parshmaune - Hank Dog - Reverend Casey Bandeoke - Damage - Rhiannon the Nightmare</p>  
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>2014 July 27th New Cross Inn Fund raiser</h2>
+                <hr class="borback">
+                <p>On sunday 27th July, Party In the Park held a fantastic funraiser at the New Cross Inn. Everyone had a brilliant time watching the top quality acts that performed.</p>
+                <p>Eddie Capone - The Ongoing Project - Parshmaune - Hank Dog - Reverend Casey Bandeoke - Damage - Rhiannon the Nightmare</p>
+            </div>
         </div>
-    </div> 
-    <div class="row tpad myTooltip">
-        <div class="col-sm-6 col-md-3 bpad">
-            <a href="#" data-toggle="tooltip" title data-original-title="client one" class="thumbnail">
-                <img src="img/gallery/nxi1.png" alt="new cross inn photo 1">
-            </a>
+        <div class="row tpad myTooltip">
+            <div class="col-sm-6 col-md-3 bpad">
+                <a href="#" data-toggle="tooltip" title data-original-title="client one" class="thumbnail">
+                    <img src="img/gallery/nxi1.png" alt="new cross inn photo 1">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 bpad">
+                <a href="#" data-toggle="tooltip" title data-original-title="client two" class="thumbnail">
+                    <img src="img/gallery/nxi2.png" alt="new cross inn photo 2">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 bpad">
+                <a href="#" data-toggle="tooltip" title data-original-title="client five" class="thumbnail">
+                    <img src="img/gallery/nxi5.png" alt="new cross inn photo 5">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 bpad">
+                <a href="#" data-toggle="tooltip" title data-original-title="client six" class="thumbnail">
+                    <img src="img/gallery/nxi6.png" alt="new cross inn photo 6">
+                </a>
+            </div>
         </div>
-        <div class="col-sm-6 col-md-3 bpad">
-            <a href="#" data-toggle="tooltip" title data-original-title="client two" class="thumbnail">
-                <img src="img/gallery/nxi2.png" alt="new cross inn photo 2">
-            </a>
-        </div>
-       
-        
-        <div class="col-sm-6 col-md-3 bpad">
-            <a href="#" data-toggle="tooltip" title data-original-title="client five" class="thumbnail">
-                <img src="img/gallery/nxi5.png" alt="new cross inn photo 5">
-            </a>
-        </div>
-        <div class="col-sm-6 col-md-3 bpad">
-            <a href="#" data-toggle="tooltip" title data-original-title="client six" class="thumbnail">
-                <img src="img/gallery/nxi6.png" alt="new cross inn photo 6">
-            </a>
-        </div>
-       
     </div>
-    
 </div>
-
+<div class="intro-block">
     <div class="container">
-            <hr class="borback">
-            <div class="row">
-                <div class="col-sm-8 blog">
-                    <h1 id="2013">Party in the Park 2013</h1>
-                </div>
-                <div class="col-sm-4 sidebar">
-                    <div class="col-sm-9">
-                        <h4>A great day out despite the rain... </h4>
-                    </div>
-                    <div class="col-sm-3">
-                        <img class="img-responsive" src="img/umbrella.png">
-                    </div>
-                </div>
-
+        <div class="row">
+            <div class="col-sm-6 tabbable">
+                <blockquote>
+                    <p>&ldquo;In its day, Urban Festival was the alternative Glastonbury. This party is being organised by local people for local people and it’s also a celebration of local talent – the musicians and artists you’ll be reading about next year. And unlike so many festivals today it’s absolutely free.&rdquo;</p>
+                    <small class="qback">Kathy Dunbar, <cite title="source title">New Cross Learning, Chair </cite></small>
+                </blockquote>
             </div>
-            <div class="row wrapper-parent">
-                <div class="col-sm-8">
-                    <div class="row tpad myTooltip">
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/2013/pitp2013-8.jpg" data-toggle="lightbox" class="thumbnail" data-title="accoustic stage performer" data-gallery="multiimages2">
-                                <img src="img/thumb/pitp2013-8-thumb.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/2013/pitp2013-1.jpg" data-toggle="lightbox" class="thumbnail" data-title="Thumbs up for Party in the Park" data-gallery="multiimages2">
-                                <img src="img/thumb/pitp2013-1-thumb.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/2013/pitp2013-2.jpg" data-toggle="lightbox" class="thumbnail" data-title="Cheers Lads!" data-gallery="multiimages2">
-                                <img src="img/thumb/pitp2013-2-thumb.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/2013/pitp2013-3.jpg" data-toggle="lightbox" class="thumbnail" data-title="There be dragons..." data-gallery="multiimages2">
-                                <img src="img/thumb/pitp2013-3-thumb.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/2013/pitp2013-4.jpg" data-toggle="lightbox" class="thumbnail" data-title="Getting down on the dance floor" data-gallery="multiimages2">
-                                <img src="img/thumb/pitp2013-4-thumb.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/2013/pitp2013-5.jpg" data-toggle="lightbox" class="thumbnail" data-title="vintage class" data-gallery="multiimages2">
-                                <img src="img/thumb/pitp2013-5-thumb.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/2013/pitp2013-6.jpg" data-toggle="lightbox" class="thumbnail" data-title="power to the people" data-gallery="multiimages2">
-                                <img src="img/thumb/pitp2013-6-thumb.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/2013/pitp2013-7.jpg" data-toggle="lightbox" class="thumbnail" data-title="curry on partying" data-gallery="multiimages2">
-                                <img src="img/thumb/pitp2013-7-thumb.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/2013/pitp2013-9.jpg" data-toggle="lightbox" class="thumbnail" data-title="audiance in the rain" data-gallery="multiimages2">
-                                <img src="img/thumb/pitp2013-9-thumb.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/2013/pitp2013-10.jpg" data-toggle="lightbox" class="thumbnail" data-title="safety first" data-gallery="multiimages2">
-                                <img src="img/thumb/pitp2013-10-thumb.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/2013/pitp2013-11.jpg" data-toggle="lightbox" class="thumbnail" data-title="kick out the jams!" data-gallery="multiimages2">
-                                <img src="img/thumb/pitp2013-11-thumb.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/2013/pitp2013-12.jpg" data-toggle="lightbox" class="thumbnail" data-title="stage stall" data-gallery="multiimages2">
-                                <img src="img/thumb/pitp2013-12-thumb.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/2013/pitp2013-13.jpg" data-toggle="lightbox" class="thumbnail" data-title="rumble in the zumba" data-gallery="multiimages2">
-                                <img src="img/thumb/pitp2013-13-thumb.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/2013/pitp2013-14.jpg" data-toggle="lightbox" class="thumbnail" data-title="human fruit machine in full effect!" data-gallery="multiimages2">
-                                <img src="img/thumb/pitp2013-14-thumb.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/2013/pitp2013-15.jpg" data-toggle="lightbox" class="thumbnail" data-title="...and here's what you could have won!" data-gallery="multiimages2">
-                                <img src="img/thumb/pitp2013-15-thumb.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 bpad">
-                            <a href="img/gallery/2013/pitp2013-16.jpg" data-toggle="lightbox" class="thumbnail" data-title="accoustic stage performer 2" data-gallery="multiimages2" data-parent=".wrapper-parent">
-                                <img src="img/thumb/pitp2013-16-thumb.jpg" class="img-responsive">
-                            </a>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="col-sm-4 sidebar">
-                    <hr class="borback">
-                    <p>
-                        Two thousand people enjoyed a day of free entertainment at Party in the Park, a community 
-                and music festival in Fordham Park, Deptford. Despite rain on the day, the event attracted lots of families who were able to 
-                take part in zumba taster sessions, listen to a range of music, spoken word and poetry performers and watch street and 
-                dance demonstrations.
-                    </p>
-                    <p>
-                        There were 25 local bands and singers who entertained the crowds with music from disco to reggae, punk rock to soul and folk. As well as the music there were DJs, a crew from New Cross fire station who gave some demonstrations , police horses from the Mets mounted police division, a performance of Caribbean dance, a beer tent, bookstall arts and crafts stalls, food, a barbeque, hula hoop demonstrations and activities for children.
-All in all, the festival shows what can happen when people from the community come together to volunteer their time with the help of local based organisations. We are currently organising this year’s Party in the Park and are looking for both volunteers and sponsorship.
-                    </p>
-                    <p>
-                        Local press coverage heralded the day as hugely successful. As part of the build up to this year’s festival we will be heavily promoting the event. To help with sponsorship please visit our <a href='@Url.Action("sponsors", "PITP")'>sposorship page</a> or if you want to contact the events organisers, please use or <a href='@Url.Action("contact", "PITP")'>contact form</a>
-                    .
-                </div>
+            <div class="col-sm-4 col-sm-offset-2">
+                <!-- Quote go here -->
+                <blockquote>
+                    <p>&ldquo;We think the Party in the Park embodies the spirit of New Cross: this is a brilliant community and people have come together to volunteer their time and local organisations have sponsored the party..&rdquo;</p>
+                    <small class="qback">R.McFarlane</small>
+                </blockquote>
             </div>
         </div>
-
+        <div class="col-sm-6 tabbable wd">website developed by - <a href="mailto:derm.finn@gmail.com">derm.finn@gmail.com</a></div>
     </div>
+</div>
 <!-- End Intro Text -->
 @section scripts{
-<script src="~/js/ekko-lightbox.min.js"></script>
+    <script src="~/js/ekko-lightbox.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function ($) {
             // delegate calls to data-toggle="lightbox"
@@ -519,27 +401,8 @@ All in all, the festival shows what can happen when people from the community co
                     }
                 });
             });
-
-
-            //$(document).delegate('*[data-toggle="lightbox2"]:not([data-gallery="navigateTo"])', 'click', function (event) {
-            //    event.preventDefault();
-            //    return $(this).ekkoLightbox({
-            //        onShown: function () {
-            //            if (window.console) {
-            //                return console.log('Checking our the events huh?');
-            //            }
-            //        },
-            //        onNavigate: function (direction, itemIndex) {
-            //            if (window.console) {
-            //                return console.log('Navigating ' + direction + '. Current item: ' + itemIndex);
-            //            }
-            //        }
-            //    });
-            //});
-
-
         });
-        </script>
-    }
+    </script>
+}
 
 
