@@ -16,39 +16,45 @@
                     </a>
                 </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "PITP")</li>
-                    <li>@Html.ActionLink("2014", "year2014", "PITP")</li>
-                    <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li class="active">@Html.ActionLink("About Us", "about-us", "PITP")</li>
-                        <li>@Html.ActionLink("Origins", "origins", "PITP")</li>
-                        </ul>
-                </li>
-                    <li class="dropdown">
-                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "PITP")</li>
 
-                        
-                        <li>@Html.ActionLink("Up And Coming...", "upandcoming", "PITP")</li>
-                        <li>@Html.ActionLink("pastevents", "pastevents", "PITP")</li>
-                        </ul>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="active">@Html.ActionLink("About Us", "about-us", "PITP")</li>
+                                <li>@Html.ActionLink("Origins", "origins", "PITP")</li>
+                            </ul>
                         </li>
-                    <li>@Html.ActionLink("Sponsors", "sponsors", "PITP")</li>
-                    <li>@Html.ActionLink("Volunteer", "volunteer", "PITP")</li>
-                    <li>@Html.ActionLink("Contact", "contact", "PITP")</li>
 
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="https://www.facebook.com/profile.php?id=100005402296847">Facebook</a></li>
-                            <li><a href="https://twitter.com/pitpnxd">Twitter</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle py" data-toggle="dropdown">Previous Years &nbsp;&nbsp;<b class="caret"></b></a>
+                            <ul class="dropdown-menu pyu">
+                                <li>@Html.ActionLink("2014", "year2014", "PITP")</li>
+                                <li>@Html.ActionLink("2013", "year2013", "PITP")</li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+
+                                <li>@Html.ActionLink("Up And Coming...", "upandcoming", "PITP")</li>
+                                <li>@Html.ActionLink("pastevents", "pastevents", "PITP")</li>
+                            </ul>
+                        </li>
+                        <li>@Html.ActionLink("Sponsors", "sponsors", "PITP")</li>
+                        <li>@Html.ActionLink("Volunteer", "volunteer", "PITP")</li>
+                        <li>@Html.ActionLink("Contact", "contact", "PITP")</li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://www.facebook.com/profile.php?id=100005402296847">Facebook</a></li>
+                                <li><a href="https://twitter.com/pitpnxd">Twitter</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
         </nav>
         </div>
 <div class="intro-block2">
@@ -106,7 +112,7 @@
                 </p> 
                 <p>
                 In the run up to this years event - planned for the summer of 2016 - we will be holding a number of benefit events and gigs. These up and coming events are 
-                vital for the financing of this summer's festival. Check out our ""<a href='@Url.Action("Upandcoming", "PITP")'>
+                vital for the financing of this summer's festival. Check out our "<a href='@Url.Action("Upandcoming", "PITP")'>
                 Up and Coming</a>" events page, or follow us on <a href="https://www.facebook.com/profile.php?id=100005402296847" alt="pitp facebook link">
                 Facebook</a> or <a href="https://twitter.com/pitpnxd" alt="pitp twitteer link">
                 Twitter</a> to get up to date details.</p>
