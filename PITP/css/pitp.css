@@ -14,7 +14,7 @@
             border-color: #222222;
         }
 
-.intro-block, .intro-block2, .intro-block3, .intro-block4, .intro-block5, .intro-block6  {
+.intro-block, .intro-block2, .intro-block3, .intro-block4, .intro-block5 {
     /*background: url(../images/purpalt.png) repeat;*/
     background-color: #ED1C24;
     padding: 100px 15px 60px;
@@ -32,12 +32,6 @@
 .intro-block5 {
         background-color:#222;
 }
-
-.intro-block6 {
-    background-color:#FFF200;
-    color:#333333;
-}
-
 
 .spon {
     background-color: #ED1C24;
