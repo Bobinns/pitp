@@ -19,6 +19,7 @@ namespace PITP
             routes.MapRoute("Tent City", "tent-city", new { controller = "PITP", action = "tent-city" });
 
             routes.MapRoute("2014", "2014", new { controller = "PITP", action = "year2014" });
+            routes.MapRoute("2013", "2013", new { controller = "PITP", action = "year2013" });
             routes.MapRoute("contact", "contact", new { controller = "PITP", action = "Contact" });
 
             routes.MapRoute("origins", "origins", new { controller = "PITP", action = "Origins" });

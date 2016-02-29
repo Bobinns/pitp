@@ -145,7 +145,14 @@ namespace PITP
 
         public ActionResult year2014()
         {
-            ViewBag.Description = "Party in the Park held its first festival in 2014";
+            ViewBag.Description = "Party in the Park held its second festival in 2014";
+            ViewBag.Keywords = "Party, Park, festval, 2013, New Cross, Deptford";
+            return View();
+        }
+
+        public ActionResult year2013()
+        {
+            ViewBag.Description = "Party in the Park held its first festival in 2013";
             ViewBag.Keywords = "Party, Park, festval, 2014, New Cross, Deptford";
             return View();
         }
