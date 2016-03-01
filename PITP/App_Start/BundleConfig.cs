@@ -17,7 +17,7 @@ namespace PITP
 
             bundles.Add(new StyleBundle("~/mycss").Include(
                     "~/css/cosmo.css",
-                    "~/css/pitp.css"
+                    "~/css/pitp.min.css"
                     ));
 
             BundleTable.EnableOptimizations = true;
