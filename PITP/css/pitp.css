@@ -24,7 +24,15 @@
 }
 
 .intro-block5 {
-        background-color:#222;
+        background-color:#fff;
+}
+.intro-block5 h1, .intro-block5 h5 {
+    color:#ed1c24;
+}
+
+.intro-block5 p, ol, h4
+{
+    color:#222222;
 }
 
 .spon {
