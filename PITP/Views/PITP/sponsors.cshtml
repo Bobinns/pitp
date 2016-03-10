@@ -109,11 +109,8 @@ else
             <h2>Get in touch</h2>
             <hr class="borback">
             <p>If you wish to enquire about sponsorship, please use the form below to contact us.</p>
-
-
-            @using (Html.BeginForm("sponsors", "PITP", new { @class = "form-horizontal tpad" }))
-            {
-               
+            @using (Html.BeginForm("sponsors", "PITP", FormMethod.Post, new { @class = "form-horizontal tpad", role = "form" }))
+            {               
                 <div class="form-group">
                     <label for="email" class="col-lg-2 control-label">Email</label>
                     <div class="col-lg-10">
