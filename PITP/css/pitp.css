@@ -115,7 +115,8 @@ hr.style-one { border: 0; height: 1px; background: #333; background-image: -webk
 
 
 .batop {
-    padding-top:3em;
+    padding-top: 3em;
+    padding-bottom: 1em;
 }
 
 .headtag {
