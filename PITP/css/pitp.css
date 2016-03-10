@@ -180,9 +180,13 @@ hr.style-one { border: 0; height: 1px; background: #333; background-image: -webk
     border:2px solid black;
 }
 
-.bodywhite {
+.bodywhite, bodypw {
     background-color:#eeefe9;
     margin-top:51px;
+}
+
+.bodypw {
+    background-color:#fff;
 }
 
 .bgFullScreen
