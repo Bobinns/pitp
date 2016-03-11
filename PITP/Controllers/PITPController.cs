@@ -117,8 +117,9 @@ namespace PITP
             return View();
         }
 
-        [ActionName("tent-city")]
-        public ActionResult housinginfoarea()
+        // The url tent-city is assigned in the RouteConfig Page
+        //[ActionName("tent-city")]
+        public ActionResult tentcity()
         {
             ViewBag.Description = "Party in the Park housing information Area";
             ViewBag.Keywords = "housing stall, information on social housing, tenant empowerment, stop social cleansing in london";
@@ -126,8 +127,8 @@ namespace PITP
         }
 
         [HttpPost]
-        [ActionName("tent-city")]
-        public ActionResult housinginfoarea(email mail)
+        //[ActionName("tent-city")]
+        public ActionResult tentcity(email mail)
         {
             ViewBag.Description = "Party in the Park Tent City";
             ViewBag.Keywords = "housing stall, information on social housing, tenant empowerment, stop social cleansing in london";
