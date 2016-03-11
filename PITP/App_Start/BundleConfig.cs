@@ -20,7 +20,7 @@ namespace PITP
                     "~/css/pitp.css"
                     ));
 
-            BundleTable.EnableOptimizations = false;
+            BundleTable.EnableOptimizations = true;
         }
     }
 }
