@@ -213,3 +213,13 @@ hr.style-one { border: 0; height: 1px; background: #333; background-image: -webk
     border-color:#333333;
     border-style:solid;
 }
+
+@media(max-width: 716px) {
+    .navbar-nav > li > a.py {
+        max-width: 100%;
+        text-align: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 21px;
+    }
+}
