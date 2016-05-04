@@ -121,8 +121,8 @@ namespace PITP
         //[ActionName("tent-city")]
         public ActionResult tentcity()
         {
-            ViewBag.Description = "Party in the Park housing information Area";
-            ViewBag.Keywords = "housing stall, information on social housing, tenant empowerment, stop social cleansing in london";
+            ViewBag.Description = "Party in the Park 2016 Tent City";
+            ViewBag.Keywords = "housing stall, information on social housing, tenant empowerment, stop social cleansing in london Demanding, Housing for Our Community";
             return View();
         }
 
@@ -130,7 +130,7 @@ namespace PITP
         //[ActionName("tent-city")]
         public ActionResult tentcity(email mail)
         {
-            ViewBag.Description = "Party in the Park Tent City";
+            ViewBag.Description = "Party in the Park 2016 Tent City";
             ViewBag.Keywords = "housing stall, information on social housing, tenant empowerment, stop social cleansing in london";
             StringBuilder sb = new StringBuilder();
             sb.Append("<p>A form from the Party in the Park Housing Area Info page has been sent - </p>");
