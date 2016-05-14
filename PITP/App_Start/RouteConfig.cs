@@ -24,7 +24,6 @@ namespace PITP
 
             routes.MapRoute("origins", "origins", new { controller = "PITP", action = "Origins" });
             routes.MapRoute("volunteer", "volunteer", new { controller = "PITP", action = "Volunteer" });
-            routes.MapRoute("events", "events", new { controller = "PITP", action = "Events" });
             //routes.MapRoute("Party2013", "Party2013", new { controller = "PITP", action = "Party2013" });
             routes.MapRoute("upandcoming", "upandcoming", new { controller = "PITP", action = "Upandcoming" });
             routes.MapRoute("sponsors", "sponsors", new { controller = "PITP", action = "sponsors" });
