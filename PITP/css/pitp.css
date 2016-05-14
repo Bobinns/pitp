@@ -297,7 +297,7 @@ hr.style-one { border: 0; height: 1px; background: #333; background-image: -webk
     background-image: url(../img/header-logo.png);
     width: 200px;
     background-repeat: no-repeat;
-    background-position: 0px 15px;
+    background-position: 0px 12px;
     margin-left: 15px;
 }
 
