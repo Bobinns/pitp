@@ -279,6 +279,7 @@ hr.style-one { border: 0; height: 1px; background: #333; background-image: -webk
     .navbar-nav {
         float: none!important;
 		margin-top: 7.5px;
+        display:block;
 	}
 	.navbar-nav>li {
         float: none;
@@ -308,5 +309,9 @@ hr.style-one { border: 0; height: 1px; background: #333; background-image: -webk
         width: 96px;
         background-position: 0px -2px;
     }
+}
+
+.navbar-nav > li > .dropdown-menu {
+    text-align:left;
 }
 
