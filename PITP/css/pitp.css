@@ -1,6 +1,5 @@
 ﻿body {
     background-color:#FFF200;
-    margin-top:70px;
 }
 
 .navbar-inverse
@@ -183,7 +182,6 @@ hr.style-one { border: 0; height: 1px; background: #333; background-image: -webk
 
 .bodywhite, bodypw {
     background-color:#eeefe9;
-    margin-top:51px;
 }
 
 .bodypw {
@@ -221,5 +219,24 @@ hr.style-one { border: 0; height: 1px; background: #333; background-image: -webk
         padding-top: 10px;
         padding-bottom: 10px;
         line-height: 21px;
+    }
+}
+
+@media(min-width: 986px) {
+    .navbar {
+        position: relative;
+        background-color: #222222;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1170px;
+        margin-bottom: 0px;
+    }
+
+    .nav-container {
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        width: 100%;
+        background-color: black;
     }
 }
