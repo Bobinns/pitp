@@ -13,9 +13,13 @@ namespace PITP
             bundles.Add(new ScriptBundle("~/Scripts").Include(
                  "~/js/jquery-{version}.js",
                  "~/js/bootstrap.min.js",
-                 "~/js/site.js"));
+                 "~/js/site.js",
+                 "~/js/jquery.easing.min.js",
+                 "~/js/scrolling-nav.js"
+                 ));
 
-            bundles.Add(new StyleBundle("~/mycss").Include(
+            bundles.Add(new StyleBundle("~/mycss").Include(                
+                "~/css/vendors.css",                
                     "~/css/cosmo.css",
                     "~/css/pitp.css"
                     ));
