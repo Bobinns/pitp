@@ -1,11 +1,12 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+
 @section BodyClass {
 bodywhite
 }
 
-<link href="~/css/style-blue.css" rel="stylesheet" />
+
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -65,9 +66,44 @@ bodywhite
     <section class="carousel-section">
         <div id="carousel-example-generic" class="carousel carousel-razon slide" data-ride="carousel" data-interval="5000">
             <!-- Indicators del -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            </ol>
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-8">
+                                <div class="carousel-caption">
+                                    <div class="carousel-text">
+                                        <h1 class="animated fadeInDownBig animation-delay-7 carousel-title">Party in the Park FundRaiser</h1>
+                                        <h2 class="animated fadeInDownBig animation-delay-5  crousel-subtitle">SAT JUNE 4th - 2PM - 8.30PM</h2>
+                                        <h2 class="animated fadeInDownBig animation-delay-5  crousel-subtitle">THE JOBCENTRE</h2>
+                                        <h2 class="animated fadeInDownBig animation-delay-5  crousel-subtitle">DEPTFORD HIGH ST</h2>
+                                        <ul class="list-unstyled carousel-list">
+                                            <li class="animated bounceInLeft animation-delay-11">SABATTA</li>
+                                            <li class="animated bounceInLeft animation-delay-13">DIRTY VIV</li>
+                                            <li class="animated bounceInLeft animation-delay-15">JOE OLDFIELD</li>
+                                            <li class="animated bounceInLeft animation-delay-16">THE NO FRILLS BAND</li>
+                                        </ul>
+                                        <h2 class="animated fadeInDownBig animation-delay-5  crousel-subtitle">PLUS SPECIAL GUESTS & DJ</h2>
+                                        <a href="https://www.spacehive.com/party-in-the-park-2016" title="spacehive" class="btn btn-default">Please Help By Donating!</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-4 hidden-xs carousel-img-wrap">
+                                <div class="carousel-img">
+                                    <a href="https://www.spacehive.com/party-in-the-park-2016" title="spacehive"><img src="~/img/fundraiser-poster-4th-June.png" class="img-responsive animated bounceInUp animation-delay-3" alt="Image"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6 col-sm-7">
@@ -77,9 +113,7 @@ bodywhite
                                         <h2 class="animated fadeInDownBig animation-delay-5  crousel-subtitle">We need your help with this year's event.</h2>
                                         <ul class="list-unstyled carousel-list">
                                             <li class="animated bounceInLeft animation-delay-11">We are seeking financial support to help cover costs</li>
-                                            @*<li class="animated bounceInLeft animation-delay-13">to help cover costs</li>*@
                                             <li class="animated bounceInLeft animation-delay-15">any donation given is greatly appreciated!</li>
-                                            @*<li class="animated bounceInLeft animation-delay-17">is greatly appreciated!</li>*@
                                         </ul>
                                         <a href="https://www.spacehive.com/party-in-the-park-2016" title="spacehive" class="btn btn-default">Please Help!</a>
                                         <h1 class="animated fadeInRightBig animation-delay-12 carousel-title">A free community festival</h1>
@@ -87,14 +121,43 @@ bodywhite
                                             <li class="animated bounceInLeft animation-delay-11">With your help we can build upon the success of past</li>
                                             <li class="animated bounceInLeft animation-delay-13">upon the success of past Party in the Park festivals</li>
                                             <li class="animated bounceInLeft animation-delay-17">Please visit<a href="https://www.spacehive.com/party-in-the-park-2016" title="spacehive"> Spacehive</a></li>
-                                        </ul>                                     
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-5 hidden-xs carousel-img-wrap">
                                 <div class="carousel-img">
                                     <a href="https://www.spacehive.com/party-in-the-park-2016" title="spacehive"><img src="img/web-logo.png" class="img-responsive animated fadeInRightBig animation-delay-3" alt="Image"></a>
-</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-1 col-sm-1 hidden-xs carousel-img-wrap">
+                                <div class="carousel-caption">
+                                    <div class="carousel-text">
+                                        <div class="fixed-height-250 animated fadeInDownBig animation-delay-2">
+                                            <div class="progress vertical bottom progress-striped">
+                                                <div class="progress-bar progress-bar-custom six-sec-ease-in-out" role="progressbar" id="prg"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-6">
+                                <div class="carousel-caption">
+                                    <h1 class="animated fadeInDownBig animation-delay-7 carousel-title">Party in the Park 2016!</h1>
+                                    <div class="carousel-text" id="poster">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-5 hidden-xs carousel-img-wrap">
+                                <div class="carousel-img">
+                                    <a href="https://www.spacehive.com/party-in-the-park-2016" title="spacehive"><img src="img/web-logo.png" class="img-responsive animated fadeInRightBig animation-delay-3" alt="Image"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -118,8 +181,8 @@ bodywhite
                                             <li class="animated bounceInLeft animation-delay-16">Professional Security</li>
                                             <li class="animated bounceInLeft animation-delay-16">Fencing</li>
                                             <li class="animated bounceInLeft animation-delay-16">Transport</li>
-                                        </ul>                                        
-                                        <a href="https://www.spacehive.com/party-in-the-park-2016" title="spacehive" class="btn btn-default">Please Help!</a>                                 
+                                        </ul>
+                                        <a href="https://www.spacehive.com/party-in-the-park-2016" title="spacehive" class="btn btn-default">Please Help!</a>
                                     </div>
                                 </div>
                             </div>
@@ -131,17 +194,15 @@ bodywhite
                         </div>
                     </div>
                 </div>
-                
+
             </div>
-            <div class="row"><a class="btn btn-info page-scroll" href="#about"><img src="~/img/arrow-down.png" class="img-responsive" alt="page-down"/></a></div>
-            <!-- Controls del -->
         </div>
         
     </section>
 
 </div>
 
-<div class="container clearfix bgFullScreen" id="about">
+<div class="container clearfix bgFullScreen">
                 <div class="container" id="hmsects">
                     <div class="row">
                         <section class="section">
@@ -233,12 +294,24 @@ bodywhite
             </div>
 
 @section Scripts {
+
     <script>
         $(function () {
+            $('.progress .progress-bar').progressbar();
             $('.carousel').carousel({
                 interval: 8000
             });
         })
+
+        $.getJSON("https://api.spacehive.com/api/Projects/GetById/22669", function (json) {
+            console.log(json);
+            $("#prg").attr('data-transitiongoal', Math.round(json.PecentFunded)).progressbar({ display_text: 'center' });
+            $('#poster').html('<h2 class="animated fadeInDownBig animation-delay-5  crousel-subtitle">' + "£" + $.number(json.Goal) + ' - Funding Target</h2>');
+            $('#poster').append('<h2 class="animated bounceInLeft animation-delay-7 crousel-subtitle">' + "£" + $.number(json.Pleged) + ' Pledged to date</h2>');
+            $('#poster').append('<h2 class="animated bounceInRight animation-delay-9 crousel-subtitle">' + json.DaysLeft + " Days Left!" + '</h2>');
+            $('#poster').append('<ul class="list-unstyled carousel-list"><li class="animated bounceInLeft animation-delay-11">We need your help with this year\'s event.</li><li class="animated bounceInLeft animation-delay-12">We are seeking financial support to help cover costs</li><li class="animated bounceInLeft animation-delay-13">any donation given is greatly appreciated!</li></ul>');
+            $('#poster').append('<a href="https://www.spacehive.com/party-in-the-park-2016" title="spacehive" class="btn btn-default animated bounceInTop animation-delay-11">Please make a pledge!</a>');
+        });
 
     </script>
 }
