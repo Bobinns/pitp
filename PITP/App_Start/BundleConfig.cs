@@ -15,16 +15,20 @@ namespace PITP
                  "~/js/bootstrap.min.js",
                  "~/js/site.js",
                  "~/js/jquery.easing.min.js",
-                 "~/js/scrolling-nav.js"
+                 "~/js/scrolling-nav.js",
+                 "~/js/bootstrap-progressbar.js",
+                 "~/js/jquery.number.js"
                  ));
 
             bundles.Add(new StyleBundle("~/mycss").Include(                
                 "~/css/vendors.css",                
                     "~/css/cosmo.css",
-                    "~/css/pitp.css"
+                    "~/css/pitp.css",
+                    "~/css/style-blue.css",
+                    "~/css/bootstrap-progressbar-3.1.1.css"
                     ));
 
-            BundleTable.EnableOptimizations = false;
+            BundleTable.EnableOptimizations = true;
         }
     }
 }
