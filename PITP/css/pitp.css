@@ -8,9 +8,15 @@
             border-color: #222222;
         }
 
-.intro-block, .intro-block2, .intro-block3, .intro-block4, .intro-block5, .topblock {
+.intro-block, .intro-block2, .intro-block3, .intro-block4, .intro-block5 {
     background-color: #ED1C24;
     padding: 100px 15px 60px;
+    color: #fff;
+}
+
+.topblock {
+    background-color: #ED1C24;
+    padding: 100px 15px 0px;
     color: #fff;
 }
 
@@ -48,7 +54,7 @@
 }
 
 .carousel-caption h1 {
-    font-size:3em;
+    font-size:2em;
     }
 .carousel-inner > .item > img{
     position: absolute;
@@ -91,9 +97,9 @@
 
 
 @media(min-width: 768px){
-.carousel-inner > .item{
+/*.carousel-inner > .item{
     height: 700px;   
-}
+}*/
 .map {
     height: 500px;
 }
