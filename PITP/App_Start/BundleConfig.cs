@@ -28,7 +28,7 @@ namespace PITP
                     "~/css/bootstrap-progressbar-3.1.1.css"
                     ));
 
-            BundleTable.EnableOptimizations = true;
+            BundleTable.EnableOptimizations = false;
         }
     }
 }
