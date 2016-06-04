@@ -1,4 +1,5 @@
 ﻿using PITP;
+using PITP.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -109,14 +110,6 @@ namespace PITP
             return View();
         }
 
-
-        public ActionResult Volunteer()
-        {
-            ViewBag.Description = "Party in the Park volunteers";
-            ViewBag.Keywords = "volunteers, help, stewards, promotion, help";
-            return View();
-        }
-
         // The url tent-city is assigned in the RouteConfig Page
         //[ActionName("tent-city")]
         public ActionResult tentcity()
@@ -158,21 +151,129 @@ namespace PITP
             return View();
         }
 
-        [HttpPost]
-        public ActionResult Volunteer(email mail)
+
+        public ActionResult Volunteer()
         {
             ViewBag.Description = "Party in the Park volunteers";
             ViewBag.Keywords = "volunteers, help, stewards, promotion, help";
-            StringBuilder sb = new StringBuilder();
-            sb.Append("<p>A form from the Party in the Park Volunteer page has been sent - </p>");
-            sb.Append("<p>Email: " + mail.Email + "</p>");
-            sb.Append("<p>Message: " + mail.Message + "</p>");
+            volunteer vol = new volunteer();
+
+            vol.Over18 = new[]
+            {
+                "Yes",
+                "No"
+            };
+
+            vol.InterestedRoles = new[]
+            {
+                "Assistant Head Steward",
+                "Chief Steward",
+                "Steward",
+                "Crew",
+                "Catering Assistant",
+                "MADCAP child steward",
+                "Parking Steward"
+            };
+
+            vol.Skills = new[] {
+                "First Aid training",
+                "Health and Safety Training",
+                "Working with children"
+            };
+
+            vol.FirstAid = new[]
+            {
+                "Yes",
+                "No"
+            };
+
+            vol.CRB = new []
+            {
+                "Yes",
+                "No"
+            };
+
+            vol.MadCap = false;
 
 
-            SendEmail.SendMail(sb.ToString(), "Potential volunteer request from the PITP Web site ", mail.Email, "vols@pitpnxd.co.uk");
-            ViewData["Message"] = "We appreciate you getting in touch. We will contact you shortly with a reply - The Party in the Park Team";
-            ViewData["Sent"] = "sent";
-            return View();
+            return View(vol);
+        }
+
+        [HttpPost]
+        public ActionResult Volunteer(volunteer vol)
+        {
+            //email mail = new email();
+
+            
+                ViewBag.Description = "Party in the Park volunteers";
+                ViewBag.Keywords = "volunteers, help, stewards, promotion, help";
+                StringBuilder sb = new StringBuilder();
+                sb.Append("<p>A form from the Party in the Park Volunteer page has been sent - </p>");
+                sb.Append("<p>Name: " + vol.Name + "</p>");
+                sb.Append("<p>Email: " + vol.Email + "</p>");
+                sb.Append("<p>Date sent: " + vol.Date + "</p>");
+                if (!string.IsNullOrEmpty(vol.Telephone)) sb.Append("<p>Message: " + vol.Telephone + "</p>");
+
+                if (vol.Over18 != null)
+                {
+                    sb.Append("<p>Over the age of 18 and under 55 years old: ");
+                    foreach (string value in vol.Over18)
+                    {
+                        sb.Append("<br>" + value + " ");
+                    }
+                    sb.Append("</p>");
+                }
+
+
+                if (vol.InterestedRoles != null)
+                {
+                    sb.Append("<p>Roles interested in : ");
+                    foreach (string value in vol.InterestedRoles)
+                    {
+                        sb.Append("<br>" + value + " ");
+                    }
+                    sb.Append("</p>");
+                }
+
+                if (vol.Skills != null)
+                {
+                    sb.Append("<p>Skills: ");
+                    foreach (string value in vol.Skills)
+                    {
+                        sb.Append("<br>" + value + " ");
+                    }
+                    sb.Append("</p>");
+                }
+
+                if (vol.CRB != null)
+                {
+                    sb.Append("<p>CRB status: ");
+                    foreach (string value in vol.CRB)
+                    {
+                        sb.Append("<br>" + value + " ");
+                    }
+                    sb.Append("</p>");
+                }
+
+            if (vol.FirstAid != null)
+                {
+                    sb.Append("<p>Want's to take a First Aid course: ");
+                    foreach (string value in vol.FirstAid)
+                    {
+                        sb.Append("<br>" + value + " ");
+                    }
+                    sb.Append("</p>");
+                }
+
+
+            if (vol.MadCap) sb.Append("<p>Is Interested in helping out with MadCap: " + vol.MadCap + "</p>");
+                else sb.Append("<p>Is <b>not</b> Interested in helping out with MadCap: " + vol.MadCap + "</p>");
+
+                SendEmail.SendMail(sb.ToString(), "Potential volunteer request from the PITP Web site ", vol.Email, "vols@pitpnxd.co.uk");
+                ViewData["Message"] = "<p>Thank you " + vol.Name + "</p><p>We appreciate you getting in touch. We will contact you shortly with a reply - The Party in the Park Team</p>";
+                ViewData["Sent"] = "sent";
+
+            return View(vol);
         }
 
         public ActionResult SiteMap()
