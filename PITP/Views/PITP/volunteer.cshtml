@@ -1,4 +1,5 @@
-﻿@model PITP.email
+﻿@model PITP.Models.volunteer
+
 @{
     ViewBag.Title = "volunteer";
 }
@@ -13,7 +14,7 @@
             </button>
             <div>
                 <a class="navbar-brand" href='.'>
-                    
+
                 </a>
             </div>
         </div>
@@ -49,7 +50,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="https://www.facebook.com/profile.php?id=100005402296847">Facebook</a></li>
+                        <li><a href="https://www.facebook.com/PitpInthepark/">Facebook</a></li>
                         <li><a href="https://twitter.com/pitpnxd">Twitter</a></li>
                     </ul>
                 </li>
@@ -84,7 +85,7 @@
                     <p><b class="text-muted2">What we can give you</b></p>
                     <ul>
                         <li>
-                            Excellent work experience and references 
+                            Excellent work experience and references
                         </li>
                         <li>The chance to contribute to an exciting community event</li>
                         <li>One day certificated first aid training (places are limited!) </li>
@@ -98,6 +99,141 @@
         </div>
     </div>
     <!-- End Intro Text -->
+    <div class="container padded batop">
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>To apply </h2>
+                <hr class="borback">
+                <p>If you wish to help out in any way possible please use the form below to contact us.</p>
+
+                @using (Html.BeginForm("Volunteer", "PITP", FormMethod.Post, new { @class = "form-horizontal tpad", role = "form" }))
+                {
+
+                    <div class="form-group">
+                        @Html.LabelFor(c => c.Name)
+                        <div class="col-lg-10">
+                            @Html.TextBoxFor(x => x.Name, new { type = "text", @class = "form-control", id = "Name", placeholder = "Name" })
+                            @Html.ValidationMessageFor(model => model.Name)
+                        </div>
+                    </div>
+                    <div class="form-group tpad">
+                        @Html.LabelFor(c => c.Email)
+                        <div class="col-lg-10">
+                            @Html.TextBoxFor(x => x.Email, new { @class = "form-control", id = "email", placeholder = "Email...", type = "email" })
+                            @Html.ValidationMessageFor(model => model.Email)
+                        </div>
+                    </div>
+                    <div class="form-group tpad">
+                        @Html.LabelFor(c => c.Telephone)
+                        <div class="col-lg-10">
+                            @Html.TextBoxFor(x => x.Telephone, new { @class = "form-control", id = "telphone", placeholder = "Telephone.", type = "telephone" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-12">
+
+                            @Html.LabelFor(x => x.Over18, new { @class = "control-label" })
+                            <div>
+                                @foreach (var item in Model.Over18)
+                                {
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" name="Over18" value="@item" > @item
+                                    </label>
+                                }
+                                
+                            </div>
+                            @*@Html.ValidationMessageFor(model => model.Over18)*@
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-12">
+                            @Html.LabelFor(x => x.InterestedRoles, new { @class = "control-label" })
+                            <div>
+                                @foreach (var item in Model.InterestedRoles)
+                                {
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" name="InterestedRoles" value="@item"> @item
+                                    </label>
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-lg-12">
+                            @Html.LabelFor(x => x.Skills, new { @class = "control-label" })
+                            <div>
+                                @foreach (var item in Model.Skills)
+                                {
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" name="Skills" value="@item"> @item
+                                    </label>
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-lg-12">
+                            @Html.LabelFor(x => x.CRB, new { @class = "control-label" })
+                            <div>
+                                @foreach (var item in Model.CRB)
+                                {
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" name="CRB" value="@item"> @item
+                                    </label>
+                                }
+                                @Html.ValidationMessageFor(model => model.Over18)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-lg-12">
+                            @Html.LabelFor(x => x.FirstAid, new { @class = "control-label" })
+                            <div>
+                                @foreach (var item in Model.FirstAid)
+                                {
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" name="FirstAid" value="@item"> @item
+                                    </label>
+                                }
+                            </div>
+                        </div>
+
+                    </div>
+
+                            <div class="form-group">
+                                <div class="col-lg-12">
+                                    <label for="madcap">Madcap is a voluntary organisation bringing urban fetes, clowns and fun to many local events. Madcap will be stationed in Fordham Park 2 weeks before the festival for 1 week working with local kids creating decorations for the festival and carnival creations for the procession on the day of the festival. If you have experience working with children and would like to volunteer on this creative and rewarding project, then please tick the Yes box below!</label>
+                                    <div><label class="checkbox-inline">
+                                            @Html.CheckBoxFor(x => x.MadCap) Yes</label>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-lg-10">
+                                    <input type="submit" value="Send" class="btn btn-default btn-lg" />
+                                </div>
+                            </div>
+
+                }
+            </div>
+
+            <div class="col-sm-4">
+                <img class="img-circle img-responsive" src="~/img/sam.png">
+                <hr class="borback">
+                <address>
+                    <h3>New Cross Learning</h3>
+                    283 – 285 New Cross Road<br>
+                    London, SE14 6AS<br>
+                    <a href="mailto: vols@pitpnxd.co.uk">vols@pitpnxd.co.uk</a><br>
+                    <abbr title="Phone">P:</abbr>0208 320 0813
+                </address>
+            </div>
+        </div>
+    </div>
 }
 else
 {
@@ -109,58 +245,21 @@ else
                 </div>
                 <div class="col-xs-9">
                     <h1>Thank you.</h1>
-                    <p class="lead">@ViewData["Message"]</p>
+                    <p class="lead">@Html.Raw(ViewData["Message"])</p>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="container padded batop">
+        <div class="row">
+            <div class="col-sm-9 col-md-offset-3">
+                <p><img src="~/img/web-logo.png" class="img-responsive" alt="june fund-raiser" /></p>
             </div>
         </div>
     </div>
 }
 
-<div class="container padded batop">
-    <div class="row">
-        <div class="col-sm-8">
-            <h2>To apply -</h2>
-            <hr class="borback">
-            <p>If you wish to help out in any way possible please use the form below to contact us.</p>
 
-            @using (Html.BeginForm("Volunteer", "PITP", FormMethod.Post, new { @class = "form-horizontal tpad", role="form" }))
-            {
-
-                <div class="form-group">
-                    <label for="email" class="col-lg-2 control-label">Email</label>
-                    <div class="col-lg-10">
-                        @Html.TextBoxFor(x => x.Email, new { type = "email", @class = "form-control", id = "email", placeholder = "Email" })
-                    </div>
-                </div>
-                <div class="form-group tpad">
-                    <label for="message" class="col-lg-2 control-label">Message</label>
-                    <div class="col-lg-10">
-                        @Html.TextAreaFor(x => x.Message, new { @class = "form-control", rows = "6", id = "message", placeholder = "Message..." })
-                    </div>
-                </div>
-                <div class="form-group tpad">
-                    <div class="col-lg-offset-2 col-lg-10">
-                        @*<a data-toggle="modal" href="#myModal" class="btn btn-default btn-lg">Send</a>*@
-                        @*<input type="submit" value="Send" class="btn btn-default btn-lg" />*@
-                        <input type="submit" value="Send" />
-                    </div>
-                </div>      
-
-            }
-        </div>
-        <div class="col-sm-4">
-            <img class="img-circle img-responsive" src="img/ba.jpg">
-            <hr class="borback">
-            <address>
-                <h3>New Cross Learning</h3>
-                283 – 285 New Cross Road<br>
-                London, SE14 6AS<br>
-                <a href="mailto: vols@pitpnxd.co.uk">vols@pitpnxd.co.uk</a><br>
-                <abbr title="Phone">P:</abbr>0208 320 0813
-            </address>
-        </div>
-    </div>
-</div>
 <!-- End Page Content -->
 
 <div class="intro-block">
@@ -186,7 +285,45 @@ else
 <!-- info panel end -->
 
 @section Scripts {
-   <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js" ></script>     
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js"></script>
+    @*<script src="https://cdn.jsdelivr.net/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>*@
+        @*<script>
+            $('form').validate({
+                rules: {
+                    Email: {
+                        email: true,
+                        required: true
+                    },
+                    Message: {
+                        minlength: 3,
+                        required: true
+                    },
+                    messages: {
+                        Email:  {
+                            email: "Please enter a valid email address",
+                            required: "Please enter your email address"
+                        },
+                        Message: {required: "Please enter a message"}
+                    }
+                },
+                highlight: function (element) {
+                    $(element).closest('.form-group').addClass('has-error');
+                },
+                unhighlight: function (element) {
+                    $(element).closest('.form-group').removeClass('has-error');
+                },
+                errorElement: 'span',
+                errorClass: 'help-block',
+
+                errorPlacement: function (error, element) {
+                    if (element.parent('.input-group').length) {
+                        error.insertAfter(element.parent());
+                    } else {
+                        error.insertAfter(element);
+                    }
+                }
+            });
+        </script>*@
     <script>
         $('form').validate({
             rules: {
@@ -194,18 +331,23 @@ else
                     email: true,
                     required: true
                 },
-                Message: {
-                    minlength: 3,
-                    required: true
-                },
-                messages: {
-                    Email:  {
-                        email: "Please enter a valid email address",
-                        required: "Please enter your email address"
-                    },
-                    Message: {required: "Please enter a message"}
-                }
+                Name: "required",
+                Over18: "required",
+                CRB: "required",
+                FirstAid: "required",
             },
+                messages: {
+                    Email: {
+                        email: "Please enter a valid email address",
+                        required: "Email is required (we promise not to spam you!)"
+                    },
+                    Name: { required: "You forgot to enter your name!" },
+                    Over18: { required: "Please Select Either Yes or No" },
+                    CRB: { required: "Please Select Either Yes or No" },
+                    FirstAid: { required: "Please Select Either Yes or No" }
+            },
+
+            
             highlight: function (element) {
                 $(element).closest('.form-group').addClass('has-error');
             },
@@ -214,14 +356,14 @@ else
             },
             errorElement: 'span',
             errorClass: 'help-block',
-           
+
             errorPlacement: function (error, element) {
-                if (element.parent('.input-group').length) {
+                if (element.parent('.checkbox-inline').length) {
                     error.insertAfter(element.parent());
                 } else {
                     error.insertAfter(element);
                 }
             }
         });
-</script>
+    </script>
 }
