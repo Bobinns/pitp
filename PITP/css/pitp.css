@@ -1,4 +1,4 @@
-﻿body {
+﻿body, .backyell {
     background-color:#FFF200;
 }
 
@@ -340,4 +340,19 @@ hr.style-one { border: 0; height: 1px; background: #333; background-image: -webk
 #carousel-example-generic .carousel-control
 {
     color:#222222;
+}
+
+.volb li a:link, .volb li a:active, .volb li a:visited, .volb li a:hover
+{
+    color:white;
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+.volb li a:hover {
+    color:yellow;
+}
+
+.panelyell{
+    border:none;
 }
