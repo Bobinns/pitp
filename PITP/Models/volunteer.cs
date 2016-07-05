@@ -31,7 +31,7 @@ namespace PITP.Models
         public IEnumerable<string> Skills { get; set; }
 
         [Required(ErrorMessage = "Please Select Either Yes or No")]
-        [DisplayName("Do you have a valid CRB check")]
+        [DisplayName("Do you have a valid DBS check")]
         public IEnumerable<string> CRB { get; set;}
 
         [DisplayName("Would you like to do a full day of First Aid Training?")]
