@@ -273,8 +273,8 @@ bodywhite
         $.getJSON("https://api.spacehive.com/api/Projects/GetById/22669", function (json) {
             console.log(json);
             $("#prg").attr('data-transitiongoal', Math.round(json.PecentFunded)).progressbar({ display_text: 'center' });
-            $('#poster').html('<h2 class="animated fadeInDownBig animation-delay-5  crousel-subtitle">' + "£" + $.number(json.Goal) + ' - Funding Target</h2>');
-            $('#poster').append('<h2 class="animated bounceInLeft animation-delay-7 crousel-subtitle">' + "£" + $.number(json.Pleged) + ' Pledged to date</h2>');
+            $('#poster').html('<h2 class="animated fadeInDownBig animation-delay-5  crousel-subtitle">' + "&#163;" + $.number(json.Goal) + ' - Funding Target</h2>');
+            $('#poster').append('<h2 class="animated bounceInLeft animation-delay-7 crousel-subtitle">' + "&#163;" + $.number(json.Pleged) + ' Pledged to date</h2>');
             $('#poster').append('<h2 class="animated bounceInRight animation-delay-9 crousel-subtitle">' + json.DaysLeft + " Days Left!" + '</h2>');
             $('#poster').append('<ul class="list-unstyled carousel-list"><li class="animated bounceInLeft animation-delay-11">We need your help with this year\'s event.</li><li class="animated bounceInLeft animation-delay-12">We are seeking financial support to help cover costs</li><li class="animated bounceInLeft animation-delay-13">any donation given is greatly appreciated!</li></ul>');
             $('#poster').append('<a href="https://www.spacehive.com/party-in-the-park-2016" title="spacehive" class="btn btn-default animated bounceInTop animation-delay-11">Please make a pledge!</a>');
