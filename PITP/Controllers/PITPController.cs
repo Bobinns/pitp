@@ -131,7 +131,7 @@ namespace PITP
             sb.Append("<p>Message: " + mail.Message + "</p>");
 
 
-            SendEmail.SendMail(sb.ToString(), "Housing Area Info request from the PITP Web site ", mail.Email, "housing@pitpnxd.co.uk");
+            SendEmail.SendMail(sb.ToString(), "Housing Area Info request from the PITP Web site ", mail.Email, "tentcity@pitpnxd.co.uk");
             ViewData["Message"] = "We appreciate you getting in touch. We will contact you shortly with a reply - The Party in the Park Team";
             ViewData["Sent"] = "sent";
             return View();
