@@ -53,7 +53,7 @@
     z-index: 10;
 }
 
-.carousel-caption h1 {
+.carousel-caption h1, .spont {
     font-size:2em;
     color:#ed1c24;
     text-shadow:none;
