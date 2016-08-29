@@ -31,7 +31,7 @@
 .intro-block5 {
         background-color:#fff;
 }
-.intro-block5 h1, .intro-block5 h5 {
+.intro-block5 h1, .intro-block5 h5, .pitphigh {
     color:#ed1c24;
 }
 
@@ -357,4 +357,15 @@ hr.style-one { border: 0; height: 1px; background: #333; background-image: -webk
 
 .panelyell{
     border:none;
+}
+
+@media (min-width: 941px) {
+    .carousel-caption-mov {
+        margin-top:-4em;
+    }
+}
+
+#logtop .nofit {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }

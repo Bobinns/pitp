@@ -97,7 +97,7 @@
 }
 .carousel-list li {
   color: #444;
-  font-size: 1.4em;
+  font-size: 1.2em;
   margin-bottom: 10px;
   overflow: hidden;
 }
@@ -177,7 +177,7 @@
   .carousel-title {
     margin: 10px 0 5px 0;
     padding: 0;
-    font-size: 2em;
+    font-size: 1.2em;
     line-height: 1.3em;
   }
   .crousel-subtitle {
@@ -191,7 +191,7 @@
   }
   .carousel-list li {
     font-size: 1.2em;
-    line-height: 1em;
+    line-height: 1.3em;
     margin-bottom: 4px;
   }
   .carousel-list li span {
