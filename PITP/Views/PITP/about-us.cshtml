@@ -66,7 +66,7 @@
             <div class="col-xs-9">
                 <h1>About Us - <span class="text-muted qback">Back for 2016!</span></h1>
                 <p class="lead">Unfortunately, due to licensing problems the organisers of Party in the Park decided to cancel the event planned for 2015. 
-                The good news is, we are back for 2016 - this summer will see the best <a href="@Url.Action("Index","PITP")">Party in the Park</a> to date!</p>
+                The good news is, we are back for 2016 - this summer will deliver the best <a href="@Url.Action("Index","PITP")">Party in the Park</a> to date!</p>
             </div>
         </div>
     </div>    
@@ -79,9 +79,14 @@
             <section>
                 <h1 class="headtag">About Us</h1>
                 <hr class="borback">
-                <p><span class="glyphicon glyphicon-time"></span> Posted on Feb 29, 2016 at 11:00 AM</p>
+                <p><span class="glyphicon glyphicon-time"></span> Posted on Aug 27, 2016 at 11:00 AM</p>
                 <hr class="borback">
-                <img src="img/aboutus.png" class="img-responsive">
+                @*<img src="img/aboutus.png" class="img-responsive">*@
+                <div align="center" class="embed-responsive embed-responsive-16by9">
+                    <video controls class="embed-responsive-item">
+                        <source src="~/img/video-optimised.mp4" type="video/mp4">
+                    </video>
+                </div>
                 <br/>
                 <p>Party In the Park is an event organised by various community groups in the area around Fordham Park. The festival's 
                 <a href="@Url.Action("origins", "PITP")">origins</a> can be traced back to the Deptford Urban Free Festival. Party in the Park is a community event 
@@ -118,19 +123,7 @@
                 Twitter</a> to get up to date details.</p>
 
                 <p>We particularly have had a lot of help from two organisations - New Cross Learning, and MadCap Coalition. Great live music has been provided by 
-                Siren Sound and Reknaw, and we have had some great DJ's, such as Softwax.</p>
-
-                <p>Over the past few years we have managed to gain the support and financial sponsorship from the following organisations:</p>
-                <ul>
-                    <li>The Birds Nest</li>
-                    <li>New Cross Inn</li>
-                    <li>Three Boroughs Housing Co-operative</li>
-                    <li>Hexagon Housing Association</li>
-                    <li>Sanford Housing Co-operative</li>
-                    <li>New Cross Learning</li>
-                    <li>Madcap Coalition</li>
-                </ul>
-                <p id="logtop">We are currently looking for <a href='@Url.Action("sponsorship", "PITP")'>sponsors </a>of this year’s event. So, if you wish to take the opportunity for your business or organisation to be involved in helping out with this tears event, please @Html.ActionLink("get in touch", "sponsors", "PITP")</p>
+                Siren Sound and Reknaw, and we have had some great DJ's, such as Softwax.</p>                
             </section>
         </div>
         <div class="col-sm-4 sidebar">
