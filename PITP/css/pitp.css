@@ -55,6 +55,8 @@
 
 .carousel-caption h1 {
     font-size:2em;
+    color:#ed1c24;
+    text-shadow:none;
     }
 .carousel-inner > .item > img{
     position: absolute;
