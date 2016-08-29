@@ -63,7 +63,8 @@
   overflow: hidden;
 }
 .carousel-razon .carousel-img img {
-  width: 100%;
+  /*width: 100%;*/
+  width:auto;
 }
 .carousel-razon .carousel-indicators {
   bottom: 0px !important;
