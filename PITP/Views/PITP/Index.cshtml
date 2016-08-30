@@ -64,7 +64,7 @@ bodywhite
 
 <div id="logtop" class="topblock">
     <section class="carousel-section">
-        <div id="carousel-example-generic" class="carousel carousel-razon slide" data-ride="carousel" data-interval="5000">
+        <div id="carousel-example-generic" class="carousel carousel-razon slide" data-ride="carousel">
             <!-- Indicators del -->
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
@@ -486,14 +486,14 @@ and the reality that many in the community face of being priced out of the city.
         $(function () {
             $('.progress .progress-bar').progressbar();
             $('.carousel').carousel({
-                interval: 400000
+                interval: 5000
             });
         })
 
-        $.getJSON("https://api.spacehive.com/api/Projects/GetById/22669", function (json) {
-            console.log(json);
-            $("#prg").attr('data-transitiongoal', Math.round(json.PecentFunded)).progressbar({ display_text: 'center' });
-        });
+        //$.getJSON("https://api.spacehive.com/api/Projects/GetById/22669", function (json) {
+        //    console.log(json);
+        //    $("#prg").attr('data-transitiongoal', Math.round(json.PecentFunded)).progressbar({ display_text: 'center' });
+        //});
 
     </script>
 }
