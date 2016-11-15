@@ -5171,13 +5171,20 @@ button.close {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
-.modal-header {
+.modal-header, .modal-header2 {
   padding: 15px;
   border-bottom: 1px solid #e5e5e5;
   min-height: 16.42857143px;
 }
-.modal-header .close {
+.modal-header .close, .modal-header2 .close {
   margin-top: -2px;
+}
+
+.modal-header2 {
+    border-bottom-color:#000;
+    background-image:url("../img/umbrella.png");
+    background-repeat:no-repeat;
+    padding-left:3em;
 }
 .modal-title {
   margin: 0;
@@ -5187,21 +5194,26 @@ button.close {
   position: relative;
   padding: 20px;
 }
-.modal-footer {
+.modal-footer, .modal-footer2 {
   margin-top: 15px;
   padding: 19px 20px 20px;
   text-align: right;
   border-top: 1px solid #e5e5e5;
 }
-.modal-footer .btn + .btn {
+.modal-footer .btn + .btn, .modal-footer2 .btn + .btn {
   margin-left: 5px;
   margin-bottom: 0;
 }
-.modal-footer .btn-group .btn + .btn {
+.modal-footer .btn-group .btn + .btn, .modal-footer2 .btn-group .btn + .btn {
   margin-left: -1px;
 }
-.modal-footer .btn-block + .btn-block {
+.modal-footer .btn-block + .btn-block, .modal-footer2 .btn-block + .btn-block {
   margin-left: 0;
+}
+
+.modal-footer2 
+{
+    border-top-color:#000;
 }
 @media (min-width: 768px) {
   .modal-dialog {
