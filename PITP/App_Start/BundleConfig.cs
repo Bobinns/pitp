@@ -23,7 +23,8 @@ namespace PITP
             bundles.Add(new StyleBundle("~/mycss").Include(                
                 "~/css/vendors.css",                
                     "~/css/cosmo.css",
-                    "~/css/pitp-style-blue.css"
+                    "~/css/pitp-style-blue.css",
+                    "~/css/agm.css"
                     ));
 
             BundleTable.EnableOptimizations = false;
