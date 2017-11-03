@@ -24,8 +24,7 @@ namespace PITP
                 "~/css/vendors.css",                
                     "~/css/cosmo.css",
                     "~/css/pitp.css",
-                    "~/css/style-blue.css",
-                    "~/css/bootstrap-progressbar-3.1.1.css"
+                    "~/css/style-blue.css"
                     ));
 
             BundleTable.EnableOptimizations = false;
