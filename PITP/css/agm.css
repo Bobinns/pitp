@@ -276,3 +276,55 @@ a.splash-arrow:hover {
     animation-duration: 1s;
 }
 
+.sh a:hover, .sh a:active, .sh a:visited, .indlink a:hover, .indlink a:active, .indlink a:hover
+{
+    color:#222;
+}
+
+
+.indlink a:link {
+    color: red;
+    text-decoration:underline;
+    font-weight:bold;
+     
+}
+
+/* visited link */
+.indlink a:visited {
+    color: red;
+    text-decoration:underline;
+    font-weight:bold;
+    
+}
+
+/* mouse over link */
+.indlink a:hover {
+    color: red;
+    text-decoration:underline;
+    font-weight:bold;
+    
+}
+
+/* selected link */
+.indlink a:active {
+    color: red;
+    text-decoration:underline;
+    font-weight:bold;
+    
+}
+
+/*.btn-default {
+  color: #fff;
+  background-color: #222222;
+  border-color: #222222;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:visited,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  color: #fff;
+  background-color: #0e0e0e;
+  border-color: #040404;
+}*/
