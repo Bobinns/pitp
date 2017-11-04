@@ -6,16 +6,18 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-/*.wrapper {
+.wrapper {
   max-width: 1000px;
   width: 90%;
-  margin: 0 auto; }*/
+  margin: 0 auto; 
+  min-height:90%;
+}
 
-img {
+/*img {
   max-width: 100%;
   height: auto;
   width: auto\9;
-  /* ie8 */ }
+  /* ie8 */ }*/
 
 .cf:before,
 .cf:after {
@@ -77,8 +79,9 @@ hr {
 }
 
 .splash-title {
+    font-family: 'Stardos Stencil', cursive;
 	color: white;
-	font-size: 3em;
+	font-size: 5em;
 	margin-top: 100px;
 	text-shadow: 0 2px 10px #000;
 	-webkit-animation-delay: 1s;
@@ -123,4 +126,102 @@ a.splash-arrow:hover {
 
 @media all and (max-width: 480px) {
 	.splash-title {font-size: 1.5em;}
+}
+
+/*@media only screen and (max-width : 1366px) {
+     .splash img{
+     width:33%;
+  }
+}
+
+@media only screen and (max-width : 1200px) {
+     .splash img{
+     width:80%;
+  }
+}*/
+
+/*@media only screen and (max-width : 979px) {
+    .splash img{
+     width:10%;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+    .splash img{
+     width:10%;
+  }
+}
+
+@media only screen and (max-width : 480px) {
+    .splash img{
+     width:10%;
+  }
+}
+
+@media only screen and (max-width : 320px) {
+    .splash img{
+     width:10%;
+  }
+}*/
+
+/*.portfolio {
+  padding: 0 !important;
+}
+.portfolio img {
+  height: auto;
+  width: 100%;
+}
+@media (min-width: 481px)  { .portfolio img { width: 80%; margin-left:10%;margin-right:10%;} }
+@media (min-width: 768px)  { .portfolio img { width: 80%; margin-left:10%;margin-right:10%; } }
+@media (min-width: 992px)  { .portfolio img { width: 80%; margin-left:10%;margin-right:10%; } }
+@media (min-width: 1200px) { .portfolio img { width: 80%; margin-left:10%;margin-right:10%;  } }*/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+    .agm1, .agm2 {
+        margin-top:4em;
+    }
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px)
+{
+    .agm1, .agm2 {
+        margin-top:2em;
+    }
+    .agm2 {
+         margin-top:3em
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px)
+{
+    .agm1, .agm2 {
+        margin-top:2em;
+    }
+    .agm2 {
+         margin-top:3em
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px)
+{
+    .agm1, .agm2 {
+        margin-top:2em;
+    }
+    .agm2 {
+         margin-top:3em
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px)
+{
+    .agm1, .agm2 {
+        margin-top:2em;
+    }
+    .agm2 {
+         margin-top:3em
+    }
 }
