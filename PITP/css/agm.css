@@ -128,54 +128,6 @@ a.splash-arrow:hover {
 	.splash-title {font-size: 1.5em;}
 }
 
-/*@media only screen and (max-width : 1366px) {
-     .splash img{
-     width:33%;
-  }
-}
-
-@media only screen and (max-width : 1200px) {
-     .splash img{
-     width:80%;
-  }
-}*/
-
-/*@media only screen and (max-width : 979px) {
-    .splash img{
-     width:10%;
-  }
-}
-
-@media only screen and (max-width : 767px) {
-    .splash img{
-     width:10%;
-  }
-}
-
-@media only screen and (max-width : 480px) {
-    .splash img{
-     width:10%;
-  }
-}
-
-@media only screen and (max-width : 320px) {
-    .splash img{
-     width:10%;
-  }
-}*/
-
-/*.portfolio {
-  padding: 0 !important;
-}
-.portfolio img {
-  height: auto;
-  width: 100%;
-}
-@media (min-width: 481px)  { .portfolio img { width: 80%; margin-left:10%;margin-right:10%;} }
-@media (min-width: 768px)  { .portfolio img { width: 80%; margin-left:10%;margin-right:10%; } }
-@media (min-width: 992px)  { .portfolio img { width: 80%; margin-left:10%;margin-right:10%; } }
-@media (min-width: 1200px) { .portfolio img { width: 80%; margin-left:10%;margin-right:10%;  } }*/
-
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) {
     .agm1, .agm2 {
