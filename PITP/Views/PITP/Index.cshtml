@@ -2,14 +2,20 @@
     ViewBag.Title = "Home Page";
 }
 
-
-
-@section BodyClass {
-    wrapper
+@section AddToHead
+{
+<link href="https://fonts.googleapis.com/css?family=Stardos+Stencil:400,700" rel="stylesheet"> 
 }
 
 <div class="splash fade-in">
-    <h1 class="splash-title fade-in">SPLASH SCREEN TITLE</h1>
+    <div class="row wrapper">
+        <div class="col-sm-12">
+            <img src="~/img/agm-presents3.png" class="center-block img-responsive agm1" alt="pitp presenting" />
+        </div>
+        <div class="col-sm-12">            
+            <img src="~/img/community2.png" class="center-block img-responsive agm2" alt="community afternoon" />
+        </div>
+    </div>
     <a href="#" class="splash-arrow fade-in"><img src="img/down-arrow.png" alt="" /></a>
 </div>
 
