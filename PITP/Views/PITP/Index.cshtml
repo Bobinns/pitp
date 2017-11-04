@@ -4,7 +4,7 @@
 
 @section AddToHead
 {
-<link href="https://fonts.googleapis.com/css?family=Stardos+Stencil:400,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Stardos+Stencil:400,700" rel="stylesheet">
 }
 
 <div class="splash fade-in">
@@ -12,7 +12,7 @@
         <div class="col-sm-12">
             <img src="~/img/agm-presents3.png" class="center-block img-responsive agm1" alt="pitp presenting" />
         </div>
-        <div class="col-sm-12">            
+        <div class="col-sm-12">
             <img src="~/img/community2.png" class="center-block img-responsive agm2" alt="community afternoon" />
         </div>
     </div>
@@ -29,7 +29,6 @@
         </button>
         <div>
             <a class="navbar-brand" href='.'>
-                @*<img src="img/header-logo.png" class="img-responsive" alt="header logo" />*@
             </a>
         </div>
     </div>
@@ -74,79 +73,84 @@
     </div>
 </nav>
 
-<div class="container" id="hmsects">
-        <div class="row">
-            <section class="section">
-                <div class="col-sm-6 col-md-3">
-                    <a href='@Url.Action("about-us", "PITP")'>
-                        <img class="img-circle img-responsive" src="img/hround1.png">
-                    </a>
-                        <h3><a href='@Url.Action("about-us", "PITP")'>About Party in the Park</a></h3>
-                        <p>
-                            Party in the Park in Deptford, is a great free festival providing music and entertainment for the New Cross and Deptford communities -
-                            with a large number of brilliant diverse performers.
-                            Party In the Park is an annual event organised by various community groups in the area around Fordham Park.
-                        </p>
-                    <p>We have successfully held festivals in 2013, 2014, and despite the rain, on Saturday September 3rd 2016 we hosted our best festival to date.</p>
-                        @*<p>
-                            After the success of “Party in the Park <a href='@Url.Action("year2014", "PITP")'>2014</a> and <a href='@Url.Action("Party2013", "PITP")'>
-                                2013
-                            </a>the event’s organisers are planning an even bigger and better day out for 2016! Find out more <a href='@Url.Action("about-us", "PITP")'>about</a> us or check out
-                            our <a href="/sponsors#sponsor">sponsorship</a> opportunities
-                        </p>*@
-                        <p><a href='@Url.Action("about-us", "PITP")' class="btn btn-default">Read More &raquo;</a></p>
-</div>
-            </section>
-            <section class="section">
-                <div class="col-sm-6 col-md-3">
-                    <a href='@Url.Action("Upandcoming", "PITP")'>
-                        <img class="img-circle img-responsive" src="img/hround4.png"></a>
-                        <h3><a href='@Url.Action("Upandcoming", "PITP")'>Up and Coming Events</a></h3>
-                        <p>
-                            Over the past four years we have held a number of events in order to support Party in the Park. As fund raisers, these events go a long
-                            way to help us fund future festivals.
-                        </p>
-                        <p>
-                            The festival to date has been financed on a shoe string budget and relies on the dedication of a number of committed volunteers.
-                            We are planning a number of benefit gigs to help fund Party in the Park 2017. Watch this space for details of <a href='@Url.Action("Upandcoming", "PITP")'>up and coming events</a>, or
-                            follow us on <a href="https://twitter.com/pitpnxd" alt="pitp twitteer link">twitter</a> and <a href="https://www.facebook.com/PitpInthepark/" alt="pitp facebook link">facebook</a>.
-                        </p>
-                        <p><a href='@Url.Action("Upandcoming", "PITP")' class="btn btn-default">View details &raquo;</a></p>
-</div>
-            </section>
-            <div class="clearfix hidden-md hidden-lg"></div>
-            <section class="section">
-                <div class="col-sm-6 col-md-3">
-                    <a href='@Url.Action("year2014", "PITP")'><img class="img-circle img-responsive" src="img/hround3.png"></a>
-                    <h3><a href='@Url.Action("year2014", "PITP")'>Past Events</a></h3>
-                    @*<p>The Party, organised by a number of community groups that include New Cross Learning and Madcap Coalition, is a revival of the famous <a href="http://transpont.blogspot.co.uk/2012/01/urban-free-festival-1992.html">Urban Free Festival</a>. Party in the Park is a New Cross/Deptford community event for all ages, with family events, arts and crafts, stalls, spoken word, as well as local bands and acts for all tastes from disco to reggae, punk rock, soul and folk.</p>*@
-                    <p><a href='@Url.Action("year2014", "PITP")'>In 2014</a> Party in the Park held a very successful event in Fordham Park, Deptford. Blessed by good weather, the festival provided a great day out for all who attended. The event’s organisers first came together to help deliver the festival in <a href="@Url.Action("2013", "PITP")" title="party in the park 2013">2013</a> and building upon this, worked together again to deliver an even bigger and better event.</p>
-                    <p><a href='@Url.Action("year2014", "PITP")' class="btn btn-default">View details &raquo;</a></p>
-                    <p>In order to help pay for Party in the Park a number of fund raisers have been successfully held in the past. We intend to put on more <a href='@Url.Action("Upandcoming", "PITP")'>Up and Comming Events page</a> in order to help pay for the fesival this summer.</p>
-                </div>
-            </section>
-            <section class="section">
-                <div class="col-sm-6 col-md-3">
-                    <a href='@Url.Action("volunteer", "PITP")'><img class="img-circle img-responsive" src="img/hround2.png"></a>
-                    <h3><a href='@Url.Action("volunteer", "PITP")'>Volunteers</a></h3>
-                    <p>
-                        The people who are currently making this possible are a very small group of very dedicated people - but there's only so much they can do and
-                                    the organisers are still looking for volunteers: contact
-                                    <br />
-                        <a href="mailto:vols@pitpnxd.co.uk" target="_blank">vols@pitpnxd.co.uk</a>
-                        <br />
-                        If you wish to help to contact the organisers of Party in the Park
-                                    please <a href='@Url.Action("contact", "PITP")'>get in touch</a>
-                    </p>
-                    <p><a href='@Url.Action("volunteer", "PITP")' class="btn btn-default">View details &raquo;</a></p>
-                    <h3>Sponsorship</h3>
-                    <p>Last year a number of different business and organisation helped support this community event.</p>
-                    <p>We are looking to attain sponsorship for Party in the Park 2017. This could be a great oppurtunity for your business to help support and promote itself within the community.</p>
-                    <p><a href='@Url.Action("sponsors", "PITP")' class="btn btn-default">View details &raquo;</a></p>
-                </div>
-            </section>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            come join us for our agm at the moonshot centre, fordham park
         </div>
     </div>
+</div>
+
+
+<div class="container" id="hmsects">
+    <div class="row">
+        <section class="section">
+            <div class="col-sm-6 col-md-3">
+                <a href='@Url.Action("about-us", "PITP")'>
+                    <img class="img-circle img-responsive" src="img/hround1.png">
+                </a>
+                <h3><a href='@Url.Action("about-us", "PITP")'>About Party in the Park</a></h3>
+                <p>
+                    Party in the Park in Deptford, is a great free festival providing music and entertainment for the New Cross and Deptford communities -
+                    with a large number of brilliant diverse performers.
+                    Party In the Park is an annual event organised by various community groups in the area around Fordham Park.
+                </p>
+                <p>We have successfully held festivals in 2013, 2014, and despite the rain, on Saturday September 3rd 2016 we hosted our best festival to date.</p>
+                <p><a href='@Url.Action("about-us", "PITP")' class="btn btn-default">Read More &raquo;</a></p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="col-sm-6 col-md-3">
+                <a href='@Url.Action("Upandcoming", "PITP")'>
+                    <img class="img-circle img-responsive" src="img/hround4.png">
+                </a>
+                <h3><a href='@Url.Action("Upandcoming", "PITP")'>Up and Coming Events</a></h3>
+                <p>
+                    Over the past four years we have held a number of events in order to support Party in the Park. As fund raisers, these events go a long
+                    way to help us fund future festivals.
+                </p>
+                <p>
+                    The festival to date has been financed on a shoe string budget and relies on the dedication of a number of committed volunteers.
+                    We are planning a number of benefit gigs to help fund Party in the Park 2017. Watch this space for details of <a href='@Url.Action("Upandcoming", "PITP")'>up and coming events</a>, or
+                    follow us on <a href="https://twitter.com/pitpnxd" alt="pitp twitteer link">twitter</a> and <a href="https://www.facebook.com/PitpInthepark/" alt="pitp facebook link">facebook</a>.
+                </p>
+                <p><a href='@Url.Action("Upandcoming", "PITP")' class="btn btn-default">View details &raquo;</a></p>
+            </div>
+        </section>
+        <div class="clearfix hidden-md hidden-lg"></div>
+        <section class="section">
+            <div class="col-sm-6 col-md-3">
+                <a href='@Url.Action("year2014", "PITP")'><img class="img-circle img-responsive" src="img/hround3.png"></a>
+                <h3><a href='@Url.Action("year2014", "PITP")'>Past Events</a></h3>
+                <p><a href='@Url.Action("year2014", "PITP")'>In 2014</a> Party in the Park held a very successful event in Fordham Park, Deptford. Blessed by good weather, the festival provided a great day out for all who attended. The event’s organisers first came together to help deliver the festival in <a href="@Url.Action("2013", "PITP")" title="party in the park 2013">2013</a> and building upon this, worked together again to deliver an even bigger and better event.</p>
+                <p><a href='@Url.Action("year2014", "PITP")' class="btn btn-default">View details &raquo;</a></p>
+                <p>In order to help pay for Party in the Park a number of fund raisers have been successfully held in the past. We intend to put on more <a href='@Url.Action("Upandcoming", "PITP")'>Up and Comming Events page</a> in order to help pay for the fesival this summer.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="col-sm-6 col-md-3">
+                <a href='@Url.Action("volunteer", "PITP")'><img class="img-circle img-responsive" src="img/hround2.png"></a>
+                <h3><a href='@Url.Action("volunteer", "PITP")'>Volunteers</a></h3>
+                <p>
+                    The people who are currently making this possible are a very small group of very dedicated people - but there's only so much they can do and
+                    the organisers are still looking for volunteers: contact
+                    <br />
+                    <a href="mailto:vols@pitpnxd.co.uk" target="_blank">vols@pitpnxd.co.uk</a>
+                    <br />
+                    If you wish to help to contact the organisers of Party in the Park
+                    please <a href='@Url.Action("contact", "PITP")'>get in touch</a>
+                </p>
+                <p><a href='@Url.Action("volunteer", "PITP")' class="btn btn-default">View details &raquo;</a></p>
+                <h3>Sponsorship</h3>
+                <p>Last year a number of different business and organisation helped support this community event.</p>
+                <p>We are looking to attain sponsorship for Party in the Park 2017. This could be a great oppurtunity for your business to help support and promote itself within the community.</p>
+                <p><a href='@Url.Action("sponsors", "PITP")' class="btn btn-default">View details &raquo;</a></p>
+            </div>
+        </section>
+    </div>
+</div>
+
 <div class="intro-block">
     <div class="container">
         <div class="row">
@@ -174,27 +178,25 @@
 @section scripts
 {
     <script type="text/javascript">
-    $( document ).ready(function() {
-	if($(".splash").is(":visible"))
-	{
-		$(".navbar").css({"opacity":"0"});
-	}
-	$(".splash-arrow").click(function()
-	{
-		$(".splash").slideUp("800", function() {
-		    $(".wrapper").delay(100).animate({ "opacity": "1.0" }, 800);
-		    $(".navbar").css({ "opacity": "1" });
-		 });
-	});
-});
+        $(document).ready(function () {
+            if ($(".splash").is(":visible")) {
+                $(".navbar").css({ "opacity": "0" });
+            }
+            $(".splash-arrow").click(function () {
+                $(".splash").slideUp("800", function () {
+                    $(".wrapper").delay(100).animate({ "opacity": "1.0" }, 800);
+                    $(".navbar").css({ "opacity": "1" });
+                });
+            });
+        });
 
-$(window).scroll(function() {
-  	  $(window).off("scroll");
-	  $(".splash").slideUp("800", function() {
-	  $("html, body").animate({"scrollTop":"0px"},100);
-	  $(".wrapper").delay(100).animate({ "opacity": "1.0" }, 800);
-	  $(".navbar").css({ "opacity": "1" });
- });
- });
-</script>
+        $(window).scroll(function () {
+            $(window).off("scroll");
+            $(".splash").slideUp("800", function () {
+                $("html, body").animate({ "scrollTop": "0px" }, 100);
+                $(".wrapper").delay(100).animate({ "opacity": "1.0" }, 800);
+                $(".navbar").css({ "opacity": "1" });
+            });
+        });
+    </script>
 }
