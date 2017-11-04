@@ -118,6 +118,11 @@ a.splash-arrow:hover {
 	bottom: 50px;
 }
 
+.sten .gl
+{
+    margin-bottom:.8em;
+}
+
 @media all and (max-width: 690px) {
   header h1 { width: 100%; text-align: center; }
   header nav { float: none; display: inline-block; margin: 0 auto; }
@@ -125,13 +130,25 @@ a.splash-arrow:hover {
 }
 
 @media all and (max-width: 480px) {
-	.splash-title {font-size: 1.5em;}
+	.splash-title {font-size: 1.5em;}    
+    .gl img:first-child{
+        margin-top:1em;
+    }
+    .intro-block6{
+        padding-top:2em;
+    }
 }
 
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) {
     .agm1, .agm2 {
         margin-top:4em;
+    }
+    .sten img:first-child{
+       margin-top:1em;
+    }
+    .intro-block6{
+        padding-top:2em;
     }
 }
 /*Small devices (landscape phones, 576px and up)*/
@@ -143,6 +160,9 @@ a.splash-arrow:hover {
     .agm2 {
          margin-top:3em
     }
+    .intro-block6{
+        padding-top:2em;
+    }
 }
 
 /*Medium devices (tablets, 768px and up)*/
@@ -153,6 +173,9 @@ a.splash-arrow:hover {
     }
     .agm2 {
          margin-top:3em
+    }
+    .intro-block6{
+        padding-top:2em;
     }
 }
 
@@ -194,7 +217,6 @@ a.splash-arrow:hover {
     font-size:3rem;
     color:#222;
     line-height: 108%;
-    margin-top:1em;
 }
 
 .sten .bl, .sten .bl2, .stensmall .bl {
