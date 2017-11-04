@@ -231,3 +231,48 @@ a.splash-arrow:hover {
 {
     background-color:#FFF200;
 }
+
+#music{
+      -webkit-animation-delay:.5s;
+    animation-delay: .5s;
+     -webkit-animation-duration:1s;     
+     animation-duration: 1s;
+}
+
+#rd
+{
+    -webkit-animation-delay:1s;
+    animation-delay: 1s;
+    -webkit-animation-duration:1s;
+    animation-duration: 1s;
+}
+
+#ass{
+     -webkit-animation-delay:1.5s;
+    animation-delay: 1.5s;
+    -webkit-animation-duration:1s;
+    animation-duration: 1s;
+}
+
+#ref {
+   -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+  -webkit-animation-duration:1s;
+  animation-duration: 1s;
+}
+
+#bm{
+     -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+    -webkit-animation-duration:1s;
+    animation-duration: 1s;
+}
+
+#agmgl
+{
+     -webkit-animation-delay:3s;
+    animation-delay: 3s;
+    -webkit-animation-duration:1s;
+    animation-duration: 1s;
+}
+

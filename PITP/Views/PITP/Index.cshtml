@@ -88,12 +88,12 @@
 
             </div>
             <div class="col-xs-12 col-md-5 col-md-offset-1 pull-right">
-                <p class="gl"><img src="~/img/agm-glasses.png" class="img-responsive hidden-sm" alt="party in the park logo" /></p>
-                <p>music</p>
-                <p><span class="bl">AGM &amp; 2018 Recruitment drive</span></p>
-                <p>achilles st stop &amp; listen campaign</p>
-                <p><span class="bl">refreshments</span></p>
-                <p>banner making</p> 
+                <p class="gl" id="agmgl"><img src="~/img/agm-glasses.png" class="img-responsive hidden-sm" alt="party in the park logo" /></p>
+                <p class="anpulse" id="music">music</p>
+                <p class="anpulse" id="rd"><span class="bl">AGM &amp; 2018 Recruitment drive</span></p>
+                <p class="anpulse" id="ass">achilles st stop &amp; listen campaign</p>
+                <p class="anpulse" id="ref"><span class="bl">refreshments</span></p>
+                <p class="anpulse" id="bm">banner making</p> 
             </div>
         </div>
     </div>
@@ -195,14 +195,28 @@
 @section scripts
 {
     <script type="text/javascript">
+
+        $.fn.extend({
+            animateCss: function (animationName) {
+                var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                this.addClass('animated ' + animationName).one(animationEnd, function () {
+                    $(this).removeClass('animated ' + animationName);
+                });
+                return this;
+            }
+        });
+
+
         $(document).ready(function () {
             if ($(".splash").is(":visible")) {
                 $(".navbar").css({ "opacity": "0" });
             }
-            $(".splash-arrow").click(function () {
+            $(".splash").click(function () {
                 $(".splash").slideUp("800", function () {
                     $(".wrapper").delay(100).animate({ "opacity": "1.0" }, 800);
                     $(".navbar").css({ "opacity": "1" });
+                    $('.anpulse').animateCss('pulse');
+                    $('.gl').animateCss('lightSpeedIn');
                 });
             });
         });
