@@ -282,15 +282,15 @@ a.splash-arrow:hover {
 }
 
 
-.indlink a:link {
+.indlink a:link, .lead a:link {
     color: red;
     text-decoration:underline;
     font-weight:bold;
-     
+    .
 }
 
 /* visited link */
-.indlink a:visited {
+.indlink a:visited, .lead a:visited {
     color: red;
     text-decoration:underline;
     font-weight:bold;
@@ -298,17 +298,20 @@ a.splash-arrow:hover {
 }
 
 /* mouse over link */
-.indlink a:hover {
+.indlink a:hover, .lead a:hover {
+    color: red;
+    text-decoration:underline;
+    font-weight:bold;    
+}
+
+/* selected link */
+.indlink a:active, .lead a:active {
     color: red;
     text-decoration:underline;
     font-weight:bold;
     
 }
 
-/* selected link */
-.indlink a:active {
-    color: red;
-    text-decoration:underline;
-    font-weight:bold;
-    
+.lead a:link, .lead a:visited, .lead a:hover, .lead a:active {
+    color:#FFF200;
 }
