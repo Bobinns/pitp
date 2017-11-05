@@ -73,20 +73,32 @@
             </div>            
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-9 col-md-offset-3">
-                <p><img src="~/img/fund-raiser-coming-soon.png" class="img-responsive" alt="watch this space - benefit gigs coming soon" /></p>
+
+    <div class="container intro-block6">
+        <div class="row sten">
+            <div class="col-xs-12 col-md-6">
+                <p>come join us for <span class="bl">our agm</span> at the <span class="bl">moonshot</span> centre, <span class="bl">fordham park</span></p>
+                <p class="stensmall">Sunday 12th november 2017 | 2-5pm</p>
+
+                <p class="stensmall" style="margin-top:2em;">if you would like to help out with next year's <span class="bl">festival</span> and get involved with <span class="bl">Party in the park</span> we'd love to meet you</p>
+                <p class="stensmall">we'll have music food and drink, banner making</p>
+                <p class="stensmall">With live performances from<span class="bl sten"> Ceri James</span> and <span class="bl sten">rhizome</span> &amp; special guests +</p>
+                <p class="stensmall bl"><span class="sten">achilles stop and listen</span> campaign will be discussing housing issues</p>
+
+            </div>
+            <div class="col-xs-12 col-md-5 col-md-offset-1 pull-right">
+                <p class="gl" id="agmgl"><img src="~/img/agm-glasses.png" class="img-responsive hidden-sm" alt="party in the park logo" /></p>
+                <p class="anpulse" id="music">music</p>
+                <p class="anpulse" id="rd"><span class="bl">AGM &amp; 2018 Recruitment drive</span></p>
+                <p class="anpulse" id="ass"><a href="https://achillesstreetstopandlisten.wordpress.com/">achilles st stop &amp; listen campaign</a></p>
+                <p class="anpulse" id="ref"><span class="bl">refreshments</span></p>
+                <p class="anpulse" id="bm">banner making</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-9 col-md-offset-3">
-                <h4>
-                    A number of events in the run up to this years Party In The Park are currently being organised. As fund raisers, these events will go a long
-                    way to help us fund the festival in 2016. We are planning on holding a benefit gig at the New Cross inn on Sunday the 17th July - more details to follow...
-                </h4>
+        <div class="row sten">
+            <div class="col-xs-12 tpad">
+                <p class="stensmall">Followed by <span class="bl"><a href="https://www.facebook.com/events/185529255352675/">no social cleansingin lewisham</a></span> at the birds nest 6-11pm</p>
             </div>
-
         </div>
     </div>
     <div class="intro-block">
@@ -113,3 +125,25 @@
         </div>
     </div>
     </div>
+
+@section scripts
+{
+    <script type="text/javascript">
+        $.fn.extend({
+            animateCss: function (animationName) {
+                var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                this.addClass('animated ' + animationName).one(animationEnd, function () {
+                    $(this).removeClass('animated ' + animationName);
+                });
+                return this;
+            }
+        });
+
+        $(document).ready(function () {
+            $(".wrapper").delay(100).animate({ "opacity": "1.0" }, 800);
+            $(".navbar").css({ "opacity": "1" });
+            $('.anpulse').animateCss('pulse');
+            $('.gl').animateCss('lightSpeedIn');
+        });        
+    </script>
+}
