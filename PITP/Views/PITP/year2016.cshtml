@@ -2,4 +2,69 @@
     ViewBag.Title = "year2016";
 }
 
-<h2>year2016</h2>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div>
+            <a class="navbar-brand" href='.'>
+
+            </a>
+        </div>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("Home", "Index", "PITP")</li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li>@Html.ActionLink("About Us", "about-us", "PITP")</li>
+                    <li>@Html.ActionLink("Origins", "origins", "PITP")</li>
+                </ul>
+            </li>
+            <li>@Html.ActionLink("Tent City", "tentcity", "PITP")</li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle py" data-toggle="dropdown">Previous Years &nbsp;&nbsp;<b class="caret"></b></a>
+                <ul class="dropdown-menu pyu">
+                    <li class="active">@Html.ActionLink("2016", "year2016", "PITP")</li>
+                    <li>@Html.ActionLink("2014", "year2014", "PITP")</li>
+                    <li>@Html.ActionLink("2013", "year2013", "PITP")</li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+
+                    <li>@Html.ActionLink("Up And Coming...", "upandcoming", "PITP")</li>
+                    <li>@Html.ActionLink("pastevents", "pastevents", "PITP")</li>
+                </ul>
+            </li>
+            <li>@Html.ActionLink("Sponsors", "sponsors", "PITP")</li>
+            <li>@Html.ActionLink("Volunteer", "volunteer", "PITP")</li>
+            <li>@Html.ActionLink("Contact", "contact", "PITP")</li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="https://www.facebook.com/PitpInthepark/">Facebook</a></li>
+                    <li><a href="https://twitter.com/pitpnxd">Twitter</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container nfit">
+    <div class="col-xs-12 col-md-5 col-md-offset-1 nointro">
+        <img src="~/img/agm/pitp2016.png" alt="party in the park 2016" class="img-responsive"  id="hointrohead"/>
+        <p>Party in the Park held in 2016 was the groups’ largest festival to date despite enduring some poor weather. </p>
+        <p>Five diﬀerent stages provided a wide ranging assortment of live music and performance. The community was regaled with mix of live rock, reggae, and punk performances, and treated to the latest innovative techno and drum and bass sounds. We are about audience parti cipation – whether helping out in site decorati on in the lead up to the festi val or involvement in arts and craft workshops on the day. </p>
+        <p>In supporting and providing a platform for local community issues, “Tent City” sought to highlight housing concerns that threaten the community. An awareness raising hub, Tent City brought housing acti vists and residents together to address issues relati ng to gentriﬁcation and social cleansing.</p>
+        <p>The Albany and Circulate brought BLOCK a show by No Fit State Circus and Moti onhouse to the festival. The crowds loved the outdoor circus spectacular!</p>
+        <p>Everyone had a great day despite the rain. With a wide variety of food and drink, bricka brack and festi val merchandise festival goers were able enjoy refreshments throughout the course of the day. Our friendly stewards were on hand to ensure the safety of those gathered. A volunteer role, the stewards helped ensure that everyone experienced a safe and secure jolly day out.</p>
+    </div>
+</div>

@@ -315,3 +315,24 @@ a.splash-arrow:hover {
 .lead a:link, .lead a:visited, .lead a:hover, .lead a:active {
     color:#FFF200;
 }
+
+.nfit{
+    background-image: url('../img/agm/IMG_8832.jpg');
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+
+.nointro {
+
+    /*background-color: #FFF200;
+    margin-top: 70px;
+    opacity: 0.9;*/
+   background: -moz-linear-gradient(top, rgba(255,242,0,0.01) 0%, rgba(255,242,0,0.01) 1%, rgba(255,242,0,1) 24%, rgba(255,242,0,1) 58%);
+    background: -webkit-linear-gradient(top, rgba(255,242,0,0.01) 0%,rgba(255,242,0,0.01) 1%,rgba(255,242,0,1) 24%,rgba(255,242,0,1) 58%);
+    background: linear-gradient(to bottom, rgba(255,242,0,0.01) 0%,rgba(255,242,0,0.01) 1%,rgba(255,242,0,1) 24%,rgba(255,242,0,1) 58%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03fff200', endColorstr='#fff200',GradientType=0 );
+}
+
+#hointrohead{
+    margin-top:70px;
+}
