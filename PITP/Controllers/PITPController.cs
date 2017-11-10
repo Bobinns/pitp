@@ -137,6 +137,13 @@ namespace PITP
             return View();
         }
 
+        public ActionResult year2016()
+        {
+            ViewBag.Description = "Party in the Park held its third festival in 2016";
+            ViewBag.Keywords = "Party, Park, festval, 2016, New Cross, Deptford";
+            return View();
+        }
+
         public ActionResult year2014()
         {
             ViewBag.Description = "Party in the Park held its second festival in 2014";
