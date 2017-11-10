@@ -4,20 +4,17 @@
             xsi:schemaLocation="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0 MvcSiteMapSchema.xsd">
 
   <mvcSiteMapNode title="2017" controller="PITP" action="Index">
-    <mvcSiteMapNode title="About" controller="PITP" action="About">
       <mvcSiteMapNode title="About Us" controller="PITP" action="about-us"/>
       <mvcSiteMapNode title="Tent City" controller="PITP" action="tentcity"/>
-    </mvcSiteMapNode>
-    <mvcSiteMapNode title="2014" controller="PITP" action="year2014"/>
-  <mvcSiteMapNode title="Events" controller="PITP" action="Events">    
-    <mvcSiteMapNode title="Origins" controller="PITP" action="Origins"/>
-  <mvcSiteMapNode title="Up and Coming" controller="PITP" action="Upandcoming"/>
-  <mvcSiteMapNode title="pastevents" controller="PITP" action="pastevents"/>
-  </mvcSiteMapNode>
-  <mvcSiteMapNode title="Sponsors" controller="PITP" action="sponsors"/>
-  <mvcSiteMapNode title="Volunteer" controller="PITP" action="Volunteer"/>
-  <mvcSiteMapNode title="Contact" controller="PITP" action="Contact"/>
-  <mvcSiteMapNode title="Site Map" controller="PITP" action="SiteMap"/>
-  </mvcSiteMapNode>
-
+      <mvcSiteMapNode title="Origins" controller="PITP" action="Origins"/>
+      <mvcSiteMapNode title="2013" controller="PITP" action="year2013"/>  
+      <mvcSiteMapNode title="2014" controller="PITP" action="year2014"/>  
+      <mvcSiteMapNode title="2016" controller="PITP" action="year2016"/>  
+      <mvcSiteMapNode title="Up and Coming" controller="PITP" action="Upandcoming"/>
+      <mvcSiteMapNode title="pastevents" controller="PITP" action="pastevents"/>
+      <mvcSiteMapNode title="Sponsors" controller="PITP" action="sponsors"/>
+      <mvcSiteMapNode title="Volunteer" controller="PITP" action="Volunteer"/>
+      <mvcSiteMapNode title="Contact" controller="PITP" action="Contact"/>
+      <mvcSiteMapNode title="Site Map" controller="PITP" action="SiteMap"/>
+      </mvcSiteMapNode>
 </mvcSiteMap>
