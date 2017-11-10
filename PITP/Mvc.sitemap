@@ -3,7 +3,7 @@
             xmlns="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0"
             xsi:schemaLocation="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0 MvcSiteMapSchema.xsd">
 
-  <mvcSiteMapNode title="2016" controller="PITP" action="Index">
+  <mvcSiteMapNode title="2017" controller="PITP" action="Index">
     <mvcSiteMapNode title="About" controller="PITP" action="About">
       <mvcSiteMapNode title="About Us" controller="PITP" action="about-us"/>
       <mvcSiteMapNode title="Tent City" controller="PITP" action="tentcity"/>
