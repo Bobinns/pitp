@@ -8,7 +8,7 @@
             border-color: #222222;
         }
 
-.intro-block, .intro-block2, .intro-block3, .intro-block4, .intro-block5, .intro-block6 {
+.intro-block, .intro-block2, .intro-block3, .intro-block4, .intro-block5, .intro-block6, .intro-block9 {
     background-color: #ED1C24;
     padding: 100px 15px 60px;
     color: #fff;
@@ -28,14 +28,14 @@
     background-color:#ED1C24;
 }
 
-.intro-block5 {
+.intro-block5, .intro-block9 {
         background-color:#fff;
 }
-.intro-block5 h1, .intro-block5 h5, .pitphigh {
+.intro-block5 h1, .intro-block5 h5, .pitphigh, .intro-block9 h1 {
     color:#ed1c24;
 }
 
-.intro-block5 p, ol, h4, ul
+.intro-block5 p, ol, h4, ul, .intro-block9 p
 {
     color:#222222;
 }
