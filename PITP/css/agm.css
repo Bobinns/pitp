@@ -438,3 +438,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05fff200', e
      padding-top:2em;
      padding-left:2em;
 }
+
+.tabbal .table{
+    margin-top:3em;
+}
+
+.tabbal .table > thead > tr {
+  background-color: #222222;
+}
+
+.tabbal .table-striped > tbody > tr:nth-child(odd) > td {
+  background-color:#ED1C24;
+  font-weight:bold;
+}
+
+.tabbal .table-striped > tbody > tr:nth-child(even) > td {
+  background-color: #FFF200;
+  color:#222222;
+  font-weight:bold;
+}
+
+.tabbalwh > tbody > tr:nth-child(odd) > td {
+  background-color: #ffffff;
+    color:#222222;
+   font-weight:bold;
+}
+
+
+
