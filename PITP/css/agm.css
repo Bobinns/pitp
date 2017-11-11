@@ -460,7 +460,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05fff200', e
 
 .tabbalwh > tbody > tr:nth-child(odd) > td {
   background-color: #ffffff;
-    color:#222222;
+   color:#222222;
    font-weight:bold;
+}
+
+.org  {
+  background-color: #222222;
+  color:#FFF200;
+  font-family:'lintsecregular';
+  text-transform: uppercase; 
+  font-size:2rem;
+  margin-left:-15px;
+  padding:.5em
+}
+
+.mb
+{
+    margin-bottom:1em;
+    margin-top:1em;
 }
 
