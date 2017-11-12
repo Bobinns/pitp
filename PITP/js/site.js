@@ -34,6 +34,6 @@
     }
   });
 
-  $("#theCarousel").carousel();
+  //$("#theCarousel").carousel();
 
 })();

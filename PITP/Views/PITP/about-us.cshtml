@@ -24,14 +24,14 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li class="active">@Html.ActionLink("About Us", "about-us", "PITP")</li>
-                                <li>@Html.ActionLink("Origins", "origins", "PITP")</li>
+                                <li>@Html.ActionLink("2016", "year2016", "PITP")</li>
                             </ul>
                         </li>
-                        <li>@Html.ActionLink("Tent City", "tentcity", "PITP")</li>
+                        
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle py" data-toggle="dropdown">Previous Years &nbsp;&nbsp;<b class="caret"></b></a>
                             <ul class="dropdown-menu pyu">
-                                <li>@Html.ActionLink("2014", "year2014", "PITP")</li>
+                                <li>@Html.ActionLink("2016", "year2016", "PITP")</li><li>@Html.ActionLink("2014", "year2014", "PITP")</li>
                                 <li>@Html.ActionLink("2013", "year2013", "PITP")</li>
                             </ul>
                         </li>
@@ -65,7 +65,7 @@
             </div>
             <div class="col-xs-9">
                 <h1>About Us - <span class="text-muted qback">Back for 2016!</span></h1>
-                <p class="lead">Despite the poor weather, 2016 witnessed the best <a href="@Url.Action("Index","PITP")">Party in the Park</a> to date!</p>
+                <p class="lead">Despite the poor weather, <a href="@Url.Action("year2016","PITP")">2016</a> witnessed the best Party in the Park to date!</p>
             </div>
         </div>
     </div>    
@@ -115,7 +115,7 @@
                     These events were successful in raising money for and promoting Party In The Park.
                 </p> 
                 <p>
-                In the run up to this years event - we hosted a number of benefit events and gigs. These up and coming events are 
+                In the run up to this years event - we are hosting a number of benefit events and gigs. These up and coming events are 
                 vital for the funding and promotion of Party in the Park. Check out our "<a href='@Url.Action("Upandcoming", "PITP")'>
                 Up and Coming</a>" events page, or follow us on <a href="https://www.facebook.com/PitpInthepark/" alt="pitp facebook link">
                 Facebook</a> or <a href="https://twitter.com/pitpnxd" alt="pitp twitteer link">

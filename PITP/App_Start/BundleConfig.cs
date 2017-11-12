@@ -16,7 +16,7 @@ namespace PITP
                  "~/js/site.js",
                  "~/js/jquery.easing.min.js",
                  "~/js/scrolling-nav.js",
-                 "~/js/bootstrap-progressbar.js",
+                 //"~/js/bootstrap-progressbar.js",
                  "~/js/jquery.number.js"
                  ));
 
