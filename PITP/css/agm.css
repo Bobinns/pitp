@@ -65,7 +65,7 @@ hr {
 /* Custom Styles */
 
 .splash {
-	background: url('../img/splash-bg3.png') center center;
+	//background: url('../img/splash-bg3.png') center center;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -76,6 +76,7 @@ hr {
 	background-size: cover;
 	background-attachment: fixed;
 	text-align: center;
+	background-color: #ed1c24;
 }
 
 .splash-title {
@@ -123,6 +124,11 @@ a.splash-arrow:hover {
     margin-bottom:.8em;
 }
 
+
+.agm1 p, .agm2 p {
+		margin-top: 1em;
+}
+
 @media all and (max-width: 690px) {
   header h1 { width: 100%; text-align: center; }
   header nav { float: none; display: inline-block; margin: 0 auto; }
@@ -137,31 +143,54 @@ a.splash-arrow:hover {
     .intro-block6{
         padding-top:2em;
     }
+	.agm1, .agm2 {
+        margin-top:2em;
+    }
+	.agm1 img {
+        max-width:70%;
+    }
+	.agm2 img {
+        max-width:50%;
+    }
+	
 }
 
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) {
-    .agm1, .agm2 {
-        margin-top:4em;
-    }
+    
     .sten img:first-child{
        margin-top:1em;
     }
     .intro-block6{
         padding-top:2em;
     }
+	
+	.agm1, .agm2 {
+        margin-top:3em;
+    }
+	
+	.agm1 img {
+        max-width:70%;
+    }
+	.agm2 img {
+        max-width:45%;
+    }
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px)
 {
     .agm1, .agm2 {
-        margin-top:2em;
-    }
-    .agm2 {
-         margin-top:3em
+        margin-top:3em;
     }
     .intro-block6{
         padding-top:2em;
+    }
+	
+	.agm1 img {
+        max-width:70%;
+    }
+	.agm2 img {
+        max-width:45%;
     }
 }
 
@@ -177,6 +206,12 @@ a.splash-arrow:hover {
     .intro-block6{
         padding-top:2em;
     }
+	.agm1 img {
+        max-width:70%;
+    }
+	.agm2 img {
+        max-width:35%;
+    }
 }
 
 /*Large devices (desktops, 992px and up)*/
@@ -188,6 +223,12 @@ a.splash-arrow:hover {
     .agm2 {
          margin-top:3em
     }
+	.agm1 img {
+        max-width:70%;
+    }
+	.agm2 img {
+        max-width:30%;
+    }
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
@@ -198,7 +239,12 @@ a.splash-arrow:hover {
     }
     .agm2 {
          margin-top:3em
-    }
+    }	
+	
+	.agm2 img {
+		width:25%;
+		height: auto;
+	}
 }
 
 @font-face {
