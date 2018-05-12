@@ -5,11 +5,11 @@
 <div class="splash fade-in">
     <div class="row wrapper">
         <div class="col-sm-12 agm1">
-            <img src="~/img/pitp2018.png" class="center-block img-responsive" alt="pitp presenting" />
+            <img src="~/img/2018/pitp-2018.png" class="center-block img-responsive" alt="pitp presenting" />
         </div>
         <div class="col-sm-12 agm2">
-            <img src="~/img/gigs/rhizome.png" class="center-block img-responsive" alt="rhizome" />
-			<p class="sten">Rhizome fund raiser!</p>
+            <img src="~/img/2018/back-for-2018.png" class="center-block img-responsive ba" alt="rhizome" />
+			<img src="~/img/2018/ford-2018.png" class="center-block img-responsive" alt="rhizome" />
         </div>
     </div>
     <a href="#" class="splash-arrow fade-in"><img src="img/down-arrow.png" alt="" /></a>
@@ -68,20 +68,14 @@
             </ul>
         </div>
     </nav>
-
-
-
     <div class="container intro-block6">
         <div class="row sten">
             <div class="col-xs-12 col-md-6">
                 <p>come join us for <span class="bl">a Party in the Park</span> fund raiser at <span class="bl">Vinyl Deptford</span> </p>
-                
-
                 <p><img src="~/img/gigs/rhizome.png" class="center-block img-responsive" alt="rhizome" /></p>
-
             </div>
             <div class="col-xs-12 col-md-5 col-md-offset-1 pull-right">
-                <p class="gl" id="agmgl"><img src="~/img/agm-glasses.png" class="img-responsive hidden-sm" alt="party in the park logo" /></p>
+                <p class="gl" id="agmgl"><img src="~/img/agm-glasses.png" class="img-responsive" alt="party in the park logo" /></p>
                 <p class="anpulse" id="music">"Dirty</p>
                 <p class="anpulse" id="rd"><span class="bl">Deptford</span></p>
                 <p class="anpulse" id="ass">Machine</p>
@@ -89,8 +83,11 @@
             </div>
         </div>
         <div class="row sten">
-            <div class="col-xs-12 tpad">
+            <div class="col-xs-6 tpad">
                 <p class="stensmall">Sunday May 27th | 2-8pm</p>
+            </div>
+			<div class="col-xs-6 tpad">
+                <p class="stensmall">4 Tanner's Hill, London SE8 4PJ</p>
             </div>
         </div>
     </div>
@@ -99,13 +96,13 @@
     <div class="map">
         <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.098547962865!2d-0.02814418398064883!3d51.47470537962984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487602f50bac2bbb%3A0xf276f90916a42f89!2sVinyl+Deptford!5e0!3m2!1sen!2suk!4v1525109375169" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe><br />
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <small><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.098547962865!2d-0.02814418398064883!3d51.47470537962984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487602f50bac2bbb%3A0xf276f90916a42f89!2sVinyl+Deptford!5e0!3m2!1sen!2suk!4v1525109375169" style="color:#0000FF;text-align:left">View Larger Map</a></small>
-            </div>
-        </div>
-    </div>
+    <!-- <div class="container"> -->
+        <!-- <div class="row"> -->
+            <!-- <div class="col-lg-12"> -->
+                <!-- <small><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.098547962865!2d-0.02814418398064883!3d51.47470537962984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487602f50bac2bbb%3A0xf276f90916a42f89!2sVinyl+Deptford!5e0!3m2!1sen!2suk!4v1525109375169" style="color:#0000FF;text-align:left">View Larger Map</a></small> -->
+            <!-- </div> -->
+        <!-- </div> -->
+    <!-- </div> -->
 
 
 
@@ -219,6 +216,7 @@
         $(document).ready(function () {
             if ($(".splash").is(":visible")) {
                 $(".nwrap").css({ "opacity": "0" });
+				$('.ba').animateCss('zoomInRight');
             }
             $(".splash").click(function () {
                 $(".splash").slideUp("800", function () {

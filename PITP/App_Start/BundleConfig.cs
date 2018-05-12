@@ -26,7 +26,6 @@ namespace PITP
                     "~/css/pitp-style-blue.css",
                     "~/css/agm.css"
                     ));
-
             BundleTable.EnableOptimizations = false;
         }
     }
