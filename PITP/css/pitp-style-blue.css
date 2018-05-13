@@ -8,7 +8,7 @@
             border-color: #222222;
         }
 
-.intro-block, .intro-block2, .intro-block3, .intro-block4, .intro-block5, .intro-block6, .intro-block9 {
+.intro-block, .intro-block2, .intro-block3, .intro-block4, .intro-block5, .intro-block6, .intro-block9, .intro-block10 {
     background-color: #ED1C24;
     padding: 100px 15px 60px;
     color: #fff;
@@ -43,6 +43,10 @@
 .intro-block5 ol
 {
     margin-left:-1.5em;
+}
+
+.intro-block10 {
+	padding-top:50px;
 }
 
 .spon {
