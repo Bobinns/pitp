@@ -129,6 +129,28 @@ a.splash-arrow:hover {
 		margin-top: 1em;
 }
 
+.bf2
+{
+	text-align:center;
+	background-color:white;
+	color:black;
+}
+
+@media all and (max-width: 480px) {
+	.bf2
+	{
+		padding-left:15px;
+		padding-right:15px;
+	}
+}
+
+@media (min-width: 992px) {
+	.bf2
+	{
+		margin-top: 50px;		
+	}
+}
+
 @media all and (max-width: 690px) {
   header h1 { width: 100%; text-align: center; }
   header nav { float: none; display: inline-block; margin: 0 auto; }
@@ -230,6 +252,7 @@ a.splash-arrow:hover {
 	.agm2 img {
         max-width:45%;
     }
+	
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
