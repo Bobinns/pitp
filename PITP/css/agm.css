@@ -83,7 +83,7 @@ hr {
 	background-color: #ed1c24;
 }
 
-.splashbd
+.splashbd, .bodyblue
 {
 	background-image: url("../img/2018/bi.png"); /* fallback */
 	background-image: url("../img/2018/bi.png"), linear-gradient(45deg, rgb(0,184,238), rgb(5,71,152)); /* W3C */
