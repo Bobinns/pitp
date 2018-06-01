@@ -176,6 +176,10 @@ a.splash-arrow:hover {
 		top: 50%;
 		padding-left:25%;
 		padding-right:25%;
+		webkit-transform: translate(-50%, -50%);
+		-moz-transform:    translate(-50%, -50%);
+		-ms-transform:     translate(-50%, -50%);
+		-o-transform:      translate(-50%, -50%);;
 		transform: translate(-50%, -50%);
 }
 
@@ -194,11 +198,19 @@ a.splash-arrow:hover {
 		top: 50%;
 		padding-left:1em;
 		padding-right:1em;
+		webkit-transform: translate(-50%, -50%);
+		-moz-transform:    translate(-50%, -50%);
+		-ms-transform:     translate(-50%, -50%);
+		-o-transform:      translate(-50%, -50%);;
 		transform: translate(-50%, -50%);
 	}
 	
 	.agm2 img {
 		top: 28%;
+		webkit-transform: translate(-50%, -28%);
+		-moz-transform:    translate(-50%, -28%);
+		-ms-transform:     translate(-50%, -28%);
+		-o-transform:      translate(-50%, -28%);;
 		transform: translate(-50%, -28%);
 	}
 	
@@ -216,11 +228,19 @@ a.splash-arrow:hover {
 		top: 50%;
 		padding-left:10%;
 		padding-right:10%;
+		webkit-transform: translate(-50%, -50%);
+		-moz-transform:    translate(-50%, -50%);
+		-ms-transform:     translate(-50%, -50%);
+		-o-transform:      translate(-50%, -50%);;
 		transform: translate(-50%, -50%);
 	}
 	
 	.agm2 img {
 		top: 21%;
+		webkit-transform: translate(-50%, -21%);
+		-moz-transform:    translate(-50%, -21%);
+		-ms-transform:     translate(-50%, -21%);
+		-o-transform:      translate(-50%, -21%);;
 		transform: translate(-50%, -21%);
 	}
 }
@@ -234,11 +254,19 @@ a.splash-arrow:hover {
 		top: 50%;
 		padding-left:15%;
 		padding-right:15%;
+		webkit-transform: translate(-50%, -50%);
+		-moz-transform:    translate(-50%, -50%);
+		-ms-transform:     translate(-50%, -50%);
+		-o-transform:      translate(-50%, -50%);;
 		transform: translate(-50%, -50%);
 	}
 
 	.agm2 img {
 		top: 22%;
+		webkit-transform: translate(-50%, -22%);
+		-moz-transform:    translate(-50%, -22%);
+		-ms-transform:     translate(-50%, -22%);
+		-o-transform:      translate(-50%, -22%);;
 		transform: translate(-50%, -22%);
 	}
 	
@@ -254,11 +282,19 @@ a.splash-arrow:hover {
 		top: 50%;
 		padding-left:30%;
 		padding-right:30%;
+		webkit-transform: translate(-50%, -50%);
+		-moz-transform:    translate(-50%, -50%);
+		-ms-transform:     translate(-50%, -50%);
+		-o-transform:      translate(-50%, -50%);;
 		transform: translate(-50%, -50%);
 	}
 
 	.agm2 img {
 		top: 22%;
+		webkit-transform: translate(-50%, -7%);
+		-moz-transform:    translate(-50%, -7%);
+		-ms-transform:     translate(-50%, -7%);
+		-o-transform:      translate(-50%, -7%);;
 		transform: translate(-50%, -7%);
 	}
 }
@@ -270,6 +306,10 @@ a.splash-arrow:hover {
 		top: 50%;
 		padding-left:30%;
 		padding-right:30%;
+		webkit-transform: translate(-50%, -50%);
+		-moz-transform:    translate(-50%, -50%);
+		-ms-transform:     translate(-50%, -50%);
+		-o-transform:      translate(-50%, -50%);;
 		transform: translate(-50%, -50%);
 	}
 
@@ -277,6 +317,10 @@ a.splash-arrow:hover {
 		top: 7%;
 		padding-left:25%;
 		padding-right:25%;
+		webkit-transform: translate(-50%, -7%);
+		-moz-transform:    translate(-50%, -7%);
+		-ms-transform:     translate(-50%, -7%);
+		-o-transform:      translate(-50%, -7%);;
 		transform: translate(-50%, -7%);
 	}
 }
