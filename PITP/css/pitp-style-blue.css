@@ -173,8 +173,8 @@ hr.style-one { border: 0; height: 1px; background: #333; background-image: -webk
 }
 
 .panel-default > .panel-heading  {
-    background-color:#222222;
-    color:white;
+    background-color:#FFF200;
+    color:#222222;
 }
 
 .spon a {

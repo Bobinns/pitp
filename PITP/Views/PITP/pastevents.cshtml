@@ -4,6 +4,9 @@
 @section AddToHead{
     <link href="@Url.Content("~/css/ekko-lightbox.min.css")" rel="stylesheet" type="text/css" />
 }
+@section BodyClass {
+backgrey
+}
 <div id="page">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-header">
@@ -61,35 +64,34 @@
 <div class="intro-block2 topblock">
     <div class="container">
         <div class="row">
-            <div class="col-xs-3">
-                <img class="img-responsive tpad" src="img/up-and-cumming.png">
+            <div class="col-sm-3 hidden-xs">
+                <img class="img-responsive tpad" src="img/ab-logo.png">
             </div>
-            <div class="col-xs-9">
-                <h1>Party in the Park <span class="text-muted qback">&raquo; Past Events</span></h1>
-                <p class="lead">
-                    @*Party in the Park has successfully held a festival in <a href="@Url.Action("year2013", "PITP")" title="party in the park 2013">2013</a> and <a href='@Url.Action("year2014", "PITP")'>2014</a>.*@
+            <div class="col-xs-12 col-sm-9">
+                <h1 class="stenwhite">Party in the Park <span class="yell">&raquo; Past Events</span></h1>
+                <p class="lead yell">
                     The organisers of Party in the Park have held a number of past events to help fund the festival.
                     Fund raisers help finance the costs of holding the annual festival and also acts as a platform for some great band and performers within the Deptford and New Cross community.
-                    You can help us put on Party in the Park 2016 by pledging a donation at <a href="https://www.spacehive.com/party-in-the-park-2016">Spacehub</a>.
+                    <!-- You can help us put on Party in the Park 2016 by pledging a donation at <a href="https://www.spacehive.com/party-in-the-park-2016">Spacehub</a>. -->
                 </p>
             </div>
         </div>
     </div>
 </div>
 
-    <div class="panel-group" id="accordion">
-        <div class="panel panel-default panelyell">
+    <div class="panel-group backgrey" id="accordion">
+        <div class="panel panel-default backgrey"">
             <div class="panel-heading">
-                <h4 class="panel-title">
+                <h4 class="panel-title container">
                     <a class="accordian-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-pushpin"></span> Past Events for 2016</a>
                 </h4>
             </div>
-            <div id="collapseOne" class="panel-collapse in backyell">
+            <div id="collapseOne" class="panel-collapse in backgrey">
                 <div class="container">
-                    <div class="panel-body backyell">
+                    <div class="panel-body colgrey">
                         <div class="row">
                             <div class="col-sm-8 blog">
-                                <h1 id="craft-workshop">Job Center Fund Raiser - 4th June 2016 </h1>
+                                <h1 id="craft-workshop" class="stensmall">Job Center Fund Raiser - <span class="bl">4th June 2016 </span></h1>
                                 <hr class="borback">
                                 <p>Party in the Park held it's second benefit gig for our 2016 festival at the Jobecenter in Deptford. With the help of the Brockley Brewery, who kindly donated a keg of ale for sale on the day, we were able to raise over £500!</p>
                                 <div class="col-sm-12">
@@ -141,7 +143,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
-                                <h2>Birds Nest Fund Raiser - 08 April 2016</h2>
+                                <h2 class="stensmall">Birds Nest Fund Raiser - <span class="bl">08 April 2016</span></h2>
                                 <hr class="borback">
                                 <p>On 08 April, Party In the Park held a great funraiser at the Birds Nest. Those who came some great punk bands, and contributed generously for Party in the Park in 2016!</p>
                             </div>
@@ -272,22 +274,22 @@
                 </div>
             </div>
         </div>
-        <div class="panel panel-default panelyell">
+        <div class="panel panel-default backgrey">
             <div class="panel-heading">
-                <h4 class="panel-title">
+                <h4 class="panel-title container">
                     <a class="accordian-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-pushpin"></span> Past Events for 2015</a>
                 </h4>
             </div>
-            <div id="collapseTwo" class="panel-collapse collapse backyell">
+            <div id="collapseTwo" class="panel-collapse collapse backgrey">
                 <div class="container">
-                    <div class="panel-body backyell">
+                    <div class="panel-body colgrey">
                         <div class="row">
                             <div class="col-sm-8 blog">
-                                <h1 id="craft-workshop">Party in the Park Craft WorkShop</h1>
+                                <h1 class="stensmall">Party in the Park Craft WorkShop</h1>
                             </div>
                             <div class="col-sm-4 sidebar">
                                 <div class="col-sm-9">
-                                    <h3 class="tpad">Minesweeper collective </h3>
+                                    <h3 class="stensmall"><span class="bl">Minesweeper collective </span></h3>
                                 </div>
                                 <div class="col-sm-3">
                                     <img class="img-responsive" src="img/creative.png">
@@ -462,7 +464,7 @@
                             <div class="col-sm-4 sidebar">
                                 <hr class="borback">
                                 <img src="img/workshop-flyer.png" class="img-responsive">
-                                <h2>
+                                <h2 class="stensmall">
                                     April 25 & 26th
                                 </h2>
                                 <p>
@@ -488,7 +490,7 @@
                         <div class="row">
                             <div class="col-sm-8 blog">
                                 <section>
-                                    <h1 class="headtag">New Cross Inn 2015 - Fund Raiser!</h1>
+                                    <h1 class="stensmall">New Cross Inn 2015 - Fund Raiser!</h1>
                                     <hr class="borback">
                                     <p><span class="glyphicon glyphicon-time"></span> Posted on 4th April, 2014 at 11:00 AM</p>
                                     <hr class="borback">
@@ -509,7 +511,7 @@
                             </div>
                             <div class="col-sm-4 sidebar">
                                 <section>
-                                    <h3 class="tpad">2015 fund raiser</h3>
+                                    <h3 class="stensmall"><span class="bl">2015 fund raiser</span></h3>
                                     <img src="img/pitp-poster_fundraiser-2015.png" class="img-responsive">
                                 </section>
                             </div>
@@ -517,7 +519,7 @@
                         <div class="row">
                             <div class="col-sm-8 blog">
                                 <section>
-                                    <h1 class="headtag">SKA-BBQ Fund Raiser!</h1>
+                                    <h1 class="stensmall">SKA-BBQ Fund Raiser!</h1>
                                     <hr class="borback">
                                     <p><span class="glyphicon glyphicon-time"></span> Posted on September 2nd, 2014 at 11:00 AM</p>
                                     <hr class="borback">
@@ -528,7 +530,7 @@
                             </div>
                             <div class="col-sm-4 sidebar">
                                 <section>
-                                    <h3 class="tpad">2014 fund raiser</h3>
+                                    <h3 class="stensmall"><span class="bl">2014 fund raiser</span></h3>
                                     <img src="img/skabbq.png" class="img-responsive">
                                 </section>
                             </div>
@@ -539,16 +541,16 @@
         </div>
         <div class="panel panel-default panelyell">
             <div class="panel-heading">
-                <h4 class="panel-title">
+                <h4 class="panel-title container">
                     <a class="accordian-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-pushpin"></span> Past Events for 2014</a>
                 </h4>
             </div>
-            <div id="collapseThree" class="panel-collapse collapse backyell">
+            <div id="collapseThree" class="panel-collapse collapse backgrey">
                 <div class="container">
-                    <div class="panel-body backyell">
+                    <div class="panel-body colgrey">
                         <div class="row">
                             <div class="col-lg-12">
-                                <h2>2014 July 27th New Cross Inn Fund raiser</h2>
+                                <h2 class="stensmall">2014 July 27th New Cross Inn Fund raiser</h2>
                                 <hr class="borback">
                                 <p>On sunday 27th July, Party In the Park held a fantastic funraiser at the New Cross Inn. Everyone had a brilliant time watching the top quality acts that performed.</p>
                                 <p>Eddie Capone - The Ongoing Project - Parshmaune - Hank Dog - Reverend Casey Bandeoke - Damage - Rhiannon the Nightmare</p>
