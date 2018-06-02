@@ -3,6 +3,9 @@
 @{
     ViewBag.Title = "volunteer";
 }
+@section BodyClass {
+backgrey
+}
 <div id="page">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-header">
@@ -274,15 +277,24 @@
     <div class="intro-block2 topblock">
         <div class="container">
             <div class="row">
-                <div class="col-xs-3">
-                    <img class="img-responsive tpad" src="img/vol.png">
-                </div>
-                <div class="col-xs-9">
-                    <h1>Party In The Park <span class="text-muted qback">&raquo; Get involved!</span></h1>
-                    <p class="lead">
+                <div class="col-sm-3 hidden-xs">
+                <img class="img-responsive tpad" src="img/ab-logo.png">
+            </div>
+            <div class="col-xs-12 col-sm-9">
+                    <h1 class="stenwhite">Party In The Park <span class="yell">&raquo; Get involved!</span></h1>
+                    <p class="lead yell">
                         If you would like to get involved with this exciting, free, community festival - then we would love to have you on board.
                     </p>
-                    <p class="text-muted2">We are looking for people who can contribute with the following</p>
+                                      
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<div class="container colgrey" style="font-size:medium">
+		<div class="row">
+			<div class="col-sm-12">
+			<h4><b>We are looking for people who can contribute with the following</b></h4>
                     <ul>
                         <li>Stewarding </li>
                         <li>Parking Stewards</li>
@@ -310,16 +322,17 @@
                         <li>A free food voucher from any of the food stalls on the day</li>
                         <li>A free drink voucher</li>
                         <li>Free entry to after party event</li>
-                    </ul>                    
-                </div>
-            </div>
-        </div>
-    </div>
+                    </ul>  
+					</div>
+		</div>
+	</div>
+	
+	
     <!-- End Intro Text -->
-    <div class="container padded batop">
+    <div class="container padded batop colgrey">
         <div class="row">
             <div class="col-sm-8">
-                <h2>To apply </h2>
+                <h2 class="sten">To apply </h2>
                 <hr class="borback">
                 <p>If you wish to help out in any way possible please use the form below to contact us.</p>
 
@@ -442,11 +455,7 @@
                 <img class="img-circle img-responsive" src="~/img/sam.png">
                 <hr class="borback">
                 <address>
-                    <h3>New Cross Learning</h3>
-                    283 – 285 New Cross Road<br>
-                    London, SE14 6AS<br>
-                    <a href="mailto: vols@pitpnxd.co.uk">vols@pitpnxd.co.uk</a><br>
-                    <abbr title="Phone">P:</abbr>0208 320 0813
+                    <a href="mailto: vols@pitpnxd.co.uk">vols@pitpnxd.co.uk</a><br>                  
                 </address>
             </div>
         </div>
