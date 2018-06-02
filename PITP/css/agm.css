@@ -365,6 +365,12 @@ a.splash-arrow:hover {
     background-color:#FFF200;
 }
 
+.padded
+{
+	padding-top:2em;
+	padding-bottom:2em;
+}
+
 #music{
       -webkit-animation-delay:.5s;
     animation-delay: .5s;

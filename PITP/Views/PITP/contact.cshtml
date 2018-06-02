@@ -2,6 +2,9 @@
 @{
     ViewBag.Title = "contact";
 }
+@section BodyClass {
+backgrey
+}
 <div id="page">
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="navbar-header">
@@ -60,15 +63,15 @@
  <!-- End Navigation -->
 @if (@ViewData["Sent"] != "sent")
 {
-<div class="intro-block2">
+<div class="intro-block2 topblock">
     <div class="container">
         <div class="row">
-            <div class="col-xs-3">
-                <img class="img-responsive tpad" src="img/idea.png">
+            <div class="col-sm-3 hidden-xs">
+                <img class="img-responsive tpad" src="img/ab-logo.png">
             </div>
-            <div class="col-xs-9">
-                <h1>Party In The Park <span class="text-muted qback">&raquo; Contact Us</span></h1>
-                <p class="lead">The people who are currently making this possible are a very small group of very dedicated people - but there's only so much they can do and 
+            <div class="col-xs-12 col-sm-9">
+                <h1 class="stenwhite">Party In The Park <span class="yell">&raquo; Contact Us</span></h1>
+                <p class="lead yell">The people who are currently making this possible are a very small group of very dedicated people - but there's only so much they can do and 
 the organisers are still looking for volunteers</p>
             </div>
         </div>
@@ -77,13 +80,13 @@ the organisers are still looking for volunteers</p>
     }
 else
 {
-    <div class="intro-block2">
+    <div class="intro-block2 topblock">
         <div class="container">
             <div class="row">
-                <div class="col-xs-3">
-                    <img class="img-responsive tpad" src="img/idea.png">
-                </div>
-                <div class="col-xs-9">
+                <div class="col-sm-3 hidden-xs">
+                <img class="img-responsive tpad" src="img/ab-logo.png">
+            </div>
+            <div class="col-xs-12 col-sm-9">
                     <h1>Thank you.</h1>
                     <p class="lead">@ViewData["Message"]</p>
                 </div>
@@ -92,17 +95,17 @@ else
     </div>
 }
 <!-- End Intro Text -->
-<div class="map">    
-    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?sll=51.4754136,-0.03861&amp;sspn=0.0051321,0.0109864&amp;q=283-285+New+Cross+Rd&amp;ie=UTF8&amp;hq=&amp;hnear=283-285+New+Cross+Rd,+New+Cross,+London+SE14+6AS,+United+Kingdom&amp;t=m&amp;z=14&amp;ll=51.475414,-0.03861&amp;output=embed"></iframe><br />
-</div>
-<div class="container">
-    <div class="row">    
-        <div class="col-lg-12">        
-        <small><a href="https://maps.google.co.uk/maps?sll=51.4754136,-0.03861&amp;sspn=0.0051321,0.0109864&amp;q=283-285+New+Cross+Rd&amp;ie=UTF8&amp;hq=&amp;hnear=283-285+New+Cross+Rd,+New+Cross,+London+SE14+6AS,+United+Kingdom&amp;t=m&amp;z=14&amp;ll=51.475414,-0.03861&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small>
-        </div>
-    </div>
-</div>
-<div class="container padded">
+<!-- <div class="map">     -->
+    <!-- <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?sll=51.4754136,-0.03861&amp;sspn=0.0051321,0.0109864&amp;q=283-285+New+Cross+Rd&amp;ie=UTF8&amp;hq=&amp;hnear=283-285+New+Cross+Rd,+New+Cross,+London+SE14+6AS,+United+Kingdom&amp;t=m&amp;z=14&amp;ll=51.475414,-0.03861&amp;output=embed"></iframe><br /> -->
+<!-- </div> -->
+<!-- <div class="container"> -->
+    <!-- <div class="row">     -->
+        <!-- <div class="col-lg-12">         -->
+        <!-- <small><a href="https://maps.google.co.uk/maps?sll=51.4754136,-0.03861&amp;sspn=0.0051321,0.0109864&amp;q=283-285+New+Cross+Rd&amp;ie=UTF8&amp;hq=&amp;hnear=283-285+New+Cross+Rd,+New+Cross,+London+SE14+6AS,+United+Kingdom&amp;t=m&amp;z=14&amp;ll=51.475414,-0.03861&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small> -->
+        <!-- </div> -->
+    <!-- </div> -->
+<!-- </div> -->
+<div class="container padded colgrey">
     <div class="row">
         <div class="col-sm-8">
             <h2>Get in touch</h2>
@@ -124,21 +127,17 @@ else
                 </div>
                 <div class="form-group tpad">
                     <div class="col-lg-offset-2 col-lg-10">
-                        <input type="submit" value="Send" />
+                        <input type="submit" value="Send" class="btn btn-default btn-lg" />
                     </div>
                 </div>
             }
         </div>
         
-        <div class="col-sm-4">
-            <img class="img-circle img-responsive" src="img/office.jpg">
+        <div class="col-sm-4 hidden-xs">
+            <img class="img-circle img-responsive" src="img/con-us.png">
             <hr class="borback">
-            <address>
-                    <h3>New Cross Learning</h3>
-                    283 – 285 New Cross Road<br>
-                    London, SE14 6AS<br>
+            <address>                    
                     <a href="mailto: newcrosspeopleslibrary@gmail.com">pitpnxd@gmail.com</a><br>
-                    <abbr title="Phone">P:</abbr>0208 320 0813
             </address>
         </div>
     </div>    
