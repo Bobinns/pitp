@@ -456,7 +456,8 @@ a.splash-arrow:hover {
 }
 
 .nfit{
-    background-image: url('../img/agm/IMG_8832.jpg');
+    /* background-image: url('../img/agm/IMG_8832.jpg'); */
+	background-image: url('../img/band2.png');
     background-repeat:no-repeat;
     background-size:100%;
 }
