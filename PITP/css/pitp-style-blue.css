@@ -4,10 +4,10 @@
 
 .navbar-inverse
         {
-            background-color:#222222;
+            background-color:#036bb6;
             border-color: #222222;
         }
-
+		
 .intro-block, .intro-block2, .intro-block3, .intro-block4, .intro-block5, .intro-block6, .intro-block9, .intro-block10 {
     background-color: #ED1C24;
     padding: 100px 15px 60px;
@@ -264,7 +264,7 @@ hr.style-one { border: 0; height: 1px; background: #333; background-image: -webk
 
     .navbar {
         position: relative;
-        background-color: #222222;
+        background-color: #036bb6;
         margin-left: auto;
         margin-right: auto;
         /*width: 960px;*/
@@ -323,7 +323,7 @@ hr.style-one { border: 0; height: 1px; background: #333; background-image: -webk
 
 
 .navbar-brand {
-    background-image: url(../img/header-logo.png);
+    background-image: url(../img/header-logo-wh.png);
     width: 200px;
     background-repeat: no-repeat;
     background-position: 0px 12px;
@@ -331,13 +331,13 @@ hr.style-one { border: 0; height: 1px; background: #333; background-image: -webk
 }
 
 
-@media (min-width: 961px) and (max-width: 1036px) {
-    .navbar-brand {
-        background-image:url(../img/specs.png);
-        width: 96px;
-        background-position: 0px -2px;
-    }
-}
+/* @media (min-width: 961px) and (max-width: 1036px) { */
+    /* .navbar-brand { */
+        /* background-image:url(../img/specs.png); */
+        /* width: 96px; */
+        /* background-position: 0px -2px; */
+    /* } */
+/* } */
 
 .navbar-nav > li > .dropdown-menu {
     text-align:left;
