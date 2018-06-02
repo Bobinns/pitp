@@ -335,7 +335,7 @@ a.splash-arrow:hover {
     font-style: normal;
 }
 
-.sten, .stensmall {
+.sten, .stensmall, .stenwhite, .stenwhitesm {
     font-family:'lintsecregular';
     text-transform: uppercase; 
     font-size:3rem;
@@ -347,12 +347,16 @@ a.splash-arrow:hover {
     color: #ED1C24;
 }
 
-.stensmall .yell
+.stensmall .yell, .sten .yell, .stenwhite .yell
 {
     color:#FFF200;
 }
 
-.stensmall {
+.stenwhite, .stenwhitesm {
+	color:#fff;
+}
+
+.stensmall, .stenwhitesm {
     font-size:2rem;
 }
 

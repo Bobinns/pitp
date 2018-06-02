@@ -2,6 +2,16 @@
     background-color:#FFF200;
 }
 
+.backgrey
+{
+	background-color:#d9d9d0;
+	background-image: url("../img/2018/bi.png"), linear-gradient(45deg, #d9d9d0, #d9d9d0); /* W3C */
+	background-size: 81px, auto, cover;
+}
+.colgrey {
+	background-color:#d9d9d0;
+}
+
 .navbar-inverse
         {
             background-color:#036bb6;
@@ -23,6 +33,9 @@
 .intro-block2, .intro-block5, .intro-block6, .intro-block4  {
     /*margin-top:-70px;*/
     padding-bottom:30px;
+	background-image: url("../img/2018/bi.png"); /* fallback */
+	background-image: url("../img/2018/bi.png"), linear-gradient(45deg, rgb(0,184,238), rgb(5,71,152)); /* W3C */
+	background-size: 81px, auto, cover;
 }
 .intro-block3 {
     background-color:#ED1C24;
@@ -317,7 +330,7 @@ hr.style-one { border: 0; height: 1px; background: #333; background-image: -webk
 	}
 
     .topblock {
-        margin-top:-50px;
+        margin-top:-80px;
     }
 }
 
