@@ -4,73 +4,80 @@
 @section AddToHead{
     <link href="@Url.Content("~/css/ekko-lightbox.min.css")" rel="stylesheet" type="text/css" />
 }
-            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+@section BodyClass {
+backgrey
+}
+<div id="page">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
-                <div>
+        </button>
+        <div>
                     <a class="navbar-brand" href='.'>
                         
                     </a>
-                </div>
-            </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("Home", "Index", "PITP")</li>
-
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li>@Html.ActionLink("About Us", "about-us", "PITP")</li>
-                                <li>@Html.ActionLink("2016", "year2016", "PITP")</li>
-                            </ul>
-                        </li>
-                        
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle py" data-toggle="dropdown">Previous Years &nbsp;&nbsp;<b class="caret"></b></a>
-                            <ul class="dropdown-menu pyu">
-                                <li class="active">@Html.ActionLink("2014", "year2014", "PITP")</li>
-                                <li>@Html.ActionLink("2013", "year2013", "PITP")</li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-
-                                <li>@Html.ActionLink("Up And Coming...", "upandcoming", "PITP")</li>
-                                <li>@Html.ActionLink("pastevents", "pastevents", "PITP")</li>
-                            </ul>
-                        </li>
-                        <li>@Html.ActionLink("Sponsors", "sponsors", "PITP")</li>
-                        <li>@Html.ActionLink("Volunteer", "volunteer", "PITP")</li>
-                        <li>@Html.ActionLink("Contact", "contact", "PITP")</li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="https://www.facebook.com/PitpInthepark/">Facebook</a></li>
-                                <li><a href="https://twitter.com/pitpnxd">Twitter</a></li>
-                            </ul>
-                        </li>
+        </div>
+    </div>
+	<div class="navbar-collapse collapse">
+		<ul class="nav navbar-nav">
+			<li>@Html.ActionLink("Home", "Index", "PITP")</li>
+			<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li>@Html.ActionLink("About Us", "about-us", "PITP")</li>
+                    <li>@Html.ActionLink("2016", "year2016", "PITP")</li>
+                </ul>
+            </li>                        
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle py" data-toggle="dropdown">Previous Years &nbsp;&nbsp;<b class="caret"></b></a>
+                    <ul class="dropdown-menu pyu">
+                        <li class="active">@Html.ActionLink("2014", "year2014", "PITP")</li>
+                        <li>@Html.ActionLink("2013", "year2013", "PITP")</li>
                     </ul>
-                </div>
-        </nav>
-       
-<div class="intro-block2">
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>@Html.ActionLink("Up And Coming...", "upandcoming", "PITP")</li>
+                        <li>@Html.ActionLink("pastevents", "pastevents", "PITP")</li>
+                    </ul>
+            </li>
+            <li>@Html.ActionLink("Sponsors", "sponsors", "PITP")</li>
+            <li>@Html.ActionLink("Volunteer", "volunteer", "PITP")</li>
+            <li>@Html.ActionLink("Contact", "contact", "PITP")</li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.facebook.com/PitpInthepark/">Facebook</a></li>
+                        <li><a href="https://twitter.com/pitpnxd">Twitter</a></li>
+                    </ul>
+             </li>
+        </ul>
+    </div>
+</nav>
+</div>
+<div class="intro-block2 topblock">
     <div class="container">
         <div class="row">
-            <div class="col-xs-3">
-                <img class="img-responsive tpad" src="img/icon2014.png">
+            <div class="col-sm-3 hidden-xs">
+                <img class="img-responsive tpad" src="img/ab-logo.png">
             </div>
-            <div class="col-xs-9">
-                <h1>Party in the Park <span class="text-muted qback">&raquo; 2014</span></h1>
-                <p class="lead">For 2014's Party in the Park we had six different stages show casing many great performers. Check out some photo’s from the day in our image gallary (click on the images), and the <a href="#band">band</a> line up by stage below.</p>
+            <div class="col-xs-12 col-sm-9">
+                <h1 class="stenwhite">Party in the Park <span class="yell">&raquo; 2014</span></h1>
+                <p class="lead yell">For 2014's Party in the Park we had six different stages show casing many great performers. Check out some photo’s from the day in our image gallary (click on the images), and the <a href="#band">band</a> line up by stage below.</p>
             </div>
         </div>
+	</div>
+		
 
+</div>
+<!-- End Intro Text -->
+
+<div class="container padded colgrey">
 <div class="row">
         <div class="col-sm-6 col-md-3 bpad">
             <a href="img/gallery/2014/pitp1.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="Setting up the site!" class="thumbnail">
@@ -212,7 +219,7 @@
                 <img src="img/thumb/face31-thumb.jpg" class="img-responsive">
             </a>
         </div>
-    </div>
+
     <div class="col-sm-6 col-md-3 bpad">
         <a href="img/gallery/2014/440.jpg" data-toggle="lightbox" class="thumbnail" data-title="Clowning around" data-gallery="multiimages">
             <img src="img/thumb/440-thumb.jpg" class="img-responsive">
@@ -315,12 +322,12 @@
     </div>
     </div>
 </div>
-<!-- End Intro Text -->
+
 
     <div class="container" id="band">
         <div class="row">
         <div class="col-sm-12">
-            <h2>2014 Band line up <span style="font-size:40%">(click on the stage name to see the days band line up)</span></h2>
+            <h2 class="sten">2014 Band line up <span style="font-size:40%">(click on the stage name to see the days band line up)</span></h2>
             <hr class="borback">
             
         </div>
@@ -339,7 +346,7 @@
                     <li><a href="#siren" data-toggle="tab">Siren Sound</a></li>
                     <li><a href="#rek" data-toggle="tab">Reknaw</a></li>
                 </ul>
-                <div class="tab-content">
+                <div class="tab-content stensmall">
                     <div class="tab-pane fade in active" id="android">
                        <ul class="list-unstyled tabup">
                            <li>1:00 – Boss Terror</li>
