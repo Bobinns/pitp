@@ -455,11 +455,14 @@ a.splash-arrow:hover {
     color:#FFF200;
 }
 
-.nfit{
-    /* background-image: url('../img/agm/IMG_8832.jpg'); */
-	background-image: url('../img/band2.png');
+.nfit, .nfit2 {
+     background-image: url('../img/agm/IMG_8832.jpg'); 	
     background-repeat:no-repeat;
     background-size:100%;
+}
+
+.nfit2 {
+    background-image: url('../img/band2.png');
 }
 
 .nointro {
@@ -506,7 +509,7 @@ a.splash-arrow:hover {
 
 /* styles for home page after splash - tablet and mobile & lower */
 @media only screen and (max-width: 767px) {
-	.spashbd, .nfit {
+	.spashbd, .nfit, .nfit2 {
 		background-color: #036bb6;
 		background-image:none;
 	}
