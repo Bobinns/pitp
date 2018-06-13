@@ -465,6 +465,13 @@ a.splash-arrow:hover {
     background-image: url('../img/band2.png');
 }
 
+.nfit a, .nfit a:active, .nfit a:hover, .nfit a:focus, nfit a:visited
+{
+	text-decoration:underline;
+	color:#FFF200;
+	font-weight: bold;
+}
+
 .nointro {
 
     /*background-color: #FFF200;
