@@ -3,7 +3,7 @@
     ViewBag.Title = "Tent City";
 }
 @section BodyClass {
-    bodypw
+backgrey
 }
 
 <div id="page">
@@ -64,21 +64,34 @@
 
 @if (@ViewData["Sent"] != "sent")
 {
-    <div class="intro-block5 topblock">
+    <div class="intro-block2 topblock">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-4 hidden-xs carousel-img-wrap">
-                    <img class="img-responsive tpad" src="img/origins.png">
-                </div>
-                <div class="col-md-9 col-sm-8">
-                    <h1>Tent City  <span class="text-muted">&raquo; Demanding Housing for Our Community</span></h1>
+                <div class="col-sm-3 hidden-xs">
+					<img class="img-responsive tpad" src="img/ab-logo.png">
+				</div>
+            <div class="col-xs-12 col-sm-9">
+				<h1 class="stenwhite">Tent City  <span class="yell">&raquo; Demanding Housing for Our Community</span></h1>
+			</div>
+        </div>
+		</div>
+	</div>
+	<div class="container padded colgrey">
+			<div class="col-xs-12 col-sm-9">
                     <p class="leadh">
-                        London is experiencing an ongoing housing crisis. At this year’s Party in the Park an area called “Tent City” will look at
+                        London is experiencing an ongoing housing crisis. At this year’s Party in the Park 2018, an area called “Tent City” will look at
                         the housing problems our communities face. We hope to bring together a number of different people to look at ways that
                         the attack on social housing can be challanged. “Tent City” will look at how the community can organise to
                         combat the social cleansing of our neighbourhoods and campaign for better social housing provision.
                     </p>
-                    @*<ol>
+					<p>
+						Over the coming weeks, we will be reaching out to different groups within the community and asking for their input for this year's
+						festival. The format of Tent City for Party in the Park 2018 will be decided by these different groups. 
+					</p>
+					<p>
+						Below are some ideas/suggestions for Tent City in 2018:
+					</p>
+                    <ol>
                         <li class="tcmb">
                             <span class="text-muted3">The Problem:</span> Introduction to what the housing crisis is, and how it is in impacting
                             on the local area.
@@ -88,71 +101,40 @@
                             <span class="text-muted3">Workshops:</span> workshops will look at practical ways to organise and resist social cleansing.
                         </li>
                         <li class="tcmb"><span class="text-muted3">Plenary Session: </span>getting feedback from each of the workshops, and tackling next steps</li>
-                    </ol>*@
-                    <h4>Format &amp; Schedule </h4>
-                    <h5><span class="text-muted3">Panel Discussion 1pm</span></h5>
-                    <p>Panel discussions will be structured as follows:</p>
-                    <ol>
-                        <li class="tcmb">Each panel member introduces their group and what it does in 3 minutes</li>
-                        <li class="tcmb">
-                            Panel Answer Questions set by the Facilitator
-                        </li>
-                        <li class="tcmb">
-                            Questions and Open Discussion
-                        </li>
-                        <li class="tcmb">Summing Up</li>
                     </ol>
-                    <p>The questions asked of panellist's are likely to consist of:</p>
-                    <ol>
-                        <li>How effective is your group’s strategy/ tactics in challenging the housing crisis?</li>
-                        <li>What are the strengths and weaknesses of your strategy/ tactic?</li>
-                        <li>How does one go about starting or joining such a group?</li>
-
-                    </ol>
-                    <h5><span class="text-muted3">Workshops 2.15 pm</span></h5>
-                    <ol>
-                        <li>The Housing and Planning Act: this workshop will look at the implications of Government housing legislation on our homes and community.</li>
-                        <li>Advisory Service for Squatters workshop</li>
-                        <li>A workshop delivered by HAGL &amp HASL</li>
-                    </ol>
-                    <h5><span class="text-muted3">Plenary Session 3.15 pm</span></h5>
-                    <p>Getting feedback from each of the workshops, and tackling next steps.</p>
-                    <h5><span class="text-muted3">The Landlord Game</span></h5>
-                    <p>Fun activity open for all to join in!</p>
-                    <p>The following groups have been invited to attend Tent City - HASL (Housing Action Southwark and Lambeth), HAGL (Housing Action Greenwich and Lewisham), Axe the Housing Act, ASH (Architect's for Social Housing), ASS (Advisory Service for Squatters), Rural Urban Synthesis (RUSS), Deptford Neighbourhood action (DNA), Greenwich Co-operative Development Agency (GCDA), Save Besson Street waste land, and Anti Raids.</p>
+					<p>
+						We will aim to set up a Tent City meeting in the coming weeks in order that those that are interested in contributing get a chance to exchange ideas and make suggestions for the itinerary of the event. 
+					</p>
+					<p>
+						If you are interested in getting involved, please get in touch with use - you can email <a href="mailto: tentcity@pitpnxd.co.uk">tentcity@pitpnxd.co.uk</a> or use the form below.
+					</p>
+                    
 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-9 col-lg-offset-3">
-                    <h2><span class="text-muted3">Tent City Site Plan</span></h2>
-                    <img src="~/img/detailed-site-plan.png" class="img-responsive" alt="tent city site plan" />
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Intro Text -->
 }
 else
 {
     <div class="intro-block2">
         <div class="container">
             <div class="row">
-                <div class="col-xs-3">
-                    <img class="img-responsive tpad" src="img/get-involved.png">
-                </div>
-                <div class="col-xs-9">
-                    <h1>Thank you.</h1>
-                    <p class="leadh">@ViewData["Message"]</p>
-                </div>
-            </div>
-        </div>
-    </div>
+                <div class="row">
+					<div class="col-sm-3 hidden-xs">
+						<img class="img-responsive tpad" src="img/ab-logo.png">
+					</div>
+					<div class="col-xs-12 col-sm-9">
+						<h1>Thank you.</h1>
+						<p class="leadh">@ViewData["Message"]</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 }
 
-<div class="container padded batop">
+<div class="container colgrey">
     <div class="row">
         <div class="col-sm-8">
-            <h2>Get in touch</h2>
+            <h2 class="sten"><span class="bl">Get in touch</span></h2>
             <hr class="borback">
             <p>
                 If you wish to find out more, or get invloved in the Tent City at this years Party In the Park, then please 
@@ -178,7 +160,7 @@ else
                     <div class="col-lg-offset-2 col-lg-10">
                         @*<a data-toggle="modal" href="#myModal" class="btn btn-default btn-lg">Send</a>*@
                         @*<input type="submit" value="Send" class="btn btn-default btn-lg" />*@
-                        <input type="submit" value="Send" />
+                        <input type="submit" value="Send" class="btn btn-default btn-lg" />
                     </div>
                 </div>      
 
