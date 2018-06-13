@@ -1,6 +1,13 @@
 ﻿@{
     ViewBag.Title = "Origins";
 }
+<style>
+.carousel-inner > .item > img
+{
+	position:relative;
+	border:none;
+}
+</style>
 <div id="page">
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="navbar-header">
@@ -59,11 +66,11 @@
 <div class="intro-block2 topblock">
     <div class="container">
         <div class="row">
-            <div class="col-xs-3">
-                <img class="img-responsive tpad" src="img/origins.png">
-            </div>
-            <div class="col-xs-9">
-                <h1>Origins <span class="text-muted qback">&raquo; Deptford Urban Free Festival</span></h1>
+            <div class="col-sm-3 hidden-xs">
+						<img class="img-responsive tpad" src="img/ab-logo.png">
+					</div>
+					<div class="col-xs-12 col-sm-9">
+                <h1 class="stenwhite">Origins <span class="yell">&raquo; Deptford Urban Free Festival</span></h1>
                 
                 <p class="lead">The origins of Party In The Park can be traced back to an annual event called the <a href="http://transpont.blogspot.co.uk/2012/01/urban-free-festival-1992.html" title="Transpontine blog about the Urban Free Festival 1992">"Deptford Urban Free Festival"</a>. 
                     What began in 1989 as a small festival with one stage grew into a massive open air party that attracted thousands of people.
@@ -75,7 +82,7 @@
 <!-- End Intro Text -->
 <div class="container">
     <div class="row orgcar">
-<div id="myCarousel" class="carousel slide">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -86,13 +93,13 @@
             <div class="carousel-inner">
                 <div class="item active">
                     <img src="~/img/f1.jpg">
-                    <div class="container active">
-                        <div class="carousel-caption">
-                            <h1>Deptford Urban Free Festival</h1>
-                            <p><b>Photographs dating from 1992 - The sites developer is in the first photo!</b></p>
-                            <p><a href="#" class="btn btn-primary btn-large">Read More...</a></p>
-                        </div>
-                    </div>
+                    <!-- <div class="container active"> -->
+                        <!-- <div class="carousel-caption"> -->
+                            <!-- <h1>Deptford Urban Free Festival</h1> -->
+                            <!-- <p><b>Photographs dating from 1992 - The sites developer is in the first photo!</b></p> -->
+                            <!-- <p><a href="#" class="btn btn-primary btn-large">Read More...</a></p> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
                 </div>
                 <div class="item">
                     <img src="~/img/f2.jpg">
@@ -104,27 +111,27 @@
                 </div>
                 <div class="item">
                     <img src="~/img/f3.jpg">
-                    <div class="container active">
-                        <div class="carousel-caption">
+                    <!-- <div class="container active"> -->
+                        <!-- <div class="carousel-caption"> -->
                             
-                        </div>
-                    </div>
+                        <!-- </div> -->
+                    <!-- </div> -->
                 </div>
                 <div class="item">
                     <img src="~/img/f4.jpg">
-                    <div class="container active">
-                        <div class="carousel-caption">
+                    <!-- <div class="container active"> -->
+                        <!-- <div class="carousel-caption"> -->
                             
-                        </div>
-                    </div>
+                        <!-- </div> -->
+                    <!-- </div> -->
                 </div>
                 <div class="item">
                     <img src="~/img/f5.jpg">
-                    <div class="container active">
-                        <div class="carousel-caption">
+                    <!-- <div class="container active"> -->
+                        <!-- <div class="carousel-caption"> -->
                             
-                        </div>
-                    </div>
+                        <!-- </div> -->
+                    <!-- </div> -->
                 </div>
                 
             </div>
@@ -159,13 +166,13 @@
 
         <!-- End Intro Text -->
 
-@*@section Scripts {
+@section Scripts {
     <script>
         $(function () {
             $('.carousel').carousel({
-                interval: 2000
+                interval: 10000
             });
         })
 
 </script>
-}*@
+}
