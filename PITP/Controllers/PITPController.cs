@@ -111,7 +111,7 @@ namespace PITP
         }
 
         // The url tent-city is assigned in the RouteConfig Page
-        [ActionName("tent-city")]
+        //[ActionName("tent-city")]
         public ActionResult tentcity()
         {
             ViewBag.Description = "Party in the Park 2018 Tent City";
@@ -120,7 +120,7 @@ namespace PITP
         }
 
         [HttpPost]
-        [ActionName("tent-city")]
+       // [ActionName("tent-city")]
         public ActionResult tentcity(email mail)
         {
             ViewBag.Description = "Party in the Park 2018 Tent City";
