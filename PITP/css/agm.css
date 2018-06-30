@@ -637,7 +637,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05fff200', e
   font-weight:bold;
 }
 
-.tabbal .table-striped > tbody > tr:nth-child(even) > td {
+.tabbal .table-striped > tbody > tr:nth-child(even) > td, .jumbotent {
   background-color: #FFF200;
   color:#222222;
   font-weight:bold;
