@@ -168,163 +168,6 @@ a.splash-arrow:hover {
   .splash-title {font-size: 2em;}
 }
 
-
-.agm1 img, .agm2 img
-{
-		position: fixed;
-		left: 50%;
-		top: 50%;
-		padding-left:25%;
-		padding-right:25%;
-		webkit-transform: translate(-50%, -50%);
-		-moz-transform:    translate(-50%, -50%);
-		-ms-transform:     translate(-50%, -50%);
-		-o-transform:      translate(-50%, -50%);;
-		transform: translate(-50%, -50%);
-}
-
-.agm2 img
-{
-	top: 7%;
-	transform: translate(-50%, -7%);
-}
- 
- /* Extra small devices (phones, 440px and down) */
-@media only screen and (max-width: 440px) {
-	.agm1 img, .agm2 img
-	{
-		position: fixed;
-		left: 50%;
-		top: 50%;
-		padding-left:1em;
-		padding-right:1em;
-		webkit-transform: translate(-50%, -50%);
-		-moz-transform:    translate(-50%, -50%);
-		-ms-transform:     translate(-50%, -50%);
-		-o-transform:      translate(-50%, -50%);;
-		transform: translate(-50%, -50%);
-	}
-	
-	.agm2 img {
-		top: 28%;
-		webkit-transform: translate(-50%, -28%);
-		-moz-transform:    translate(-50%, -28%);
-		-ms-transform:     translate(-50%, -28%);
-		-o-transform:      translate(-50%, -28%);;
-		transform: translate(-50%, -28%);
-	}
-	
-	.splash {
-		background-size: 33px, auto, cover;
-	}
-}
-
-/* Small devices (portrait tablets and large phones, between 331px and 440px) */
-@media only screen and (min-width:341px) and (max-width: 440px) {
-	.agm1 img, .agm2 img
-	{
-		position: fixed;
-		left: 50%;
-		top: 50%;
-		padding-left:10%;
-		padding-right:10%;
-		webkit-transform: translate(-50%, -50%);
-		-moz-transform:    translate(-50%, -50%);
-		-ms-transform:     translate(-50%, -50%);
-		-o-transform:      translate(-50%, -50%);;
-		transform: translate(-50%, -50%);
-	}
-	
-	.agm2 img {
-		top: 21%;
-		webkit-transform: translate(-50%, -21%);
-		-moz-transform:    translate(-50%, -21%);
-		-ms-transform:     translate(-50%, -21%);
-		-o-transform:      translate(-50%, -21%);;
-		transform: translate(-50%, -21%);
-	}
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 441px) and (max-width: 600px) {
-
-	.agm1 img, .agm2 img {
-		position: fixed;
-		left: 50%;
-		top: 50%;
-		padding-left:15%;
-		padding-right:15%;
-		webkit-transform: translate(-50%, -50%);
-		-moz-transform:    translate(-50%, -50%);
-		-ms-transform:     translate(-50%, -50%);
-		-o-transform:      translate(-50%, -50%);;
-		transform: translate(-50%, -50%);
-	}
-
-	.agm2 img {
-		top: 22%;
-		webkit-transform: translate(-50%, -22%);
-		-moz-transform:    translate(-50%, -22%);
-		-ms-transform:     translate(-50%, -22%);
-		-o-transform:      translate(-50%, -22%);;
-		transform: translate(-50%, -22%);
-	}
-	
-	.splash {
-		background-size: 44px, auto, cover;
-	}
-}
-
-@media only screen and (min-width: 601px) and (max-width: 969px) {
-	.agm1 img, .agm2 img {
-		position: fixed;
-		left: 50%;
-		top: 50%;
-		padding-left:30%;
-		padding-right:30%;
-		webkit-transform: translate(-50%, -50%);
-		-moz-transform:    translate(-50%, -50%);
-		-ms-transform:     translate(-50%, -50%);
-		-o-transform:      translate(-50%, -50%);;
-		transform: translate(-50%, -50%);
-	}
-
-	.agm2 img {
-		top: 22%;
-		webkit-transform: translate(-50%, -7%);
-		-moz-transform:    translate(-50%, -7%);
-		-ms-transform:     translate(-50%, -7%);
-		-o-transform:      translate(-50%, -7%);;
-		transform: translate(-50%, -7%);
-	}
-}
-
-@media only screen and (min-width: 970px) {
-	.agm1 img, .agm2 img {
-		position: fixed;
-		left: 50%;
-		top: 50%;
-		padding-left:30%;
-		padding-right:30%;
-		webkit-transform: translate(-50%, -50%);
-		-moz-transform:    translate(-50%, -50%);
-		-ms-transform:     translate(-50%, -50%);
-		-o-transform:      translate(-50%, -50%);;
-		transform: translate(-50%, -50%);
-	}
-
-	.agm2 img {
-		top: 7%;
-		padding-left:25%;
-		padding-right:25%;
-		webkit-transform: translate(-50%, -7%);
-		-moz-transform:    translate(-50%, -7%);
-		-ms-transform:     translate(-50%, -7%);
-		-o-transform:      translate(-50%, -7%);;
-		transform: translate(-50%, -7%);
-	}
-}
-
 @font-face {
     font-family: 'lintsecregular';
     src: url('/fonts/lintsec-webfont.woff2') format('woff2'),
@@ -335,12 +178,30 @@ a.splash-arrow:hover {
     font-style: normal;
 }
 
+@font-face {font-family: "ITC Lubalin Graph";
+    src: url("//db.onlinewebfonts.com/t/8757150dfad945583fb246987bb4dcd9.eot");
+    src: url("//db.onlinewebfonts.com/t/8757150dfad945583fb246987bb4dcd9.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/8757150dfad945583fb246987bb4dcd9.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/8757150dfad945583fb246987bb4dcd9.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/8757150dfad945583fb246987bb4dcd9.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/8757150dfad945583fb246987bb4dcd9.svg#ITC Lubalin Graph") format("svg");
+}
+
 .sten, .stensmall, .stenwhite, .stenwhitesm {
     font-family:'lintsecregular';
     text-transform: uppercase; 
     font-size:3rem
     color:#222;
     line-height: 108%;
+}
+
+.newfon, .fund, .fbell, .fbell2, .fbelline, .flinesm, .gener  {
+	font-family: ITC Lubalin Graph;
+	text-transform: uppercase; 
+    font-size:6rem;
+    color:#fff;
+    line-height: 100%;
+		z-index:1;
 }
 
 .sten .bl, .sten .bl2, .stensmall .bl  {
@@ -664,4 +525,172 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05fff200', e
     margin-bottom:1em;
     margin-top:1em;
 }
+
+@media screen and (max-width: 2560px) {
+	.newfon, .fund, .fbell, .fbell2, .gener
+	{
+		position: fixed;
+		left: 33%;
+		padding-left:.8em;
+		top: 13px;
+	}
+	.agm1 img, .agm2 img {
+		position: fixed;
+		left: 33%;
+		top:118px;
+	}	
+	.fund 
+	{
+		top:395px;
+		left:45%;
+		font-size:6.6rem;
+	}
+	.fbell, .fbell2, .gener {
+		top:550px;
+		font-size:3rem;
+		left:35%;
+	}
+	
+	.fbell2
+	{
+		margin-top: 4rem;
+		margin-left:12rem;
+	}
+	
+	.fbelline{
+		position:fixed;
+		top: 655px;
+		font-size: 4rem;
+		left:30%;
+	}
+	.flinesm {
+		font-size: 2rem;
+	}
+	.gener {
+		font-size: 1.7rem;
+		top: 700px;
+	}
+}
+@media screen and (max-width: 1440px) {
+	.newfon, .fund
+	{
+		left:15%;
+		color:#fff;
+	}
+	.agm1 img, .agm2 img {
+		left:15%;
+	}
+	.fund{
+		left:38%;
+	}
+	.fbell, .fbell2 {
+		left:18%;
+	}
+	.fbelline {
+		left:12%;
+	}
+	
+}
+@media screen and (max-width: 1024px) {
+	.newfon, .agm1 img, .fbell, .fbell2
+	{
+		left:6%;
+	}
+	/*.fbelline {
+		font-size:3.5rem;
+		left:15px;
+	}*/
+}
+@media screen and (max-width: 768px) {
+	.newfon, .fund, .fbell
+	{
+		font-size: 4.8rem;
+	}
+	.agm1 img{
+		left:1%;
+		top:77px;
+	}
+	.fund{
+		left:30%;
+		top:295px;
+	}
+	.fbell, .fbell2  {
+	font-size: 2.8rem;
+	top:438px;
+	}
+	.fbell2 {
+		margin-top: 7rem;
+    margin-left: 8rem;
+	}
+	.fbelline {
+		top:580px;
+	}
+}
+@media screen and (max-width: 425px) {
+	.newfon, .fund, .fbell, .fbell2
+	{
+		font-size: 2.8rem;
+	}
+	.newfon
+	{
+	left:3%;
+	top:33px;
+	}
+	.fund{
+	top:199px;
+	}
+	.fbell, .fbell2 {
+		font-size: 2.2rem;
+		left:0;
+		top:300px;
+		margin-left:2rem;
+	}
+	.fbell2 {
+		font-size:1.9rem;
+		margin-left:0;
+	}
+	.fbelline {
+		top:415px;
+		left:5%;
+	}
+}
+@media screen and (max-width: 375px) {
+	.newfon
+	{
+		font-size:2.5rem;
+	}
+	.fund{
+	top:177px;
+	}
+	.fbell {
+		font-size: 2rem;
+		left: -2rem;
+		top: 270px;
+	}
+	.fbell2 {
+		top: 260px;
+	}
+}
+@media screen and (max-width: 320px) {
+	.newfon
+	{
+		font-size: 2.1rem;
+		left: 0;
+		top: 44px;
+	}
+	.fund{
+		top: 159px;
+		left: 25%;
+	}
+	.fbell {
+		font-size: 1.8rem;
+		left: 0rem;
+		top: 250px;
+	}
+	.fbell2 {
+		top: 240px;
+	}
+}
+
+
 
