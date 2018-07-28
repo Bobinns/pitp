@@ -136,9 +136,9 @@ a.splash-arrow:hover {
 }
 
 
-.agm1 p, .agm2 p {
+/*.agm1 p, .agm2 p {
 		margin-top: 1em;
-}
+}*/
 
 .bf2
 {
@@ -527,28 +527,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05fff200', e
 }
 
 @media screen and (max-width: 2560px) {
+	.agm1 p, .agm2 p {
+		margin-top: 1em;
+	}
 	.newfon, .fund, .fbell, .fbell2, .gener
 	{
 		position: fixed;
-		left: 33%;
+		left: 25%;
 		padding-left:.8em;
 		top: 13px;
 	}
 	.agm1 img, .agm2 img {
 		position: fixed;
-		left: 33%;
+		left: 25%;
 		top:118px;
 	}	
 	.fund 
 	{
 		top:395px;
-		left:45%;
+		left:38%;
 		font-size:6.6rem;
 	}
 	.fbell, .fbell2, .gener {
 		top:550px;
 		font-size:3rem;
-		left:35%;
+		left:25%;
 	}
 	
 	.fbell2
@@ -561,7 +564,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05fff200', e
 		position:fixed;
 		top: 655px;
 		font-size: 4rem;
-		left:30%;
+		left:20%;
 	}
 	.flinesm {
 		font-size: 2rem;
@@ -572,124 +575,209 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05fff200', e
 	}
 }
 @media screen and (max-width: 1440px) {
+	.agm1 p, .agm2 p {
+		margin-top: 0;
+	}
 	.newfon, .fund
 	{
-		left:15%;
+		left:25%;
 		color:#fff;
+		font-size:5rem;
+		margin-top:0px;
 	}
 	.agm1 img, .agm2 img {
-		left:15%;
+		left:25%;
+		width:55%;
+		top:38px;
 	}
 	.fund{
 		left:38%;
+		top:305px;
 	}
 	.fbell, .fbell2 {
 		left:18%;
+		left:18%;
+		top:380px;
 	}
 	.fbelline {
 		left:12%;
+		top:460px;
+	}
+	.gener
+	{
+		top:510px;
+		left:18%;
 	}
 	
 }
 @media screen and (max-width: 1024px) {
-	.newfon, .agm1 img, .fbell, .fbell2
-	{
-		left:6%;
-	}
-	/*.fbelline {
-		font-size:3.5rem;
-		left:15px;
-	}*/
-}
-@media screen and (max-width: 768px) {
-	.newfon, .fund, .fbell
-	{
-		font-size: 4.8rem;
+	.newfon {
+		left:15%;
 	}
 	.agm1 img{
-		left:1%;
-		top:77px;
+		width:70%;
+		left:15%;
 	}
 	.fund{
-		left:30%;
-		top:295px;
+		top: 297px;
+		left: 33%;
 	}
-	.fbell, .fbell2  {
-	font-size: 2.8rem;
-	top:438px;
+	.fbell, .fbell2
+	{
+		top: 358px;
+		left:6%;
 	}
-	.fbell2 {
-		margin-top: 7rem;
-    margin-left: 8rem;
+	.fbell2  {
+		top: 350px;
+		font-size: 2.4rem;
+		left: 15%;
 	}
 	.fbelline {
-		top:580px;
+		top: 420px;
+		font-size:3.5rem;
+		left:15px;
+	}
+	.gener{
+		left:6%;
+	}
+	
+}
+@media screen and (max-width: 768px) {
+
+	.newfon, .fund, .fbell
+	{
+		font-size: 3.8rem;
+	}
+	.fund{
+		left:33%;
+		top:225px;
+	}
+	.fbell, .fbell2  {
+	font-size: 2.2rem;
+	top:278px;
+	}
+	.fbell2 {
+		left: 2%;
+		top: 268px;
+	}
+	.fbelline {
+		top:350px;
 	}
 }
 @media screen and (max-width: 425px) {
+	.agm1 img {
+		width: 86%;
+		left: 8%;
+	}
 	.newfon, .fund, .fbell, .fbell2
 	{
-		font-size: 2.8rem;
+		font-size: 2.7rem;
 	}
 	.newfon
 	{
 	left:3%;
-	top:33px;
+	top:25px;
 	}
 	.fund{
-	top:199px;
+	top:159px;
 	}
 	.fbell, .fbell2 {
 		font-size: 2.2rem;
-		left:0;
-		top:300px;
-		margin-left:2rem;
+		left: 0;
+		top: 210px;
+		margin-left: .5rem;
 	}
 	.fbell2 {
-		font-size:1.9rem;
-		margin-left:0;
+		font-size: 1.5rem;
+		top: 225px;
+		left: 9%;
 	}
 	.fbelline {
-		top:415px;
-		left:5%;
+		top: 290px;
+		left: 5%;
+	}
+	.gener {
+		top: 485px;
 	}
 }
 @media screen and (max-width: 375px) {
 	.newfon
 	{
 		font-size:2.5rem;
+		top: 20px;
 	}
-	.fund{
-	top:177px;
+	.fund {
+		top: 146px;
 	}
 	.fbell {
-		font-size: 2rem;
-		left: -2rem;
-		top: 270px;
+		top: 185px;
+		font-size:2rem;
 	}
 	.fbell2 {
-		top: 260px;
+		top: 195px;
+	}
+	.fbelline {
+		top: 255px;
+		left: 5%;
 	}
 }
 @media screen and (max-width: 320px) {
 	.newfon
 	{
-		font-size: 2.1rem;
-		left: 0;
-		top: 44px;
+		font-size:2rem;
+		top: 19px;
 	}
-	.fund{
-		top: 159px;
-		left: 25%;
+	.fund
+	{
+		top: 128px;
+		left: 30%;
 	}
+	
 	.fbell {
-		font-size: 1.8rem;
+		font-size: 1.5rem;
 		left: 0rem;
-		top: 250px;
+		top: 170px;
 	}
 	.fbell2 {
-		top: 240px;
+		top: 168px;
+		font-size: 1.3rem;
 	}
+	.fbelline {
+		top: 245px;
+	}
+	.gener {
+		top: 465px;
+	}
+}
+
+#dam{
+	color:#030102;
+	padding-right:1rem;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-delay: 1s;
+}
+
+#uka {
+	-webkit-animation-duration: 3s;
+	-webkit-animation-delay: 2s;
+}
+
+#john {
+	color:#ffff00;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-delay: 3s;
+}
+
+#wmc
+{
+	color:#030102;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-delay: 4s;
+}
+
+.fund{
+	-webkit-animation-duration: 3s;
+	-webkit-animation-delay: 5s;
 }
 
 
