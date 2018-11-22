@@ -1,0 +1,176 @@
+﻿@model PITP.email
+@{
+    ViewBag.Title = "contact";
+}
+@section BodyClass {
+backgrey
+}
+<div id="page">
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div>
+                    <a class="navbar-brand" href='.'>
+                        
+                    </a>
+                </div>
+            </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "PITP")</li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink("About Us", "about-us", "PITP")</li>
+                                <li>@Html.ActionLink("2016", "year2016", "PITP")</li>
+								<li>@Html.ActionLink("Tent City", "tentcity", "PITP")</li>
+								<li>@Html.ActionLink("Origins", "origins", "PITP")</li><li>@Html.ActionLink("Donate", "donate", "PITP")</li>
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle py" data-toggle="dropdown">Previous Years &nbsp;&nbsp;<b class="caret"></b></a>
+                            <ul class="dropdown-menu pyu">
+                                <li>@Html.ActionLink("2016", "year2016", "PITP")</li>
+								<li>@Html.ActionLink("2014", "year2014", "PITP")</li>
+                                <li>@Html.ActionLink("2013", "year2013", "PITP")</li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink("Up And Coming...", "upandcoming", "PITP")</li>
+                                <li>@Html.ActionLink("pastevents", "pastevents", "PITP")</li>
+                            </ul>
+                        </li>
+                        <li>@Html.ActionLink("Sponsors", "sponsors", "PITP")</li>
+                        <li>@Html.ActionLink("Volunteer", "volunteer", "PITP")</li>
+                        <li class="active">@Html.ActionLink("Contact", "contact", "PITP")</li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://www.facebook.com/PITPNXD/">Facebook</a></li>
+                                <li><a href="https://twitter.com/pitpnxd">Twitter</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+        </div>
+ <!-- End Navigation -->
+@if (@ViewData["Sent"] != "sent")
+{
+<div class="intro-block2 topblock">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 hidden-xs">
+                <img class="img-responsive tpad" src="~/img/2018/full-pitp.png">
+            </div>
+            <div class="col-xs-12 col-sm-9">
+                <h1 class="genh7">Party In The Park <span class="yell">&raquo; Contact Us</span></h1>
+                <p class="lead yell">The people who are currently making this possible are a very small group of very dedicated people - but there's only so much they can do and 
+the organisers are still looking for volunteers</p>
+            </div>
+        </div>
+    </div>    
+</div>
+    }
+else
+{
+    <div class="intro-block2 topblock">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 hidden-xs">
+                <img class="img-responsive tpad" src="~/img/2018/full-pitp.png">
+            </div>
+            <div class="col-xs-12 col-sm-9">
+                    <h1>Thank you.</h1>
+                    <p class="lead">@ViewData["Message"]</p>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+<!-- End Intro Text -->
+<!-- <div class="map">     -->
+    <!-- <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?sll=51.4754136,-0.03861&amp;sspn=0.0051321,0.0109864&amp;q=283-285+New+Cross+Rd&amp;ie=UTF8&amp;hq=&amp;hnear=283-285+New+Cross+Rd,+New+Cross,+London+SE14+6AS,+United+Kingdom&amp;t=m&amp;z=14&amp;ll=51.475414,-0.03861&amp;output=embed"></iframe><br /> -->
+<!-- </div> -->
+<!-- <div class="container"> -->
+    <!-- <div class="row">     -->
+        <!-- <div class="col-lg-12">         -->
+        <!-- <small><a href="https://maps.google.co.uk/maps?sll=51.4754136,-0.03861&amp;sspn=0.0051321,0.0109864&amp;q=283-285+New+Cross+Rd&amp;ie=UTF8&amp;hq=&amp;hnear=283-285+New+Cross+Rd,+New+Cross,+London+SE14+6AS,+United+Kingdom&amp;t=m&amp;z=14&amp;ll=51.475414,-0.03861&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small> -->
+        <!-- </div> -->
+    <!-- </div> -->
+<!-- </div> -->
+<div class="container padded colgrey">
+    <div class="row">
+        <div class="col-sm-8">
+            <h2 class="genh6">Get in touch</h2>
+            <hr class="borback">
+            <p>If you wish to contact the organisers of Party In the Park, please submit the form below.</p>
+            @using (Html.BeginForm("contact", "PITP", FormMethod.Post, new { @class = "form-horizontal tpad", role="form" }))
+            {
+                <div class="form-group">
+                    <label for="email" class="col-lg-2 control-label">Email</label>
+                    <div class="col-lg-10">
+                         @Html.TextBoxFor(x => x.Email, new { type = "email", @class = "form-control", id = "email", placeholder = "Email" })
+                    </div>
+                </div>
+                <div class="form-group tpad">
+                    <label for="message" class="col-lg-2 control-label">Message</label>
+                    <div class="col-lg-10">
+                        @Html.TextAreaFor(x => x.Message, new { @class = "form-control", rows = "6", id = "message", placeholder = "Message..." })
+                    </div>
+                </div>
+                <div class="form-group tpad">
+                    <div class="col-lg-offset-2 col-lg-10">
+                        <input type="submit" value="Send" class="btn btn-default btn-lg" />
+                    </div>
+                </div>
+            }
+        </div>
+        
+        <div class="col-sm-4 hidden-xs">
+            <img class="img-circle img-responsive" src="img/con-us.png">
+            <hr class="borback">
+            <address>                    
+                    <a href="mailto: newcrosspeopleslibrary@gmail.com">pitpnxd@gmail.com</a><br>
+            </address>
+        </div>
+    </div>    
+</div>    
+<!-- End Page Content -->
+
+<div class="intro-block">
+    <div class="container">
+        <div class="row slogo">
+            <div class="col-sm-4 tabbable">
+                <blockquote>
+                    <p>&ldquo;This party is being organised by local people for local people and it’s also a celebration of local talent – And unlike so many festivals today it’s absolutely free.&rdquo;</p>
+                    <small class="qback">Kathy Dunbar, <cite title="source title">New Cross Learning, Chair </cite></small>
+                </blockquote>
+            </div>
+            <div class="col-sm-4">
+                <!-- Quote go here -->
+                <blockquote>
+                    <p>&ldquo;We think the Party in the Park embodies the spirit of New Cross: this is a brilliant community and people have come together to volunteer their time and local organisations have sponsored the party..&rdquo;</p>
+                    <small class="qback">R.McFarlane</small>
+                </blockquote>
+            </div>
+            <div class="col-sm-2">
+                <img src="~/img/Lb_lewisham_logo.png" class="img-responsive" alt="Lewisham council logo" />
+            </div>
+            <div class="col-sm-2">
+                <img src="~/img/slogo/composite.png" class="img-responsive" alt="sponsors logo" />
+            </div>
+        </div>
+        <div class="col-sm-6 tabbable wd">website developed by - <a href="mailto:derm.finn@gmail.com">derm.finn@gmail.com</a></div>
+    </div>
+</div>
+

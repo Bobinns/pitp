@@ -1,0 +1,221 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+@section BodyClass {
+backgrey
+}
+<div id="page">
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div>
+                    <a class="navbar-brand" href='.'>
+                        
+                    </a>
+                </div>
+            </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "PITP")</li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="active">@Html.ActionLink("About Us", "about-us", "PITP")</li>
+                                <li>@Html.ActionLink("2016", "year2016", "PITP")</li>
+								<li>@Html.ActionLink("Tent City", "tentcity", "PITP")</li>
+								<li>@Html.ActionLink("Origins", "origins", "PITP")</li><li>@Html.ActionLink("Donate", "donate", "PITP")</li>
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle py" data-toggle="dropdown">Previous Years &nbsp;&nbsp;<b class="caret"></b></a>
+                            <ul class="dropdown-menu pyu">
+                                <li>@Html.ActionLink("2016", "year2016", "PITP")</li>
+								<li>@Html.ActionLink("2014", "year2014", "PITP")</li>
+                                <li>@Html.ActionLink("2013", "year2013", "PITP")</li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+
+                                <li>@Html.ActionLink("Up And Coming...", "upandcoming", "PITP")</li>
+                                <li>@Html.ActionLink("pastevents", "pastevents", "PITP")</li>
+                            </ul>
+                        </li>
+                        <li>@Html.ActionLink("Sponsors", "sponsors", "PITP")</li>
+                        <li>@Html.ActionLink("Volunteer", "volunteer", "PITP")</li>
+                        <li>@Html.ActionLink("Contact", "contact", "PITP")</li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://www.facebook.com/PITPNXD/">Facebook</a></li>
+                                <li><a href="https://twitter.com/pitpnxd">Twitter</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+        </div>
+<div class="intro-block2 topblock">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 hidden-xs">
+                <img class="img-responsive tpad" src="~/img/2018/full-pitp.png">
+            </div>
+            <div class="col-xs-12 col-sm-9">
+                <h1 class="genh7">About Us - <span class="yell">Back for 2018!</span></h1>
+                @*<p class="genh6 well">Despite the poor weather, <a href="@Url.Action("year2016","PITP")">2016</a> witnessed the best Party in the Park to date!</p>*@
+                <p class="genh6 well">In order to run the festival we need to raise @ViewBag.GrandTotal - For a full breakdown of the costs involved and to see information about our funders, visit our <a href='@Url.Action("sponsors", "PITP")'>sponsors page.</a></p>
+                <p class="genh4">your donations will help with the costs of putting on the festival. <span class="fyell">please give generously</span></p>
+
+
+                <span class="ppal4"><i class="fab fa-paypal"></i><i class="fab fa-cc-visa"></i><i class="fab fa-cc-mastercard"></i><i class="fab fa-cc-amex"></i></span>
+
+                <a href='@Url.Action("donate", "PITP")' class="ppal2">
+                    <input type="submit" value="PLEASE DONATE!" name="submit" title="PayPal - The safer, easier way to pay online!" class="btn btn-ppark animated tada">
+                </a>
+            </div>
+        </div>
+    </div>    
+</div>
+<!-- End Intro Text -->
+
+<div class="container padded colgrey">
+    <div class="row">
+        <div class="col-sm-8 blog">
+            <section>
+                <h1 class="genh6">About Us</h1>
+                <!-- <hr class="borback"> -->
+                <p><span class="glyphicon glyphicon-time"></span> Posted on May 27, 2018 at 10:00 AM</p>
+                <!-- <hr class="borback"> -->
+                <!-- <img src="img/aboutus.png" class="img-responsive"> -->
+                <div align="center" class="embed-responsive embed-responsive-16by9">
+                    <video controls class="embed-responsive-item" poster="~/img/2018/logo-poster.png">
+                        <source src="~/img/partyintheparkvid2018.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <br/>
+                <p>
+                    Back for 2018, Party in the Park is a free festival providing music and entertainment for the New Cross and Deptford communities.
+                    Providing a free summer festival this years event will showcase a large number of brilliant and diverse local performances.
+                    Party in the Park is a local event for all ages.</p>
+                <p>
+                    Drawing upon the <a href='@Url.Action("tentcity", "PITP")'>Tent City</a> event hosted back in 2016, the theme and focus of this years event will focus on housing for the community.
+                 With a special health and well being area, arts and crafts stalls and family entertainment this years festival will cater for everyone that attends.
+                </p>
+                <p>
+                    To date the event has been made possible as a result of the collaboration of a number of different community organisations, groups, and business.
+                    Celebrating the rich cultural diversity and identity of the area Party in the Park is a great day out for all.
+                </p>
+                <p>
+                    On September the 1st Fordham Park will host the festival and provide a platform for a number of groups that work within the Deptford and New Cross area.
+                    Building on the successes of past festivals held in <a href='@Url.Action("year2013", "PITP")'>2013</a>, <a href='@Url.Action("year2014", "PITP")'>2014</a>, and <a href='@Url.Action("year2016", "PITP")'>2016</a> we hope to provide Party in the Park's best festival to date.
+                </p>
+                <p>
+                    The festival is run by a number of dedicated volunteers that give their free time to organise the event.
+                    However, Party in the Park is only possible as a result of the financial contributions from you the community.</p>
+                @*<p>In order to run the festival we need to raise @ViewBag.GrandTotal - For a full breakdown of the costs involved and to see information about our funders, visit our <a href='@Url.Action("sponsors", "PITP")'>sponsors page.</a></p>
+                <p class="genh4">your donations will help with the costs of putting on the festival. <span class="fyell">please give generously</span></p>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="ppal2">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="696F36G2HC62Y">                    
+                    <i class="fab fa-paypal fab2"></i><i class="fab fa-cc-visa fab2"></i><i class="fab fa-cc-mastercard fab2"></i><i class="fab fa-cc-amex fab2"></i>
+                    <input type="submit" value="PLEASE DONATE!" name="submit" title="PayPal - The safer, easier way to pay online!" class="btn btn-ppark animated tada">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                </form>
+                <p>*@                    
+                <p>To learn more about opportunities to come and help out on the day, visit our <a href='@Url.Action("volunteer", "PITP")'>volunteer page</a>, or email us <a href="mailto:vols@pitpnxd.co.uk">vols@pitpnxd.co.uk.</a></p>
+                <p>With your help we can ensure that Party in the Park in 2018 will be our best party yet!</p> 
+                <p>Party In the Park is an event organised by various community groups in the area around Fordham Park. The festival's 
+                <a href="@Url.Action("origins", "PITP")">origins</a> can be traced back to the Deptford Urban Free Festival. Party in the Park is a community event 
+                for all ages, with family events, arts and crafts, stalls, spoken word, as well as local bands and acts for all tastes from disco to reggae, punk rock, 
+                soul and folk.</p>
+                <p>In both <a href='@Url.Action("year2013", "PITP")'>2013</a> and <a href='@Url.Action("year2014", "PITP")'>2014</a> the
+    event provided a large range of food stalls, a New Cross Inn beer tent.
+    <a href="http://www.madcapcoalition.org.uk/">MADCAP </a> entertained - providing games and competitions with lots of prizes.
+    The festival in 2014 had a health and well being "Detox city" area, and stalls that promoted the work of community projects such as,
+    <a href="http://www.buildthelenox.org/">The Lenox Project" Grow Wild</a>, and stalls that promoted the great work that housing co-operatives do.
+</p>
+                <p>Local press coverage heralded both the events held in 2013 and 2014 as hugely successful. 
+                To help with sponsorship please visit our <a href='@Url.Action("sponsors","PITP")'>sposorship page</a> or if you want to contact the events organisers, please use or <a href='@Url.Action("contact","PITP")'>contact form</a>.</p>
+                <hr class="borback">
+            </section>
+            <section>
+                <h1 class="genh6">Community Groups</h1>
+                <p class="genh5"><span class="bl">Who organises the event?</span></p>
+                <!-- <hr class="borback"> -->
+                <p><span class="glyphicon glyphicon-time"></span> Posted on November 15th, 2017 at 6:10 PM</p>
+                <!-- <hr class="borback"> -->
+                <img src="img/exlib.png" class="img-responsive">
+                <!-- <hr class="borback"> -->
+
+                <p>
+                    A number of different community groups and local businesses collaborate to make Party In The Park happen. To date we have had a dedicated 
+                    number of people directly involved with the events organisation. Planning for past festivals has involved a number of fund raisers. 
+                    These events were successful in raising money for and promoting Party In The Park.
+                </p> 
+                <p>
+                In the run up to this years event - we are hosting a number of benefit events and gigs. These up and coming events are 
+                vital for the funding and promotion of Party in the Park. Check out our "<a href='@Url.Action("Upandcoming", "PITP")'>
+                Up and Coming</a>" events page, or follow us on <a href="https://www.facebook.com/PitpInthepark/" alt="pitp facebook link">
+                Facebook</a> or <a href="https://twitter.com/pitpnxd" alt="pitp twitteer link">
+                Twitter</a> to get up to date details.</p>
+
+                <p>We particularly have had a lot of help from two organisations - New Cross Learning, and MadCap Coalition. Great live music has been provided by 
+                Siren Sound and Reknaw, and we have had some great DJ's, such as Softwax.</p>                
+            </section>
+        </div>
+        <div class="col-sm-4 sidebar">
+            <section>
+                <h3 class="genh5">Latest from Twitter</h3>
+                <div class="media tpad">
+                    @*<a class="pull-left" href="https://twitter.com/pitpnxd">
+                        <img class="media-object" src="img/twitter.png" alt="user">
+                    </a>*@
+                    <div class="media-body">
+                        <h4 class="media-heading">@@pitpnxd</h4>
+                        <p class="bpad"><a class="twitter-timeline"  href="https://twitter.com/pitpnxd"  data-widget-id="486514106099175424">Tweets by @@pitpnxd</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</p>
+                    </div>
+                </div>
+            
+            </section>
+        </div>
+    </div>    
+</div>    
+
+<div class="intro-block">
+    <div class="container">
+        <div class="row slogo">
+            <div class="col-sm-4 tabbable">
+                <blockquote>
+                    <p>&ldquo;This party is being organised by local people for local people and it’s also a celebration of local talent – And unlike so many festivals today it’s absolutely free.&rdquo;</p>
+                    <small class="qback">Kathy Dunbar, <cite title="source title">New Cross Learning, Chair </cite></small>
+                </blockquote>
+            </div>
+            <div class="col-sm-4">
+                <!-- Quote go here -->
+                <blockquote>
+                    <p>&ldquo;We think the Party in the Park embodies the spirit of New Cross: this is a brilliant community and people have come together to volunteer their time and local organisations have sponsored the party..&rdquo;</p>
+                    <small class="qback">R.McFarlane</small>
+                </blockquote>
+            </div>
+            <div class="col-sm-2">
+                <img src="~/img/Lb_lewisham_logo.png" class="img-responsive" alt="Lewisham council logo" />
+            </div>
+            <div class="col-sm-2">
+                <img src="~/img/slogo/composite.png" class="img-responsive" alt="sponsors logo" />
+            </div>
+        </div>
+        <div class="col-sm-6 tabbable wd">website developed by - <a href="mailto:derm.finn@gmail.com">derm.finn@gmail.com</a></div>
+    </div>
+</div>

@@ -1,0 +1,159 @@
+﻿@{
+    ViewBag.Title = "upandcoming";
+}
+@section BodyClass {
+backred }
+
+<div id="page">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div>
+                <a class="navbar-brand" href='.'>
+
+                </a>
+            </div>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Home", "Index", "PITP")</li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>@Html.ActionLink("About Us", "about-us", "PITP")</li>
+                        <li>@Html.ActionLink("2016", "year2016", "PITP")</li>
+                        <li>@Html.ActionLink("Tent City", "tentcity", "PITP")</li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle py" data-toggle="dropdown">Previous Years &nbsp;&nbsp;<b class="caret"></b></a>
+                    <ul class="dropdown-menu pyu">
+                        <li>@Html.ActionLink("2016", "year2016", "PITP")</li>
+                        <li>@Html.ActionLink("2014", "year2014", "PITP")</li>
+                        <li>@Html.ActionLink("2013", "year2013", "PITP")</li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li class="active">@Html.ActionLink("Up And Coming...", "upandcoming", "PITP")</li>
+                        <li>@Html.ActionLink("pastevents", "pastevents", "PITP")</li>
+                    </ul>
+                </li>
+                <li>@Html.ActionLink("Sponsors", "sponsors", "PITP")</li>
+                <li>@Html.ActionLink("Volunteer", "volunteer", "PITP")</li>
+                <li>@Html.ActionLink("Contact", "contact", "PITP")</li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.facebook.com/PITPNXD/">Facebook</a></li>
+                        <li><a href="https://twitter.com/pitpnxd">Twitter</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Navigation -->
+    <div class="intro-block44 topblock">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 hidden-xs">
+                    <img class="img-responsive tpad" src="~/img/2018/full-pitp.png">
+                </div>
+                <div class="col-xs-12 col-sm-9">
+                    <h1 class="genh7">Up and Coming... <span class="yell">&raquo;2018 Benefit Events!</span></h1>
+
+                    <p class="genh6 well">
+                        We are planning a number of benefit gigs to help fund the event this summer. Watch this space for details of <a href='@Url.Action("Upandcoming", "PITP")'> up and coming events</a>, or
+                        follow us on <a href="https://twitter.com/pitpnxd" alt="pitp twitteer link">twitter</a> and <a href="https://www.facebook.com/PitpInthepark/" alt="pitp facebook link">facebook</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container padded splash">
+        <div class="row">
+            <div class="col-sm-11 col-sm-offset-1">
+                <img src="~/img/2018/pitpnxd-logo.png" class="center-block img-responsive" alt="pitp presenting" />
+                <p class="genh3" id="ftop">fundraiser</p>
+            </div>
+            @*<div class="col-sm-11 col-sm-offset-1 ppal3 mb">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="696F36G2HC62Y">                    
+                    <i class="fab fa-paypal"></i><i class="fab fa-cc-visa"></i><i class="fab fa-cc-mastercard"></i><i class="fab fa-cc-amex"></i>
+                    <input type="submit" value="PLEASE DONATE!" name="submit" title="PayPal - The safer, easier way to pay online!" class="btn btn-ppark animated tada">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                </form>
+                <p class="genh4">your donations will help with the costs of putting on the festival. <span class="fyell">please give generously</span></p>
+            </div>*@
+            <div class="col-sm-11 col-sm-offset-1">
+                <p class="genh fbl">at five bells</p>
+                <p class="genh">155 New Cross road, london se14 5dj</p>
+            </div>
+            <div class="col-sm-12">
+                <p class="genh4 fbl">thursday 23 august - starts a 7is - 11pm</p>
+                <p class="genh4"><span class="fbl">magic city trio &#8226;</span> <span class="fyell">the four fathers </span>&#8226;<span class="fbl">thee brouhaha &#8226;</span> meu chris bowsher</p>
+                <p class="genh4">with mc/poetry from @@ph7 <span class="fbl">+ shina shihoko nagai</span></p>
+            </div>
+        </div>
+
+        @*<div class="row">
+                <div class="col-sm-12">
+                    <p class="gl" id="agmgl">
+                        <img src="~/img/2018/fundraiser2.png" class="img-responsive" alt="watch this space - benefit gigs coming soon" />
+                </div>
+            </div>*@
+    </div>
+    <div class="intro-block">
+        <div class="container">
+            <div class="row slogo">
+                <div class="col-sm-4 tabbable">
+                    <blockquote>
+                        <p>&ldquo;This party is being organised by local people for local people and it’s also a celebration of local talent – And unlike so many festivals today it’s absolutely free.&rdquo;</p>
+                        <small class="qback">Kathy Dunbar, <cite title="source title">New Cross Learning, Chair </cite></small>
+                    </blockquote>
+                </div>
+                <div class="col-sm-4">
+                    <!-- Quote go here -->
+                    <blockquote>
+                        <p>&ldquo;We think the Party in the Park embodies the spirit of New Cross: this is a brilliant community and people have come together to volunteer their time and local organisations have sponsored the party..&rdquo;</p>
+                        <small class="qback">R.McFarlane</small>
+                    </blockquote>
+                </div>
+                <div class="col-sm-2">
+                    <img src="~/img/Lb_lewisham_logo.png" class="img-responsive" alt="Lewisham council logo" />
+                </div>
+                <div class="col-sm-2">
+                    <img src="~/img/slogo/composite.png" class="img-responsive" alt="sponsors logo" />
+                </div>
+            </div>
+            <div class="col-sm-6 tabbable wd">website developed by - <a href="mailto:derm.finn@gmail.com">derm.finn@gmail.com</a></div>
+        </div>
+    </div>
+@section scripts
+{
+    <script type="text/javascript">
+        $.fn.extend({
+            animateCss: function (animationName) {
+                var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                this.addClass('animated ' + animationName).one(animationEnd, function () {
+                    $(this).removeClass('animated ' + animationName);
+                });
+                return this;
+            }
+        });
+        $(document).ready(function () {
+            $(".wrapper").delay(100).animate({ "opacity": "1.0" }, 800);
+            $(".navbar").css({ "opacity": "1" });
+            $('.anpulse').animateCss('pulse');
+            $('.gl').animateCss('lightSpeedIn');
+        });
+    </script>
+}
