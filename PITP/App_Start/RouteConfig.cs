@@ -25,12 +25,12 @@ namespace PITP
             routes.MapRoute("2014", "2014", new { controller = "PITP", action = "year2014" });
             routes.MapRoute("2013", "2013", new { controller = "PITP", action = "year2013" });
             routes.MapRoute("2016", "2016", new { controller = "PITP", action = "year2016" });
-            routes.MapRoute("contact", "contact", new { controller = "PITP", action = "Contact" });
+            routes.MapRoute("contact", "contact", new { controller = "PITP", action = "contact" });
 
             routes.MapRoute("origins", "origins", new { controller = "PITP", action = "Origins" });
             routes.MapRoute("volunteer", "volunteer", new { controller = "PITP", action = "Volunteer" });
             //routes.MapRoute("Party2013", "Party2013", new { controller = "PITP", action = "Party2013" });
-            routes.MapRoute("upandcoming", "upandcoming", new { controller = "PITP", action = "Upandcoming" });
+            routes.MapRoute("upandcoming", "upandcoming", new { controller = "PITP", action = "upandcoming" });
             routes.MapRoute("sponsors", "sponsors", new { controller = "PITP", action = "sponsors" });
             routes.MapRoute("pastevents", "pastevents", new { controller = "PITP", action = "pastevents" });
             routes.MapRoute("SiteMap", "SiteMap", new { controller = "PITP", action = "SiteMap" });

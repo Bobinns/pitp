@@ -432,10 +432,6 @@ namespace PITP
 
         public ActionResult GetSponsors()
         {
-            //var query = from b in db.Funders
-            //            orderby b.C_payerEmail
-            //            select b;
-
             var spview = from c in pc.formusers
                          where c.ppal.paid == true
                             select new sponsorview
@@ -448,10 +444,7 @@ namespace PITP
 
             var retview = spview.ToList<sponsorview>();
 
-
-    //var ret = query.ToList<Funder>();
-
-            return PartialView("_getsponsors", retview);
+            return PartialView(retview);
         }
 
         public ActionResult Donate()

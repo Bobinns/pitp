@@ -1,0 +1,39 @@
+﻿@model IEnumerable<PITP.Models.sponsorview>
+
+<div class="table-responsive">
+    <table class="table table-striped table-hover" id="myTable">
+        <thead>
+            <tr class="danger">
+                <th>
+                    Name
+                </th>
+                <th>
+                    £'s
+                </th>
+                
+                <th>
+                   Message
+                </th>
+            </tr>
+        </thead>
+        @foreach (var item in Model)
+            {
+            <tr class="danger">
+                <td>
+                    @Html.DisplayFor(modelItem => item.fullName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.contribution)
+                </td>
+                
+                <td>
+                    @Html.DisplayFor(modelItem => item.message)
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
+
+
+
