@@ -13,6 +13,7 @@
       <mvcSiteMapNode title="2013" controller="PITP" action="year2013"/>  
       <mvcSiteMapNode title="2014" controller="PITP" action="year2014"/>  
       <mvcSiteMapNode title="2016" controller="PITP" action="year2016"/>  
+      <mvcSiteMapNode title="2018" controller="PITP" action="year2018"/>
       <mvcSiteMapNode title="Up and Coming" controller="PITP" action="Upandcoming"/>
       <mvcSiteMapNode title="pastevents" controller="PITP" action="pastevents"/>
       <mvcSiteMapNode title="Sponsors" controller="PITP" action="sponsors"/>

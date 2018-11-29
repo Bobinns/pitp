@@ -167,6 +167,25 @@ namespace PITP
             return View();
         }
 
+        public ActionResult year2018()
+        {
+            ViewBag.Description = "Party in the Park 2018 a community event for all ages held in Fordham Park Deptford";
+            ViewBag.Keywords = "2018, Party, park, Deptford, New Cross, Lewisham, community, event, pop, rock, folk, festival";
+
+            var netTotal = (from d in pc.formusers
+                            where d.ppal.paid == true
+                            select d.ppal.sAmountPaid
+                            ).Sum();
+
+            var amountNeeded = grandTotal - netTotal;
+            amountNeeded = amountNeeded - raisersTodate;
+
+
+            ViewBag.GrandTotal = string.Format("{0:C}", grandTotal);
+            ViewBag.AmountNeeded = string.Format("{0:C}", amountNeeded);
+            return View();
+        }
+
         public ActionResult year2016()
         {
             ViewBag.Description = "Party in the Park held its third festival in 2016";
