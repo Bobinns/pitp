@@ -31,6 +31,10 @@ namespace PITP
                     "~/css/agm.css"
                     ));
 
+            bundles.Add(new StyleBundle("~/animate").Include(
+                    "~/css/animate.css"
+                ));
+
             bundles.Add(new ScriptBundle("~/bundles/Chart2").Include(
                 "~/Scripts/Chart.js", "~/js/common.js"));
 

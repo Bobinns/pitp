@@ -3,12 +3,12 @@
 }
 
 @section AddToHead {
-    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+    @Styles.Render("~/animate")
 }
-@section BodyClass { bodyblue
+@section BodyClass { newhome
 }
 
-<div class="nwrap splashbd">
+<div class="nwrap">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -67,19 +67,47 @@
         </div>
     </nav>
 
-    <div class="container finhome">
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2 blcol2">
+    <div class="container finhome blcol2">
+        <div class="row agm2018">
+            <div class="col-md-7 col-md-offset-2">
                 <img src="~/img/2019/head2.png" class="img-responsive" />
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
+        <div class="row agm2018b">
+            <div class="col-md-7 col-md-offset-2">
                 <img src="~/img/2018/pitpnxd-logo.png" class="img-responsive pull-right" />
             </div>
         </div>
-    </div>
-    <div class="container divup">
+        <div class="row agm2018 scroll-animations">
+            <div class="col-md-7 col-md-offset-2 col-xs-12 agmtextst animated">
+                <p>
+                    ANNUAL GENERAL MEETING
+                    <span>AND FIRST FUNDRAISER GIG FOR NEXT YEARS FESTIVAL</span>
+                </p>
+            </div>
+
+            <div class="col-md-7 col-md-offset-2 col-xs-12 agmtext animated">
+                <p>
+                    Saturday, 8 December 2018 from 18:00-23:00
+                    <span>The Five Bells</span>
+                </p>
+            </div>
+            <div class="col-md-7 col-md-offset-2 col-xs-12 agmtextbl animated">
+                <p>
+                    featuring BOGUS GASMAN,
+                    <span>THE BROUHAHA and MeU = MeU and MC Patrick Lyons</span>
+                </p>
+            </div>
+            <div class="col-md-7 col-md-offset-2 col-xs-12 agmtextend animated">
+                <p>
+                    AGM: UPSTAIRS - 6.00pm- 8.00pm
+                    <span>FUNDRAISER: DOWNSTAIRS - 8.30pm - 11.00pm</span>
+                </p>
+            </div>
+            <div class="clearfix"></div> 
+        </div>
+        </div>
+    @*<div class="container divupb">
         <div class="row mb">
             <section class="section">
                 <div class="col-sm-6 col-md-3">
@@ -92,12 +120,11 @@
                         with a large number of brilliant diverse performers.
                         Party In the Park is now a biannual event organised by various community groups in the area around Fordham Park.
                     </p>
-                    <p class="indlink">We have successfully held festivals in 2013, 2014, and despite the rain, on Saturday September 3rd <a href='@Url.Action("year2016", "PITP")'>2016</a> we hosted our best festival to date.</p>
+                    <p class="indlink">We have successfully held festivals in 2013, 2014, 2016, and on Saturday September 1st 2018 we hosted our best festival to date.</p>
                     <p>
                         The festival is run by a number of dedicated volunteers that give their free time to organise the event.
                         However, Party in the Park is only possible as a result of the financial contributions from you the community.
                     </p>
-                    <p>In order to run the festival we need to raise @ViewBag.GrandTotal - For a full breakdown of the costs involved and to see information about our funders, visit our <a href='@Url.Action("sponsors", "PITP")'>sponsors page.</a></p>
                     <p><a href='@Url.Action("about-us", "PITP")' class="btn btn-default">Read More &raquo;</a></p>
                     <p class="genh5">your donations will help with the costs of putting on the festival. <span class="fyell">please give generously</span></p>
                     <a href='@Url.Action("donate", "PITP")' class="ppal2">
@@ -159,7 +186,7 @@
                 </div>
             </section>
         </div>
-    </div>
+    </div>*@
     <div class="intro-block">
         <div class="container">
             <div class="row slogo">
@@ -206,24 +233,24 @@
 
 
         $(document).ready(function () {
-            $('#yourElement').animateCss('pulse', function () {
-                // Do somthing after animation
+            // Check if element is scrolled into view
+            function isScrolledIntoView(elem) {
+                var docViewTop = $(window).scrollTop();
+                var docViewBottom = docViewTop + $(window).height();
+
+                var elemTop = $(elem).offset().top;
+                var elemBottom = elemTop + $(elem).height();
+
+                return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+            }
+            // If element is scrolled into view, fade it in
+            $(window).scroll(function () {
+                $('.scroll-animations .animated').each(function () {
+                    if (isScrolledIntoView(this) === true) {
+                        $(this).addClass('fadeInLeft');
+                    }
+                });
             });
-
-            // sponsors table
-            $('#myTable').DataTable({
-                searching: false,
-                ordering: true
-            });
-            //$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-            //    var target = $(e.target).attr("href") // activated tab
-            //    alert(target);
-
-                
-            //    $('#band').css({ "background": "url('../img/skyline.png') repeat-x scroll center bottom #FFA753" });
-
-
-            //});
         });
     </script>
 }

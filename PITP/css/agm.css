@@ -84,6 +84,10 @@ hr {
 	background-size: 81px, auto, cover;
 }
 
+.newhome {
+    background-color:#036bb6;
+}
+
 a.splash-arrow {
 	color: white;
 	font-size: 1.2em;
@@ -174,7 +178,7 @@ a.splash-arrow:hover {
     line-height: 108%;
 }
 
-.fund, .fbell2, .flinesm, .gener, .genh, .genh2, .genh3, .genh4, .genh5, .genh6, .genh7, .genh8, .genh44, .genh444    {
+.fund, .fbell2, .flinesm, .gener, .genh, .genh2, .genh3, .genh4, .genh5, .genh6, .genh7, .genh8, .genh44, .genh444, .agmtext, .agmtextend, .agmtextst, .agmtextbl    {
 	font-family: ITC Lubalin Graph;
 	text-transform: uppercase; 
     font-size:6rem;
@@ -385,11 +389,15 @@ a.splash-arrow:hover {
 }
 
 
-.divup
+.divup, .divupb
 {
 	background-color: #d9d9d0;
 	padding-top: 5em;
 	margin-top: -4em;
+}
+
+.divupb{
+    margin-top:0;
 }
 
 #hointrohead{
@@ -434,7 +442,7 @@ a.splash-arrow:hover {
 	}
     .embed-responsive-16by9, .finhome
     {
-        margin-top:-50px;
+        margin-top:-20px;
     }
 
     .festintro
@@ -1155,8 +1163,9 @@ padding-top: 0rem;
         border:none;
     }
 
-    .genh44{
+.genh44 {
         font-size:2rem;
+        background-color:#d2232a;
     }
 
     .genh444
@@ -1199,5 +1208,139 @@ padding-top: 0rem;
 .val1 a:hover {
     text-decoration:none;
     color:#fff;
+}
+
+.agm2018{
+    margin-top:5rem;
+    text-align:right;
+}
+
+.agm2018 p {
+    margin:1rem 0rem .5rem 0rem; 
+}
+
+.agm2018 span {
+    display:block; 
+   font-size:2rem;
+
+}
+
+.agm2018b {
+    margin-top:1rem;
+}
+
+
+.agmtextst {
+    font-size: 3.3rem;
+    background-color:#d2232a;
+    background: linear-gradient(90deg, #036bb6 13%, #d2232a 13%);
+}
+
+.agmtextst span {
+    font-size: 1.9rem;
+    line-height: 2rem;
+}
+
+.agmtext {
+    font-size:2.1rem;
+    background: linear-gradient(90deg, #036bb6 10%, #fff200 10%);
+}
+.agmtext p {
+    color:#231f20;
+}
+
+.agmtextbl  {
+    font-size:2.1rem;
+    background: linear-gradient(90deg, #036bb6 16%, #231f20 16%);
+}
+
+.agmtextbl span {
+    font-size:1.9rem;
+}
+
+.agmtextbl p, .agmtextst p, .agmtextst p, .agmtextend p, .agmtext p {
+    text-transform:none;
+}
+
+.agmtextend {
+    font-size:2.2rem;
+    color:#231f20;
+    background: linear-gradient(90deg, #036bb6 23%, #fff200 23%);
+}
+
+@media all and (max-width: 320px) {
+.agmtextst {
+   font-size:1.7rem;
+   background: linear-gradient(90deg, #036bb6 4%, #d2232a 4%);
+}
+
+.agmtextst span {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+
+.agmtext {
+    font-size:1.4rem;
+    background: linear-gradient(90deg, #036bb6 2%, #fff200 2%);
+}
+.agmtext span {
+    font-size:1.4rem;
+}
+
+.agmtextbl  {
+    font-size:1.4rem;
+    background: linear-gradient(90deg, #036bb6 3.8%, #231f20 3.8%);
+}
+
+.agmtextbl span {
+    font-size:1.4rem;
+}
+
+.agmtextend {
+    font-size:1.4rem;
+    background: linear-gradient(90deg, #036bb6 8%, #fff200 8%);
+}
+
+.agmtextend span {
+     font-size:1.4rem;
+ }
+}
+
+@media all and (max-width: 480px) {
+.agmtextst {
+   font-size:2rem;
+   background: linear-gradient(90deg, #036bb6 6%, #d2232a 6%);
+}
+
+.agmtextst span {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+
+.agmtext {
+    font-size:1.4rem;
+    background: linear-gradient(90deg, #036bb6 3%, #fff200 3%);
+}
+.agmtext span {
+    font-size:1.4rem;
+}
+
+.agmtextbl  {
+    font-size:1.4rem;
+    background: linear-gradient(90deg, #036bb6 4.8%, #231f20 4.8%);
+}
+
+.agmtextbl span {
+    font-size:1.4rem;
+}
+
+.agmtextend {
+    font-size:1.4rem;
+    background: linear-gradient(90deg, #036bb6 10%, #fff200 10%);
+}
+
+.agmtextend span {
+     font-size:1.4rem;
+ }
 }
 
