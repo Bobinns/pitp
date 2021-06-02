@@ -79,3 +79,4 @@ PITP.csproj
 packages.config
 *.sln
 .vs/
+/PITP/img/video-optimised.mp4
